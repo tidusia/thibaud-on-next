@@ -1,0 +1,7 @@
+# Redirects from what the browser requests to what we serve
+
+# Blog posts from Gatsby
+/etre-freelance-c-est-la-vie/ /blog/etre-freelance-c-est-la-vie/
+/tester-ses-reducer-react-redux-jest/ /blog/tester-ses-reducer-react-redux-jest/
+/un-bon-developpeur/ /blog/un-bon-developpeur/
+/comprendre-differents-types-tests/ /blog/comprendre-differents-types-tests/
