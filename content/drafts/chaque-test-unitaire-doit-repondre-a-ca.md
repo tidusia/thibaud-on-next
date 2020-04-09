@@ -4,7 +4,7 @@ date: "2019-03-12T14:00:00.000Z"
 description: Une suite de tests ne sert à rien si elle ne répond pas à certaines exigences. Voici 5 questions que chaque test unitaire doit répondre.
 ---
 
-![Test unitaire tout moisi](./test-moisi.png) _Un test bien obscur, à jeter à la poubelle dès que possible_
+![Test unitaire tout moisi](/images/test-moisi.png) _Un test bien obscur, à jeter à la poubelle dès que possible_
 
 Il existe des auteurs qui changent complètement notre façon de travailler. Eric Elliot en fait partie, et [son article sur les tests unitaires](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d) a radicalement changé ma façon d'écrire mes tests unitaires.
 
