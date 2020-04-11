@@ -21,7 +21,7 @@ const ShowCase = () => (
         <div className="relative">
           <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
             En 6 ans, j'ai accompagné plus
-            <span className="block font-bold text-green-400">
+            <span className="block font-bold text-blue-600">
               de 20 projets startups
             </span>
           </h4>
@@ -36,7 +36,7 @@ const ShowCase = () => (
             <li>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     <svg
                       className="h-6 w-6"
                       stroke="currentColor"
@@ -57,9 +57,11 @@ const ShowCase = () => (
                     Spécialisé en React.js
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    J'ai eu la chance de travailler sur plus d'une dizaine de
+                    projets en React.js ou React Native. Aujourd'hui, je préfère
+                    me concentrer sur React.js, pour le web uniquement. C'est ce
+                    qui me permet d'être très efficace et d'apporter une réelle
+                    expertise.
                   </p>
                 </div>
               </div>
@@ -67,7 +69,7 @@ const ShowCase = () => (
             <li className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     <svg
                       className="h-6 w-6"
                       stroke="currentColor"
@@ -88,9 +90,9 @@ const ShowCase = () => (
                     Intégration au pixel perfect
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Généralement, les designers aiment travailler avec moi. Je
+                    suis capable de comprendre les enjeux derrière leurs
+                    maquettes et de les reproduire avec une extrême fidélité.
                   </p>
                 </div>
               </div>
@@ -98,7 +100,7 @@ const ShowCase = () => (
             <li className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     <svg
                       className="h-6 w-6"
                       stroke="currentColor"
@@ -122,7 +124,7 @@ const ShowCase = () => (
                     Vous avez surement besoin de quelqu'un capable d'intégrer
                     une équipe déjà en place. Ça tombe bien, c'est ce qui me
                     convient le mieux ! J'ai l'habitude de débarquer sur des
-                    projets en cours pour du renfort ou bien de poser une
+                    projets en cours pour du renfort, ou bien de poser une
                     architecture en concertation avec d'autres développeurs
                     expérimentés.
                   </p>
@@ -133,8 +135,12 @@ const ShowCase = () => (
         </div>
 
         <div className="mt-10 -mx-4 relative lg:mt-0">
-          <div className="relative mx-auto text-green-400">
+          <div className="relative mx-auto text-blue-600">
             <LogoReact />
+            <h2 className="text-center text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl md:text-4xl sm:leading-9">
+              Ma spécialisation :{" "}
+              <strong className="font-bold text-blue-600">React</strong>
+            </h2>
           </div>
         </div>
       </div>
@@ -151,9 +157,10 @@ const ShowCase = () => (
               </span>
             </h4>
             <p className="mt-3 text-lg leading-7 text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              ex obcaecati natus eligendi delectus, cum deleniti sunt in labore
-              nihil quod quibusdam expedita nemo.
+              Agricool avait besoin d'un bon dev front à l'aise avec Next.js
+              (framework React), TypeScript pour se brancher sur le headless CMS
+              Prismic.io en GraphQL, en améliorant autant que possible les
+              performances dans une optique d'éco-conception.
             </p>
 
             <ul className="mt-10">
@@ -178,12 +185,15 @@ const ShowCase = () => (
                   </div>
                   <div className="ml-4">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                      Mobile notifications
+                      Intégration des vues
                     </h5>
                     <p className="mt-2 text-base leading-6 text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      En quelques jours, j'ai intégré les 9 vues sur le Figma au
+                      pixel perfect qui ont ensuite été validées par le
+                      designer. J'ai choisi Storybook pour m'aider dans la
+                      création des composants React. J'ai aussi prévu le
+                      découpage de certains blocs afin d'être compatible avec
+                      les Slices de Prismic.
                     </p>
                   </div>
                 </div>
@@ -209,12 +219,47 @@ const ShowCase = () => (
                   </div>
                   <div className="ml-4">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                      Reminder emails
+                      Branchement CMS Prismic
                     </h5>
                     <p className="mt-2 text-base leading-6 text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      En collaboration avec le lead-dev d'Agricool, j'ai créer
+                      les différents types de pages dans Prismic, généré des
+                      données initiales depuis le back-office que j'ai ensuite
+                      récupérées à l'aide de GraphQL.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="mt-10">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
+                      <svg
+                        className="h-6 w-6"
+                        stroke="currentColor"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h5 className="text-lg leading-6 font-medium text-gray-900">
+                      Éco-conception
+                    </h5>
+                    <p className="mt-2 text-base leading-6 text-gray-500">
+                      Un des enjeux de la mission était de réaliser un site
+                      performant, accessible, avec un excellent score sur
+                      Lighthouse. La startup étant engagée dans la lutte contre
+                      le réchauffement climatique, j'ai pu mettre en oeuvre de
+                      nombreuses bonnes pratiques d'éco-conception sur le
+                      projet.
                     </p>
                   </div>
                 </div>
