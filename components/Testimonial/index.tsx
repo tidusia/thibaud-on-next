@@ -43,12 +43,12 @@ const Testimonial = ({ picture, name, position, content }: Props) => (
 
       <div className="relative lg:flex lg:items-center">
         <div className="hidden lg:block lg:flex-shrink-0">
-          <img className="h-64 w-64 rounded-full" src={picture} alt={name} />
+          <img className="h-48 w-48 rounded-full" src={picture} alt={name} />
         </div>
 
         <div className="relative lg:ml-10">
           <svg
-            className="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50"
+            className="absolute z-0 top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50"
             stroke="currentColor"
             fill="none"
             viewBox="0 0 144 144"
@@ -59,7 +59,7 @@ const Testimonial = ({ picture, name, position, content }: Props) => (
             />
           </svg>
           <blockquote>
-            <div className="text-2xl leading-9 font-medium text-gray-900">
+            <div className="relative z-10 text-2xl leading-9 font-medium text-gray-900">
               <p>{content}</p>
             </div>
             <footer className="mt-8">
@@ -67,8 +67,8 @@ const Testimonial = ({ picture, name, position, content }: Props) => (
                 <div className="flex-shrink-0 lg:hidden">
                   <img
                     className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
+                    src={picture}
+                    alt={name}
                   />
                 </div>
                 <div className="ml-4 lg:ml-0">
