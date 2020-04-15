@@ -7,10 +7,10 @@ const ShowCase = () => (
       <DotsGrid rootClassNames="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" />
 
       <div className="relative">
-        <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+        <h3 className="lg:text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           Vous cherchez un développeur de confiance ?
         </h3>
-        <p className="mt-4 max-w-2xl mx-auto text-center text-xl leading-7 text-gray-500">
+        <p className="mt-4 max-w-2xl mx-auto lg:text-center text-xl leading-7 text-gray-500">
           Passionné par le développement web, je suis disponible pour vous
           accompagner sur tout le front-end de votre projet : intégration,
           architecture, connexion back-end et stratégie de tests.
@@ -40,9 +40,9 @@ const ShowCase = () => (
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       viewBox="0 0 24 24"
                       className="w-6 h-6"
                     >
@@ -71,9 +71,9 @@ const ShowCase = () => (
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       viewBox="0 0 24 24"
                       className="w-6 h-6"
                     >
@@ -100,9 +100,9 @@ const ShowCase = () => (
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       viewBox="0 0 24 24"
                       className="w-6 h-6"
                     >
@@ -165,9 +165,9 @@ const ShowCase = () => (
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         viewBox="0 0 24 24"
                         className="w-6 h-6"
                       >
@@ -197,9 +197,9 @@ const ShowCase = () => (
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         viewBox="0 0 24 24"
                         className="w-6 h-6"
                       >
@@ -227,9 +227,9 @@ const ShowCase = () => (
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         viewBox="0 0 24 24"
                         className="w-6 h-6"
                       >

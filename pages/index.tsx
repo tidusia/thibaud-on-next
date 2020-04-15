@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import HomeIntro from "../components/HomeIntro";
 import ShowCase from "../components/ShowCase";
 import Testimonial from "../components/Testimonial";
+import Stats from "../components/Stats";
 
 const Home: NextPage = () => (
   <div>
@@ -21,6 +22,16 @@ const Home: NextPage = () => (
       name="Pierre Ragois"
       position="Designer Freelance, a réalisé les maquettes pour Agricool"
       content="En 20 ans de création numérique (déjà!), le nombre de devs front en qui j'ai une totale confiance sur l'intégration d'un design se comptent sur les doigts d'une seule main. Thibaud fait partie de ce club très restreint, et ça en dit long sur ses compétences humaines et professionnelles. Je le recommande donc vivement, en espérant avoir plus de projets avec lui à l'avenir !"
+    />
+
+    <Stats
+      title="Mon crédo : Améliorer constamment mes compétences"
+      subtitle="Via la formation en continu, la création de checklists et l'utilisation d'outils de mesure de la qualité, je fais en sorte d'apporter toujours plus de valeur à mon travail."
+      stats={[
+        { value: "38", label: "Projets clients" },
+        { value: "6 ans", label: "expérience freelance" },
+        { value: "2850h", label: "sur projets clients" },
+      ]}
     />
   </div>
 );
