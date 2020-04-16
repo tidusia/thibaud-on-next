@@ -61,6 +61,7 @@ const Stats = ({ title, subtitle, stats = [] }: Props) => (
               {/* CSS designed for 3 items */}
               {stats.map((stat, index) => (
                 <StatItem
+                  key={stat.label}
                   value={stat.value}
                   label={stat.label}
                   index={index}

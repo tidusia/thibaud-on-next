@@ -1,9 +1,12 @@
 import { NextPage } from "next";
 
+import hoursWorking from "../data/hours-working";
+import projects from "../data/projects";
 import HomeIntro from "../components/HomeIntro";
 import ShowCase from "../components/ShowCase";
 import Testimonial from "../components/Testimonial";
 import Stats from "../components/Stats";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => (
   <div>
@@ -28,10 +31,17 @@ const Home: NextPage = () => (
       title="Mon crédo : Améliorer constamment mes compétences"
       subtitle="Via la formation en continu, la création de checklists et l'utilisation d'outils de mesure de la qualité, je fais en sorte d'apporter toujours plus de valeur à mon travail."
       stats={[
-        { value: "38", label: "Projets clients" },
+        { value: "34", label: "Projets clients" },
         { value: "6 ans", label: "expérience freelance" },
-        { value: "2850h", label: "sur projets clients" },
+        { value: `${hoursWorking}h`, label: "sur projets clients" },
       ]}
+    />
+
+    <Projects
+      heading="Références"
+      title="Développements Front-End"
+      subtitle="Quelques startups et agences avec qui j'ai collaboré"
+      projects={projects}
     />
   </div>
 );
