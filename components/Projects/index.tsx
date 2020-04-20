@@ -2,14 +2,15 @@ import Project from "../Project";
 import { Project as ProjectType } from "../../data/projects";
 
 type Props = {
-  heading?: string;
   title: string;
+  id: string;
+  heading?: string;
   subtitle?: string;
   projects: Array<ProjectType>;
 };
 
-const Projects = ({ heading, title, subtitle, projects }: Props) => (
-  <div className="bg-gray-900">
+const Projects = ({ heading, title, subtitle, projects, id }: Props) => (
+  <div className="bg-gray-900" id={id}>
     <div className="pt-12 sm:pt-16 lg:pt-24">
       <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto lg:max-w-none">

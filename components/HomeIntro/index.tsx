@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Nav from "../Nav";
 import { NavigationItem } from "../../data/navigation";
 
@@ -34,20 +35,14 @@ const HomeIntro = ({ navItems }: Props) => (
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                >
+                <a href="#references" className="w-full btn btn-blue btn-big">
                   Mes références
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                >
-                  Me contacter
-                </a>
+                <Link href="/contact">
+                  <a className="w-full btn btn-light btn-big">Me contacter</a>
+                </Link>
               </div>
             </div>
           </div>

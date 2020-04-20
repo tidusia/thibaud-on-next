@@ -39,6 +39,7 @@ const Home: NextPage = () => (
     />
 
     <Projects
+      id="references"
       heading="Références"
       title="Développements Front-End"
       subtitle="Quelques startups et agences avec qui j'ai collaboré"
