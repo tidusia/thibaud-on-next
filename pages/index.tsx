@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 
+import navigation from "../data/navigation";
 import hoursWorking from "../data/hours-working";
 import projects from "../data/projects";
 import HomeIntro from "../components/HomeIntro";
@@ -10,7 +11,7 @@ import Projects from "../components/Projects";
 
 const Home: NextPage = () => (
   <div>
-    <HomeIntro />
+    <HomeIntro navItems={navigation} />
     <ShowCase />
 
     <Testimonial

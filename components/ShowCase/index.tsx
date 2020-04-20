@@ -22,7 +22,7 @@ const ShowCase = () => (
           <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
             En 6 ans, j'ai accompagné plus
             <span className="block font-bold text-blue-600">
-              de 20 projets startups
+              de 15 projets startups
             </span>
           </h4>
           <p className="mt-3 text-lg leading-7 text-gray-500">

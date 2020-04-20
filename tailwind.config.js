@@ -8,6 +8,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    margin: ["responsive", "first"],
+  },
   plugins: [require("@tailwindcss/ui")],
 };
