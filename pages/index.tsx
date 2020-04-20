@@ -7,6 +7,7 @@ import HomeIntro from "../components/HomeIntro";
 import ShowCase from "../components/ShowCase";
 import Testimonial from "../components/Testimonial";
 import Stats from "../components/Stats";
+import CallToActionCenter from "../components/CallToActionCenter";
 import Projects from "../components/Projects";
 
 const Home: NextPage = () => (
@@ -45,6 +46,8 @@ const Home: NextPage = () => (
       subtitle="Quelques startups et agences avec qui j'ai collaboré"
       projects={projects}
     />
+
+    <CallToActionCenter title="On travaille ensemble ?" />
   </div>
 );
 
