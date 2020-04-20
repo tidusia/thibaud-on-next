@@ -54,7 +54,7 @@ const projects: Array<Project> = [
   {
     title: "Agricool",
     year: "2020",
-    labels: ["React", "TypeScript", "Next.js", "HTML", "CSS", "Prismic.io"],
+    labels: ["TypeScript", "Next.js", "CSS", "Prismic.io"],
     done: [
       "Intégration des vues",
       "Branchement CMS Prismic",
@@ -65,7 +65,7 @@ const projects: Array<Project> = [
   {
     title: "SuperReco",
     year: "2019-2020",
-    labels: ["Rails", "HTML", "Tailwind CSS"],
+    labels: ["Rails", "HTML", "Tailwind CSS", "JavaScript"],
     done: [
       "Création de toutes les vues du projet",
       "Conseils sur l'UX et création de wireframes",
