@@ -58,7 +58,7 @@ const Home: NextPage = () => (
       projects={projects}
     />
 
-    <CallToActionCenter title="On travaille ensemble ?" dark />
+    <CallToActionCenter title="On travaille ensemble ?" />
 
     <FeaturedPosts
       title="Un peu de lecture ?"
