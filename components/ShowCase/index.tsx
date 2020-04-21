@@ -1,5 +1,7 @@
 import DotsGrid from "../DotsGrid";
 import LogoReact from "../LogoReact";
+import { yearsWorking } from "../../data/hours-working";
+import projects from "../../data/projects";
 
 const ShowCase = () => (
   <section className="py-16 overflow-hidden lg:py-24">
@@ -20,9 +22,15 @@ const ShowCase = () => (
       <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div className="relative">
           <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-            En 6 ans, j'ai accompagné plus
+            En {yearsWorking} ans, j'ai accompagné plus
             <span className="block font-bold text-blue-600">
-              de 15 projets startups
+              de{" "}
+              {projects.reduce(
+                (total, project) =>
+                  project.isStartup ? total + project.nbOfClients : total,
+                0
+              )}{" "}
+              projets startups
             </span>
           </h4>
           <p className="mt-3 text-lg leading-7 text-gray-500">

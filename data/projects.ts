@@ -20,6 +20,8 @@ type Label =
 export type Project = {
   title: string;
   year: string;
+  nbOfClients: number;
+  isStartup: boolean;
   description?: string;
   labels?: Array<Label>;
   done?: Array<string>;
@@ -55,6 +57,8 @@ const projects: Array<Project> = [
     title: "Agricool",
     year: "2020",
     labels: ["TypeScript", "Next.js", "CSS", "Prismic.io"],
+    nbOfClients: 1,
+    isStartup: true,
     done: [
       "Intégration des vues",
       "Branchement CMS Prismic",
@@ -66,6 +70,8 @@ const projects: Array<Project> = [
     title: "SuperReco",
     year: "2019-2020",
     labels: ["Rails", "HTML", "Tailwind CSS", "JavaScript"],
+    nbOfClients: 1,
+    isStartup: true,
     done: [
       "Création de toutes les vues du projet",
       "Conseils sur l'UX et création de wireframes",
@@ -76,6 +82,8 @@ const projects: Array<Project> = [
     title: "Sport Managing",
     year: "2019",
     labels: ["React Native", "CSS", "TypeScript", "Node.js"],
+    nbOfClients: 1,
+    isStartup: true,
     done: [
       "Renfort sur le projet en React Native",
       "Création d'une fonctionnalité serveur en Node.js",
@@ -85,6 +93,8 @@ const projects: Array<Project> = [
     title: "The Geek Family",
     year: "2019",
     labels: ["React Native", "CSS", "JavaScript"],
+    nbOfClients: 2,
+    isStartup: true,
     done: [
       "Renfort sur plusieurs projets en React Native",
       "Intégration de nombreuses vues dans un délai très court",
@@ -96,6 +106,8 @@ const projects: Array<Project> = [
     title: "Talium",
     year: "2018",
     labels: ["React", "Flow", "CSS-in-JS", "JavaScript"],
+    nbOfClients: 1,
+    isStartup: true,
     done: [
       "Architecture et stratégie de tests d'une plateforme dans la crypto-monnaie",
       "Binôme avec un autre developpeur confirmé en React",
@@ -106,6 +118,8 @@ const projects: Array<Project> = [
     title: "Poi Pay",
     year: "2018",
     labels: ["React Native", "CSS-in-JS", "JavaScript"],
+    nbOfClients: 1,
+    isStartup: true,
     done: [
       "Lead dev front sur React Native",
       "Mentoring d'un développeur junior en React Native",
@@ -116,6 +130,8 @@ const projects: Array<Project> = [
     title: "Stryng Messaging",
     year: "2017-2018",
     labels: ["React", "React Native", "CSS-in-JS", "JavaScript"],
+    nbOfClients: 1,
+    isStartup: true,
     done: [
       "Intégration des vues en React.js",
       "POC d'application en React Native",
@@ -128,6 +144,8 @@ const projects: Array<Project> = [
     title: "Startup on Rails",
     year: "2017",
     labels: ["React", "React Native", "CSS", "JavaScript"],
+    nbOfClients: 2,
+    isStartup: true,
     done: [
       "Développement front-end et intégration sur un projet React.js",
       "Intégration des vues sur application mobile en React native",
@@ -137,6 +155,8 @@ const projects: Array<Project> = [
     title: "Intégration Web",
     year: "2017-2020",
     labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS"],
+    nbOfClients: pixelPerfect.length,
+    isStartup: true,
     done: [
       `Collaboration sur ${pixelPerfect.length} projets startups`,
       "Intégration des maquettes fournies au pixel perfect",
@@ -147,6 +167,8 @@ const projects: Array<Project> = [
     title: "Sites vitrines",
     year: "2015-2017",
     labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS", "Pug"],
+    nbOfClients: sitesVitrines.length,
+    isStartup: false,
     done: [
       `Création de plus ${sitesVitrines.length} sites vitrines pour des clients dans toute la France`,
     ],
