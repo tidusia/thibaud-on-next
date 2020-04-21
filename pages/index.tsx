@@ -10,6 +10,7 @@ import Stats from "../components/Stats";
 import CallToActionCenter from "../components/CallToActionCenter";
 import FeaturedPosts from "../components/FeaturedPosts";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const totalNbOfProjects = projects.reduce(
   (total, project) => total + project.nbOfClients,
@@ -63,6 +64,8 @@ const Home: NextPage = () => (
       title="Un peu de lecture ?"
       subtitle="Simple et naturel, c'est ma façon de m'exprimer ici. C'est un des rares espaces où je règne en maître après tout !"
     />
+
+    <Footer />
   </div>
 );
 
