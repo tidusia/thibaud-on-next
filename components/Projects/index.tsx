@@ -10,9 +10,9 @@ type Props = {
 };
 
 const Projects = ({ heading, title, subtitle, projects, id }: Props) => (
-  <div className="bg-gray-900" id={id}>
-    <div className="pt-12 sm:pt-16 lg:pt-24">
-      <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+  <div className="bg-gray-900 pt-16">
+    <div id={id}>
+      <div className="max-w-screen-xl mx-auto text-center pt-12 sm:pt-16 lg:pt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto lg:max-w-none">
           {!!heading && (
             <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
@@ -28,15 +28,12 @@ const Projects = ({ heading, title, subtitle, projects, id }: Props) => (
         </div>
       </div>
     </div>
-    <div className="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
-      <div className="relative">
-        <div className="absolute inset-0 h-3/4 bg-gray-900"></div>
-        <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5">
-            {projects.map((project) => (
-              <Project {...project} key={project.title} />
-            ))}
-          </div>
+    <div className="mt-8 pb-12 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5">
+          {projects.map((project) => (
+            <Project {...project} key={project.title} />
+          ))}
         </div>
       </div>
     </div>

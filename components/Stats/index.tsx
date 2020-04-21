@@ -52,24 +52,19 @@ const Stats = ({ title, subtitle, stats = [] }: Props) => (
         </p>
       </div>
     </div>
-    <div className="mt-10 pb-12 bg-white sm:pb-16">
-      <div className="relative">
-        <div className="absolute inset-0 h-1/2 bg-gray-50"></div>
-        <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
-              {/* CSS designed for 3 items */}
-              {stats.map((stat, index) => (
-                <StatItem
-                  key={stat.label}
-                  value={stat.value}
-                  label={stat.label}
-                  index={index}
-                  lastIndex={stats.length - 1}
-                />
-              ))}
-            </div>
-          </div>
+    <div className="max-w-screen-xl mx-auto -mt-8 px-4 sm:px-6 lg:px-8 transform translate-y-1/2">
+      <div className="max-w-4xl mx-auto">
+        <div className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+          {/* CSS designed for 3 items */}
+          {stats.map((stat, index) => (
+            <StatItem
+              key={stat.label}
+              value={stat.value}
+              label={stat.label}
+              index={index}
+              lastIndex={stats.length - 1}
+            />
+          ))}
         </div>
       </div>
     </div>
