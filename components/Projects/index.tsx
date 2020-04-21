@@ -28,7 +28,7 @@ const Projects = ({ heading, title, subtitle, projects, id }: Props) => (
         </div>
       </div>
     </div>
-    <div className="mt-8 pb-12 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+    <div className="mt-8 pb-12 sm:mt-12 lg:mt-16">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5">
           {projects.map((project) => (
