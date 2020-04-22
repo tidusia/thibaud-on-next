@@ -1,15 +1,11 @@
 ---
 title: Être freelance, c'est la vie
 date: "2019-02-28"
-category: "Blog"
-categoryHref: "/blog"
 timeReading: "4 minutes"
 picture: "/images/blog/planete-mercure-ardeche.jpg"
 pictureAlt: Une photo de l'espace de coworking Planète Mercure en Ardèche
 excerpt: Arrêtons de mentir, on ne devient pas freelance juste pour choisir ses horaires. Qu'est-ce qui te pousse à vouloir te lancer ?
 ---
-
-![Planète Mercure Coworking en Ardèche](/images/planete-mercure-ardeche.jpg) _C'est cool de pouvoir bosser d'où l’on veut =D_
 
 ## Pourquoi devenir freelance ?
 

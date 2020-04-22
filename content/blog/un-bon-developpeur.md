@@ -1,10 +1,9 @@
 ---
 title: Qu'est-ce qu'un bon développeur ?
 date: "2019-05-14"
-category: "Blog"
-categoryHref: "/blog"
 timeReading: "3 minutes"
 picture: "https://i.pinimg.com/originals/76/04/3f/76043f0d370e49e75f59509b7bbaf548.jpg"
+pictureAlt: Chuck Noris est un bon développeur
 excerpt: Celui qui code vite ? Ou qui documente bien ? Ou bien qui répare en premier les bugs ? Rien à voir avec tout cela, voici les savoir-faire d'un vrai bon développeur.
 ---
 
@@ -30,7 +29,7 @@ Autant que possible, tout développeur devrait utiliser le service/produit au qu
 
 Peu importe ton moyen, partage ce que tu as appris et diffuse les bonnes pratiques.
 
-> Artisanat logiciel = l'idée de compagnonnage <br>Jean-Pierre Lambert sur Scrum Life
+> Artisanat logiciel = l'idée de compagnonnage, Jean-Pierre Lambert sur Scrum Life
 
 Et cerise sur le gâteau, partager des connaissances est le meilleur moyen d'apprendre. Donc, n'attends pas d'être un expert pour diffuser la bonne parole !
 
