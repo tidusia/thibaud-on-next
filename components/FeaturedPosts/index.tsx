@@ -5,9 +5,15 @@ type Props = {
   title: string;
   subtitle?: string;
   posts: Array<PostType>;
+  hideLinks?: boolean;
 };
 
-const FeaturedPosts = ({ title, subtitle, posts }: Props) => {
+const FeaturedPosts = ({
+  title,
+  subtitle,
+  posts,
+  hideLinks = false,
+}: Props) => {
   if (!posts || !posts.length) return null;
 
   return (
@@ -26,16 +32,19 @@ const FeaturedPosts = ({ title, subtitle, posts }: Props) => {
             <Post key={post.title} {...post} />
           ))}
         </div>
-        <div className="mt-16 sm:flex sm:justify-center">
-          <Link href="/blog">
-            <a className="btn btn-blue btn-big">Tous les articles</a>
-          </Link>
-          <Link href="/news">
-            <a className="btn btn-light btn-big mt-3 sm:mt-0 sm:ml-3">
-              Toutes les news
-            </a>
-          </Link>
-        </div>
+
+        {!hideLinks && (
+          <div className="mt-16 sm:flex sm:justify-center">
+            <Link href="/blog">
+              <a className="btn btn-blue btn-big">Tous les articles</a>
+            </Link>
+            <Link href="/news">
+              <a className="btn btn-light btn-big mt-3 sm:mt-0 sm:ml-3">
+                Toutes les news
+              </a>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

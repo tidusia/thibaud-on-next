@@ -98,7 +98,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       categoryHref: markdown.data.categoryHref || "",
       excerpt: markdown.data.excerpt || "",
       publishDate: markdown.data.date || "",
-      timeReading: markdown.data.timeReading || "6 minutes",
+      timeReading: markdown.data.timeReading || "",
     });
   }
 

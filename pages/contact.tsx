@@ -17,7 +17,7 @@ const Contact: NextPage = () => (
       <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
         <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
-            <h2 className="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
+            <h2 className="text-2xl leading-8 font-extrabold tracking-tight text-blue-500 sm:text-3xl sm:leading-9">
               Travaillons ensemble
             </h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
@@ -113,15 +113,13 @@ const Contact: NextPage = () => (
                   ></textarea>
                 </div>
               </div>
-              <div className="">
-                <span className="inline-flex rounded-md shadow-sm">
-                  <button
-                    type="submit"
-                    className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
-                  >
-                    Envoyer
-                  </button>
-                </span>
+              <div>
+                <button
+                  type="submit"
+                  className="btn btn-blue btn-big w-full lg:w-auto"
+                >
+                  Envoyer
+                </button>
               </div>
             </form>
           </div>
