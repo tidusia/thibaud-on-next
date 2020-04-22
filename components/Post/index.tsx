@@ -49,7 +49,13 @@ const Post = ({
       </div>
       <div className="mt-6 flex items-center">
         <div className="flex text-sm leading-5 text-gray-500">
-          <time dateTime={publishDate}>{publishDate}</time>
+          <time dateTime={publishDate}>
+            {new Date(publishDate).toLocaleDateString("fr-FR", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </time>
           <span className="mx-1">&middot;</span>
           <span>{timeReading} de lecture</span>
         </div>

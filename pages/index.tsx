@@ -83,19 +83,16 @@ const Home: NextPage<Props> = ({ posts }) => (
 export const getStaticProps: GetStaticProps = async (context) => {
   const blogSlugs = fs.readdirSync(blogPath);
   const posts: Array<PostType> = [];
-  const maxPosts = blogSlugs.length > 3 ? 3 : blogSlugs.length;
 
-  for (let i = 0; i < maxPosts; i++) {
+  for (let i = 0; i < blogSlugs.length; i++) {
     const slug = blogSlugs[i];
     const content = await import(`../content/blog/${slug}`);
     const markdown = matter(content.default);
 
     posts.push({
-      href: "#",
+      href: `/blog/${slug.slice(0, -3)}`,
       title: markdown.data.title || "",
-      picture:
-        markdown.data.picture ||
-        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      picture: markdown.data.picture || "",
       pictureAlt: markdown.data.pictureAlt || "",
       category: markdown.data.category || "",
       categoryHref: markdown.data.categoryHref || "",
@@ -106,7 +103,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 
   const props: Props = {
-    posts,
+    posts: posts
+      .sort((a, b) => ("" + b.publishDate).localeCompare(a.publishDate))
+      .slice(0, 3),
   };
 
   return {

@@ -1,6 +1,9 @@
 ---
 title: Être freelance, c'est la vie
 date: "2019-02-28"
+category: "Blog"
+categoryHref: "/blog"
+picture: "/images/blog/planete-mercure-ardeche.jpg"
 excerpt: Arrêtons de mentir, on ne devient pas freelance juste pour choisir ses horaires. Qu'est-ce qui te pousse à vouloir te lancer ?
 ---
 
