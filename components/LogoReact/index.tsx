@@ -1,11 +1,15 @@
-const LogoReact = () => (
+type Props = {
+  className: string;
+};
+
+const LogoReact = ({ className }: Props) => (
   <svg
     version="1.1"
-    id="Layer_2_1_"
     x="0px"
     y="0px"
     viewBox="0 0 841.9 595.3"
     enableBackground="new 0 0 841.9 595.3"
+    className={className}
   >
     <g>
       <path

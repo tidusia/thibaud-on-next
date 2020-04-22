@@ -14,7 +14,7 @@ const Testimonial = ({
   reverse = false,
 }: Props) => (
   <div className="bg-white overflow-hidden">
-    <div className="relative max-w-screen-xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
+    <div className="relative max-w-xl lg:max-w-screen-xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
       <svg
         className={`hidden lg:block absolute top-1/2 transform -translate-y-1/2 ${
           reverse ? "left-full -translate-x-1/2" : "right-full translate-x-1/2"

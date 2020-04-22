@@ -34,10 +34,11 @@ const BlogTemplate: NextPage<Props> = (props) => {
       </div>
 
       <article className="article-page mx-auto px-4 py-12">
-        <h1 className="article-main-title my-12">{props.frontmatter.title}</h1>
+        <h1 className="article-main-title mt-0 mb-12 sm:my-12">
+          {props.frontmatter.title}
+        </h1>
         <h2 className="mb-4 text-gray-600">{props.frontmatter.excerpt}</h2>
-        <p className="mb-16 text-right text-base">
-          -{" "}
+        <p className="mb-16 sm:text-right text-base leading-5 text-gray-500">
           <time dateTime={props.frontmatter.date} className="my-0">
             {new Date(props.frontmatter.date).toLocaleDateString("fr-FR", {
               year: "numeric",
@@ -45,7 +46,8 @@ const BlogTemplate: NextPage<Props> = (props) => {
               day: "numeric",
             })}
           </time>
-          , {props.frontmatter.timeReading} de lecture
+          <span className="mx-1">&middot;</span>
+          {props.frontmatter.timeReading} de lecture
         </p>
 
         <figure className="mb-16">

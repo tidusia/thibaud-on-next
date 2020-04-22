@@ -6,7 +6,7 @@ const Footer = () => (
           href="https://www.linkedin.com/in/thibaudduthoit/"
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-6 text-gray-400 hover:text-gray-500"
+          className="mx-3 text-gray-400 hover:text-gray-500"
         >
           <span className="sr-only">GitHub</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -17,7 +17,7 @@ const Footer = () => (
           href="https://github.com/tidusia"
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-6 text-gray-400 hover:text-gray-500"
+          className="mx-3 text-gray-400 hover:text-gray-500"
         >
           <span className="sr-only">GitHub</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ const Footer = () => (
           href="https://twitter.com/DuthoitThibaud"
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-6 text-gray-400 hover:text-gray-500"
+          className="mx-3 text-gray-400 hover:text-gray-500"
         >
           <span className="sr-only">Twitter</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

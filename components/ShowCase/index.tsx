@@ -45,7 +45,7 @@ const ShowCase = () => (
               <div className="flex">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
-                    <LogoReact />
+                    <LogoReact className="w-12" />
                   </div>
                 </div>
                 <div className="ml-4">
@@ -128,7 +128,7 @@ const ShowCase = () => (
 
         <div className="mt-10 -mx-4 relative lg:mt-0">
           <div className="relative mx-auto text-blue-500">
-            <LogoReact />
+            <LogoReact className="w-full" />
             <h2 className="text-center text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl md:text-4xl sm:leading-9">
               Ma spécialisation :{" "}
               <strong className="font-bold text-blue-500">React</strong>

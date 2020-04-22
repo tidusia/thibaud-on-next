@@ -9,7 +9,7 @@ const Project = ({
 }: ProjectProps) => (
   <div className="rounded-lg shadow-lg overflow-hidden mb-4">
     <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
-      <div className="mb-4 flex items-baseline text-4xl leading-none font-extrabold">
+      <div className="mb-4 flex items-baseline flex-wrap text-4xl leading-none font-extrabold">
         {title}
         <span className="ml-1 text-xl leading-8 font-medium text-gray-500">
           /{year}

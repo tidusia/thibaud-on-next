@@ -44,7 +44,7 @@ const Post = ({
         </Link>
       </div>
       <div className="mt-6 flex items-center">
-        <div className="flex text-sm leading-5 text-gray-500">
+        <div className="flex flex-wrap text-sm leading-5 text-gray-500">
           <time dateTime={publishDate}>
             {new Date(publishDate).toLocaleDateString("fr-FR", {
               year: "numeric",

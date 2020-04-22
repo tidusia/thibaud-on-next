@@ -90,4 +90,8 @@
   @apply italic;
 }
 
+.article-content pre {
+  overflow-x: auto;
+}
+
 @tailwind utilities;

@@ -42,17 +42,13 @@ const StatItem = ({ value, label, index, lastIndex }: StatItemProps) => {
 
 const Stats = ({ title, subtitle, stats = [] }: Props) => (
   <div className="bg-gray-50 pt-12 sm:pt-16">
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto md:text-center">
-        <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-          {title}
-        </h2>
-        <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
-          {subtitle}
-        </p>
-      </div>
+    <div className="max-w-xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 md:text-center">
+      <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+        {title}
+      </h2>
+      <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">{subtitle}</p>
     </div>
-    <div className="max-w-screen-xl mx-auto -mt-8 px-4 sm:px-6 lg:px-8 transform translate-y-1/2">
+    <div className="max-w-screen-xl mx-auto my-8 sm:-mt-8 sm:mb-0 px-4 sm:px-6 lg:px-8 sm:transform sm:translate-y-1/2">
       <div className="max-w-4xl mx-auto">
         <div className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
           {/* CSS designed for 3 items */}
