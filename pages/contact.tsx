@@ -5,12 +5,12 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 const Contact: NextPage = () => (
-  <main>
+  <div>
     <div className="max-w-screen-xl mx-auto">
       <Nav navItems={navigation} />
     </div>
 
-    <div className="relative bg-white mt-12">
+    <main className="relative bg-white mt-12">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
       </div>
@@ -52,9 +52,10 @@ const Contact: NextPage = () => (
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form
-              action="#"
               method="POST"
+              name="contact"
               className="grid grid-cols-1 row-gap-6"
+              data-netlify="true"
             >
               <div>
                 <label htmlFor="full_name" className="sr-only">
@@ -120,10 +121,10 @@ const Contact: NextPage = () => (
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <Footer />
-  </main>
+  </div>
 );
 
 export default Contact;
