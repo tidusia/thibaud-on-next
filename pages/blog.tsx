@@ -8,6 +8,7 @@ import Nav from "../components/Nav";
 import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 const blogPath = path.relative(__dirname, "/content/blog");
 
@@ -17,6 +18,9 @@ type Props = {
 
 const Blog: NextPage<Props> = ({ posts }) => (
   <div>
+    <Head>
+      <title>Le Blog | Thibaud Duthoit</title>
+    </Head>
     <div className="max-w-screen-xl mx-auto mb-6">
       <Nav navItems={navigation} />
     </div>

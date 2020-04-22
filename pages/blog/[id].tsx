@@ -9,6 +9,7 @@ import navigation from "../../data/navigation";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { yearsWorking } from "../../data/hours-working";
+import Head from "next/head";
 
 const blogPath = path.relative(__dirname, "/content/blog");
 
@@ -29,6 +30,9 @@ type Props = {
 const BlogTemplate: NextPage<Props> = (props) => {
   return (
     <div>
+      <Head>
+        <title>{props.frontmatter.title}</title>
+      </Head>
       <div className="max-w-screen-xl mx-auto">
         <Nav navItems={navigation} />
       </div>

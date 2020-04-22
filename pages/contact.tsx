@@ -3,9 +3,13 @@ import { NextPage } from "next";
 import navigation from "../data/navigation";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 const Contact: NextPage = () => (
   <div>
+    <Head>
+      <title>Formulaire de contact | Thibaud Duthoit</title>
+    </Head>
     <div className="max-w-screen-xl mx-auto">
       <Nav navItems={navigation} />
     </div>

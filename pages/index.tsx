@@ -1,4 +1,5 @@
 import { NextPage, GetStaticProps } from "next";
+import Head from "next/head";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
@@ -29,6 +30,9 @@ type Props = {
 
 const Home: NextPage<Props> = ({ posts }) => (
   <div>
+    <Head>
+      <title>Thibaud Duthoit | Développeur React Freelance</title>
+    </Head>
     <HomeIntro navItems={navigation} />
     <ShowCase />
 
