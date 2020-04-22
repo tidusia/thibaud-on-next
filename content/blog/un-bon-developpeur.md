@@ -2,8 +2,6 @@
 title: Qu'est-ce qu'un bon développeur ?
 date: "2019-05-14"
 timeReading: "3 minutes"
-picture: "https://i.pinimg.com/originals/76/04/3f/76043f0d370e49e75f59509b7bbaf548.jpg"
-pictureAlt: Chuck Noris est un bon développeur
 excerpt: Celui qui code vite ? Ou qui documente bien ? Ou bien qui répare en premier les bugs ? Rien à voir avec tout cela, voici les savoir-faire d'un vrai bon développeur.
 ---
 

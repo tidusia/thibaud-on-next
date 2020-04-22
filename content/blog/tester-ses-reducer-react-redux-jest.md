@@ -2,7 +2,6 @@
 title: Comment tester ses reducers React + Redux + Jest
 date: "2019-03-05"
 timeReading: "29 minutes"
-picture: "https://miro.medium.com/max/1200/1*yxpuK0WgPK9kymxVO29YGg.jpeg"
 excerpt: Dans cette petite vidéo je vous montre une façon simple et efficace de tester ses reducers et comment tester que l'on respecte la règle d'immutabilité du reducer.
 ---
 
