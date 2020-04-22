@@ -38,11 +38,6 @@ const FeaturedPosts = ({
             <Link href="/blog">
               <a className="btn btn-blue btn-big">Tous les articles</a>
             </Link>
-            <Link href="/news">
-              <a className="btn btn-light btn-big mt-3 sm:mt-0 sm:ml-3">
-                Toutes les news
-              </a>
-            </Link>
           </div>
         )}
       </div>

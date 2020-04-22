@@ -5,8 +5,6 @@ export type Props = {
   title: string;
   picture: string;
   pictureAlt: string;
-  category: string;
-  categoryHref: string;
   excerpt: string;
   publishDate: string;
   timeReading: string;
@@ -17,8 +15,6 @@ const Post = ({
   title,
   picture,
   pictureAlt,
-  category,
-  categoryHref,
   excerpt,
   publishDate,
   timeReading,
@@ -33,11 +29,11 @@ const Post = ({
     </div>
     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
       <div className="flex-1">
-        <p className="text-sm leading-5 font-medium text-indigo-600">
+        {/* <p className="text-sm leading-5 font-medium text-indigo-600">
           <Link href={categoryHref}>
             <a className="hover:underline">{category}</a>
           </Link>
-        </p>
+        </p> */}
         <Link href={href}>
           <a className="block">
             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">

@@ -94,8 +94,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       title: markdown.data.title || "",
       picture: markdown.data.picture || "",
       pictureAlt: markdown.data.pictureAlt || "",
-      category: markdown.data.category || "",
-      categoryHref: markdown.data.categoryHref || "",
       excerpt: markdown.data.excerpt || "",
       publishDate: markdown.data.date || "",
       timeReading: markdown.data.timeReading || "",

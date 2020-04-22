@@ -5,7 +5,7 @@ export type NavigationItem = {
 
 const navigation: Array<NavigationItem> = [
   { href: "/blog", text: "Blog" },
-  { href: "/news", text: "News" },
+  // { href: "/news", text: "News" },
   { href: "/contact", text: "Contact" },
 ];
 

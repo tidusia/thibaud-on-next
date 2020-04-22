@@ -15,7 +15,7 @@ type Props = {
   posts: Array<PostType>;
 };
 
-const Home: NextPage<Props> = ({ posts }) => (
+const Blog: NextPage<Props> = ({ posts }) => (
   <div>
     <div className="max-w-screen-xl mx-auto mb-6">
       <Nav navItems={navigation} />
@@ -46,8 +46,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       title: markdown.data.title || "",
       picture: markdown.data.picture || "",
       pictureAlt: markdown.data.pictureAlt || "",
-      category: markdown.data.category || "",
-      categoryHref: markdown.data.categoryHref || "",
       excerpt: markdown.data.excerpt || "",
       publishDate: markdown.data.date || "",
       timeReading: markdown.data.timeReading || "",
@@ -55,9 +53,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 
   const props: Props = {
-    posts: posts
-      .filter((post) => (post.category || "").toLocaleLowerCase() === "blog")
-      .sort((a, b) => ("" + b.publishDate).localeCompare(a.publishDate)),
+    posts: posts.sort((a, b) =>
+      ("" + b.publishDate).localeCompare(a.publishDate)
+    ),
   };
 
   return {
@@ -65,4 +63,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
   };
 };
 
-export default Home;
+export default Blog;
