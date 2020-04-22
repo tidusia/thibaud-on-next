@@ -1,4 +1,5 @@
 import Post, { Props as PostType } from "../Post";
+import Link from "next/link";
 
 type Props = {
   title: string;
@@ -24,6 +25,16 @@ const FeaturedPosts = ({ title, subtitle, posts }: Props) => {
           {posts.map((post) => (
             <Post key={post.title} {...post} />
           ))}
+        </div>
+        <div className="mt-16 sm:flex sm:justify-center">
+          <Link href="/blog">
+            <a className="btn btn-blue btn-big">Tous les articles</a>
+          </Link>
+          <Link href="/news">
+            <a className="btn btn-light btn-big mt-3 sm:mt-0 sm:ml-3">
+              Toutes les news
+            </a>
+          </Link>
         </div>
       </div>
     </div>

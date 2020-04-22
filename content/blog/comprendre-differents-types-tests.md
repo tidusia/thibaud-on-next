@@ -3,6 +3,7 @@ title: Comprendre les différents types de tests
 date: "2019-06-14"
 category: "Blog"
 categoryHref: "/blog"
+timeReading: "6 minutes"
 picture: "https://blog.octo.com/wp-content/uploads/2011/03/TestDrivenGameDevelopment1.png"
 excerpt: Tests unitaires, fonctionnels ou d'intégration, pas facile de s'y retrouver. Voici l'essentiel à savoir pour bien comprendre la différence entre ces types de tests
 ---
