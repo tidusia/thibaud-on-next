@@ -34,7 +34,7 @@ const Post = ({
             <a className="hover:underline">{category}</a>
           </Link>
         </p> */}
-        <Link href={href}>
+        <Link href="/blog/[id]" as={href}>
           <a className="block">
             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {title}
