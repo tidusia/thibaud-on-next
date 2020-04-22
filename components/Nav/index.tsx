@@ -1,11 +1,12 @@
 import React from "react";
 import { NavigationItem } from "../../data/navigation";
+import Link from "next/link";
 
 type Props = {
   navItems: Array<NavigationItem>;
 };
 
-const menuOpenClassName = "absolute top-0 inset-x-0 md:hidden";
+const menuOpenClassName = "absolute top-0 inset-x-0 md:hidden z-40";
 const menuCloseClassName = "hidden";
 
 const Nav = ({ navItems }: Props) => {
@@ -17,11 +18,13 @@ const Nav = ({ navItems }: Props) => {
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
-              <a href="/">
-                <div className="text-2xl tracking-tight leading-10 font-extrabold">
-                  Thibaud Duthoit
-                </div>
-              </a>
+              <Link href="/">
+                <a>
+                  <div className="text-2xl tracking-tight leading-10 font-extrabold">
+                    Thibaud Duthoit
+                  </div>
+                </a>
+              </Link>
               <div className="flex items-center md:hidden">
                 <button
                   type="button"
@@ -47,13 +50,11 @@ const Nav = ({ navItems }: Props) => {
           </div>
           <div className="hidden md:block pl-6">
             {navItems.map((navItem) => (
-              <a
-                key={navItem.href}
-                href={navItem.href}
-                className="mx-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
-              >
-                {navItem.text}
-              </a>
+              <Link key={navItem.href} href={navItem.href}>
+                <a className="mx-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+                  {navItem.text}
+                </a>
+              </Link>
             ))}
           </div>
         </nav>

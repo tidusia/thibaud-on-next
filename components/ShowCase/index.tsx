@@ -23,7 +23,7 @@ const ShowCase = () => (
         <div className="relative">
           <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
             En {yearsWorking} ans, j'ai accompagné plus
-            <span className="block font-bold text-blue-600">
+            <span className="block font-bold text-blue-500">
               de{" "}
               {projects.reduce(
                 (total, project) =>
@@ -44,7 +44,7 @@ const ShowCase = () => (
             <li>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -75,7 +75,7 @@ const ShowCase = () => (
             <li className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -104,7 +104,7 @@ const ShowCase = () => (
             <li className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -137,11 +137,11 @@ const ShowCase = () => (
         </div>
 
         <div className="mt-10 -mx-4 relative lg:mt-0">
-          <div className="relative mx-auto text-blue-600">
+          <div className="relative mx-auto text-blue-500">
             <LogoReact />
             <h2 className="text-center text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl md:text-4xl sm:leading-9">
               Ma spécialisation :{" "}
-              <strong className="font-bold text-blue-600">React</strong>
+              <strong className="font-bold text-blue-500">React</strong>
             </h2>
           </div>
         </div>

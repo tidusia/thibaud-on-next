@@ -30,7 +30,7 @@ const StatItem = ({ value, label, index, lastIndex }: StatItemProps) => {
 
   return (
     <div className={rootClassName}>
-      <p className="text-5xl leading-none font-extrabold text-blue-600">
+      <p className="text-5xl leading-none font-extrabold text-blue-500">
         {value}
       </p>
       <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
