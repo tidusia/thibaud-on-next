@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import { NavigationItem } from "../../data/navigation";
 import Link from "next/link";
 
@@ -11,6 +12,7 @@ const menuCloseClassName = "hidden";
 
 const Nav = ({ navItems }: Props) => {
   const [open, setOpen] = React.useState<boolean>(false);
+  const router = useRouter();
 
   return (
     <>
@@ -51,7 +53,13 @@ const Nav = ({ navItems }: Props) => {
           <div className="hidden md:block pl-6">
             {navItems.map((navItem) => (
               <Link key={navItem.href} href={navItem.href}>
-                <a className="mx-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+                <a
+                  className={`mx-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${
+                    router.pathname === navItem.href
+                      ? "text-blue-500"
+                      : "text-gray-500"
+                  }`}
+                >
                   {navItem.text}
                 </a>
               </Link>
