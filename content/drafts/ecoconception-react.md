@@ -1,7 +1,7 @@
 ---
 title: L'écoconception avec React, c'est possible ?
-date: '2019-09-16T14:00:00.000Z'
-description: Ou est-ce qu'utiliser cette librairie ne fait que nous rapprocher encore plus vite du chaos climatique ? 🧐
+date: "2019-09-16"
+excerpt: Ou est-ce qu'utiliser cette librairie ne fait que nous rapprocher encore plus vite du chaos climatique ? 🧐
 ---
 
 **React**, c'est à la mode. On l'utilise dans tout les sens : de l'application mobile, du site vitrine classique, de l'application web et même de la Réalité Augmentée.

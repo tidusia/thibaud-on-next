@@ -1,7 +1,7 @@
 ---
 title: Comprendre les différents types de tests
-date: "2019-06-14T09:00:00.000Z"
-description: Tests unitaires, fonctionnels ou d'intégration, pas facile de s'y retrouver. Voici l'essentiel à savoir pour bien comprendre la différence entre ces types de tests
+date: "2019-06-14"
+excerpt: Tests unitaires, fonctionnels ou d'intégration, pas facile de s'y retrouver. Voici l'essentiel à savoir pour bien comprendre la différence entre ces types de tests
 ---
 
 Pendant longtemps, j'ai été un peu paumé par rapport aux différents types de tests qui existent. On en entend parler dans des articles ou par des collègues, ou bien l'on met en place ces différents types de tests sans même s'en rendre compte.

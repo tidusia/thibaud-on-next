@@ -1,7 +1,7 @@
 ---
 title: Comment nommer (correctement) ses classes pour CSS
-date: '2019-12-16T14:00:00.000Z'
-description: Ou comment éviter d'apporter le chaos dans vos fichiers HTML 🌪
+date: "2019-12-16"
+excerpt: Ou comment éviter d'apporter le chaos dans vos fichiers HTML 🌪
 ---
 
 Il existe des sujets d'apparence totalement insignifiante. Des points sur lesquels on imagine mal débattre pendant des heures. **Choisir une bonne valeur pour l'attribut `class` de vos éléments HTML** en fait partie.

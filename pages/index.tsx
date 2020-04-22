@@ -1,4 +1,7 @@
-import { NextPage } from "next";
+import { NextPage, GetStaticProps } from "next";
+import path from "path";
+import fs from "fs";
+import matter from "gray-matter";
 
 import navigation from "../data/navigation";
 import hoursWorking, { yearsWorking } from "../data/hours-working";
@@ -9,6 +12,7 @@ import Testimonial from "../components/Testimonial";
 import Stats from "../components/Stats";
 import CallToActionCenter from "../components/CallToActionCenter";
 import FeaturedPosts from "../components/FeaturedPosts";
+import { Props as PostType } from "../components/Post";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
@@ -17,7 +21,13 @@ const totalNbOfProjects = projects.reduce(
   0
 );
 
-const Home: NextPage = () => (
+const blogPath = path.relative(__dirname, "/content/blog");
+
+type Props = {
+  posts: Array<PostType>;
+};
+
+const Home: NextPage<Props> = ({ posts }) => (
   <div>
     <HomeIntro navItems={navigation} />
     <ShowCase />
@@ -63,10 +73,45 @@ const Home: NextPage = () => (
     <FeaturedPosts
       title="Un peu de lecture ?"
       subtitle="Simple et naturel, c'est ma façon de m'exprimer ici. C'est un des rares espaces où je règne en maître après tout !"
+      posts={posts}
     />
 
     <Footer />
   </div>
 );
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const blogSlugs = fs.readdirSync(blogPath);
+  const posts: Array<PostType> = [];
+  const maxPosts = blogSlugs.length > 3 ? 3 : blogSlugs.length;
+
+  for (let i = 0; i < maxPosts; i++) {
+    const slug = blogSlugs[i];
+    const content = await import(`../content/blog/${slug}`);
+    const markdown = matter(content.default);
+
+    posts.push({
+      href: "#",
+      title: markdown.data.title || "",
+      picture:
+        markdown.data.picture ||
+        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      pictureAlt: markdown.data.pictureAlt || "",
+      category: markdown.data.category || "",
+      categoryHref: markdown.data.categoryHref || "",
+      excerpt: markdown.data.excerpt || "",
+      publishDate: markdown.data.date || "",
+      timeReading: markdown.data.timeReading || "6 minutes",
+    });
+  }
+
+  const props: Props = {
+    posts,
+  };
+
+  return {
+    props,
+  };
+};
 
 export default Home;

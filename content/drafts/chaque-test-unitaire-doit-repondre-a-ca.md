@@ -1,7 +1,7 @@
 ---
 title: Chaque test unitaire doit répondre à ça
-date: "2019-03-12T14:00:00.000Z"
-description: Une suite de tests ne sert à rien si elle ne répond pas à certaines exigences. Voici 5 questions que chaque test unitaire doit répondre.
+date: "2019-03-12"
+excerpt: Une suite de tests ne sert à rien si elle ne répond pas à certaines exigences. Voici 5 questions que chaque test unitaire doit répondre.
 ---
 
 ![Test unitaire tout moisi](/images/test-moisi.png) _Un test bien obscur, à jeter à la poubelle dès que possible_

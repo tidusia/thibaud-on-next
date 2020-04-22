@@ -11,7 +11,7 @@ const removeMarkdownExtension = (file: string) => file.slice(0, -3);
 type Props = {
   frontmatter: {
     title: string;
-    description: string;
+    excerpt: string;
     date: string;
   };
   content: string;
