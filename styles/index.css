@@ -45,7 +45,13 @@
 }
 
 .article-main-title {
-  @apply text-5xl;
+  @apply text-4xl;
+}
+
+@media (min-width: 640px) {
+  .article-main-title {
+    @apply text-5xl;
+  }
 }
 
 .article-content h2 {

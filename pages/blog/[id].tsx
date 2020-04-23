@@ -38,7 +38,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
       </div>
 
       <article className="article-page mx-auto px-4 py-12">
-        <h1 className="article-main-title mt-0 mb-12 sm:my-12">
+        <h1 className="article-main-title mt-0 mb-12 sm:my-12 break-words">
           {props.frontmatter.title}
         </h1>
         <h2 className="mb-4 text-gray-600">{props.frontmatter.excerpt}</h2>
