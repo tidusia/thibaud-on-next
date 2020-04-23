@@ -1,8 +1,8 @@
 ---
-title: Qu'est-ce qu'un bon développeur ?
+title: Qu'est-ce qu'un bon développeur ?
 date: "2019-05-14"
 timeReading: "3 minutes"
-excerpt: Celui qui code vite ? Ou qui documente bien ? Ou bien qui répare en premier les bugs ? Rien à voir avec tout cela, voici les savoir-faire d'un vrai bon développeur.
+excerpt: Celui qui code vite ? Ou qui documente bien ? Ou bien qui répare en premier les bugs ? Rien à voir avec tout cela, voici les savoir-faire d'un vrai bon développeur.
 ---
 
 Cet article est très fortement inspiré par l'excellente vidéo de [Scrum life sur youtube](https://www.youtube.com/watch?v=RW0-QIJttBM), jettes-y un oeil ou deux. Je me permets de reprendre les points sur lesquels je suis totalement d'accord, cela me sert aussi de mémo personnel =D

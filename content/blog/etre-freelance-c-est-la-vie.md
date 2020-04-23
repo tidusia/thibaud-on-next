@@ -4,14 +4,14 @@ date: "2019-02-28"
 timeReading: "4 minutes"
 picture: "/images/blog/planete-mercure-ardeche.jpg"
 pictureAlt: Une photo de l'espace de coworking Planète Mercure en Ardèche
-excerpt: Arrêtons de mentir, on ne devient pas freelance juste pour choisir ses horaires. Qu'est-ce qui te pousse à vouloir te lancer ?
+excerpt: Arrêtons de mentir, on ne devient pas freelance juste pour choisir ses horaires. Qu'est-ce qui te pousse à vouloir te lancer ?
 ---
 
-## Pourquoi devenir freelance ?
+## Pourquoi devenir freelance ?
 
-Choisir ses horaires ? L'aventure ? Travailler de chez soi, au bar du village, ou même à l'autre bout de la planète ? Monter en compétence ?
+Choisir ses horaires ? L'aventure ? Travailler de chez soi, au bar du village, ou même à l'autre bout de la planète ? Monter en compétence ?
 
-Excellentes raisons. Mais n'est-ce pas un peu facile ? Et si ce n'était que la partie émergée de l'iceberg ?
+Excellentes raisons. Mais n'est-ce pas un peu facile ? Et si ce n'était que la partie émergée de l'iceberg ?
 
 Voici mon point de vue, complètement arbitraire, sur la question.
 
@@ -21,7 +21,7 @@ Honnêtement, ça serait un très mauvais calcul.
 
 Devenir freelance, ça signifie que tu vas devoir trouver des clients, les satisfaire, qu'ils te payent dans les temps et au juste prix. Tu vas devoir supporter des périodes creuses, de mauvais payeurs, te faire une trésorerie d'avance. Tu vas être obligé de te plonger dans l'administratif, l'entrepreneuriat, [l&apos;écriture d&apos;articles de blog pour expliquer aux gens qui tu es vraiment](http://thibaud-duthoit.fr).
 
-Alors, es-tu prêt à ce déluge juste pour choisir tes horaires ?
+Alors, es-tu prêt à ce déluge juste pour choisir tes horaires ?
 
 Si oui, alors bravo, quelle force de volonté ! Mais je suis intimement convaincu qu'il y a des raisons plus profondes qui te motivent.
 
@@ -43,11 +43,11 @@ En ce qui me concerne, ça a été d'utiliser systématiquement un typage très 
 
 ### Être freelance te donne une chance de faire tes propres choix
 
-Ta boite a décidé d'utiliser massivement WordPress/jQuery/Windows/PHP/insérer-ici-toute-techno-douteuse ? _(désolé pour le troll)_
+Ta boite a décidé d'utiliser massivement WordPress/jQuery/Windows/PHP/insérer-ici-toute-techno-douteuse ? _(désolé pour le troll)_
 
 À moins d'avoir de bons arguments et une équipe à l'écoute, il y a de fortes chances pour que tu subisses le changement.
 
-Et Dieu sait que c'est frustrant. Comment faire du bon taf avec de mauvais outils ?
+Et Dieu sait que c'est frustrant. Comment faire du bon taf avec de mauvais outils ?
 
 _Ça ne sera pas le cas en étant freelance._
 
@@ -77,7 +77,7 @@ Saisis donc cette chance pour te lancer dans un nouveau métier. Ou pour te spé
 
 > Écoute ton coeur - Grand-mère feuillage
 
-Oh que c'est cucul la praline... Mais dans le fond, n'est-ce pas bien plus motivant de faire ce qui te plaît, ce dont tu es réellement doué ?
+Oh que c'est cucul la praline... Mais dans le fond, n'est-ce pas bien plus motivant de faire ce qui te plaît, ce dont tu es réellement doué ?
 
 ### Un peu de lucidité dans ce monde de brutes
 
@@ -89,4 +89,4 @@ Il y a quelques considérations à prendre avant de se jeter à l'eau.
 
 Et si vous êtes déjà freelance, mais que vous avez du mal à être payé à hauteur de vos compétences, alors la [formation Freelance CAAP](https://freelanceboost.fr/etape-negligee-par-99-des-freelances/) est faite pour vous.
 
-Et puis il faut aussi rester à l'écoute des opportunités. Autant une offre complètement folle répondant à tous mes critères draconiens me ferait un jour revenir au salariat. Qui sait ?
+Et puis il faut aussi rester à l'écoute des opportunités. Autant une offre complètement folle répondant à tous mes critères draconiens me ferait un jour revenir au salariat. Qui sait ?
