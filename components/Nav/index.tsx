@@ -21,10 +21,8 @@ const Nav = ({ navItems }: Props) => {
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link href="/">
-                <a>
-                  <div className="text-2xl tracking-tight leading-10 font-extrabold">
-                    Thibaud Duthoit
-                  </div>
+                <a className="text-2xl tracking-tight leading-10 font-extrabold">
+                  Thibaud Duthoit
                 </a>
               </Link>
               <div className="flex items-center md:hidden">
@@ -72,9 +70,11 @@ const Nav = ({ navItems }: Props) => {
         <div className="shadow-md">
           <div className="p-2 bg-gray-900 shadow-xs overflow-hidden">
             <div className="pl-2 pr-4 pt-4 flex items-center justify-between">
-              <div className="text-2xl tracking-tight leading-10 font-extrabold text-white">
-                Thibaud Duthoit
-              </div>
+              <Link href="/">
+                <a className="text-2xl tracking-tight leading-10 font-extrabold text-white">
+                  Thibaud Duthoit
+                </a>
+              </Link>
               <div className="-mr-2">
                 <button
                   type="button"

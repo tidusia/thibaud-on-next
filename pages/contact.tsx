@@ -100,6 +100,7 @@ const Contact: NextPage = () => (
                     name="phone"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Téléphone"
+                    type="tel"
                   />
                 </div>
               </div>
