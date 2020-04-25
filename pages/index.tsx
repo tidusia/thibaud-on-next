@@ -46,7 +46,7 @@ const Home: NextPage<Props> = ({ posts }) => (
     <Testimonial
       picture="/images/pierre-ragois.jpg"
       name="Pierre Ragois"
-      position="Designer Freelance, a réalisé les maquettes pour Agricool"
+      position="Designer Freelance, il a réalisé les maquettes pour Agricool"
       content="En 20 ans de création numérique (déjà!), le nombre de devs front en qui j'ai une totale confiance sur l'intégration d'un design se comptent sur les doigts d'une seule main. Thibaud fait partie de ce club très restreint, et ça en dit long sur ses compétences humaines et professionnelles. Je le recommande donc vivement, en espérant avoir plus de projets avec lui à l'avenir !"
       reverse
     />

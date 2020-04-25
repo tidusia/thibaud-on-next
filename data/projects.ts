@@ -27,7 +27,7 @@ export type Project = {
   done?: Array<string>;
 };
 
-const sitesVitrines = [
+const sitesVitrine = [
   "Mark Decker",
   "Dimis",
   "Marquand",
@@ -110,7 +110,7 @@ const projects: Array<Project> = [
     isStartup: true,
     done: [
       "Architecture et stratégie de tests d'une plateforme dans la crypto-monnaie",
-      "Binôme avec un autre developpeur confirmé en React",
+      "Binôme avec un autre développeur confirmé en React",
       "Collaboration avec l'équipe interne back-end",
     ],
   },
@@ -164,13 +164,13 @@ const projects: Array<Project> = [
     ],
   },
   {
-    title: "Sites vitrines",
+    title: "Sites vitrine",
     year: "2015-2017",
     labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS", "Pug"],
-    nbOfClients: sitesVitrines.length,
+    nbOfClients: sitesVitrine.length,
     isStartup: false,
     done: [
-      `Création de plus ${sitesVitrines.length} sites vitrines pour des clients dans toute la France`,
+      `Création de plus ${sitesVitrine.length} sites vitrines pour des clients dans toute la France`,
     ],
   },
 ];

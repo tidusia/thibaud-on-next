@@ -29,7 +29,7 @@ Les avantages des tests unitaires sont importants :
 - ils permettent [d'écrire très facilement des fonctionnalités en TDD](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
 - ils sont tellement précis que l'on peut connaitre très rapidement la cause d'une régression et la manière de la corriger
 - ils sont rapides à mettre en place et rapide à s'exécuter
-- ils sont simple (et doivent le rester)
+- ils sont simples (et doivent le rester)
 
 Vous l'avez compris, c'est le type de test idéal pour débuter dans le testing automatisé. Ils constituent le socle sur lequel repose la qualité de votre software.
 
@@ -51,9 +51,9 @@ Si vous utilisez redux, ça pourrait être de tester qu'une action appelée pass
 
 L'idéal est de tester des cas d'usages réels ou très proches du réel. Pour le back, ça peut être de tester qu'un POST a bien créé une nouvelle entrée en base correctement.
 
-Prenons l'analogie du corps humain. Les tests unitaires vérifient que tel muscle fonctionne bien, tel os est assez solide. Les tests d'intégrations vont vérifier que, avec tel impulsion nerveuse, on devrait voir se lever le bras.
+Prenons l'analogie du corps humain. Les tests unitaires vérifient que tel muscle fonctionne bien, tel os est assez solide. Les tests d'intégrations vont vérifier qu'avec telle impulsion nerveuse, on devrait voir se lever le bras.
 
-Ces tests apportent beaucoup de valeur aussi a un niveau plus avancé du développement, car certaines régressions arrivent lors de l'ajout d'une librairie, d'un wrapper de composant, d'un changement d'architecture. Et bien que vos tests unitaires peuvent afficher tout vert, vous auriez quand même _cassé_ une fonctionnalité.
+Ces tests apportent beaucoup de valeur aussi à un niveau plus avancé du développement, car certaines régressions arrivent lors de l'ajout d'une librairie, d'un wrapper de composant, d'un changement d'architecture. Et bien que vos tests unitaires peuvent afficher tout vert, vous auriez quand même _cassé_ une fonctionnalité.
 
 Il n'est pas forcément utile de chercher une couverture de code énorme. Ces tests sont plus couteux à maintenir, et il y a plus de chances d'avoir de faux positifs (des tests qui échouent alors que tout va bien).
 
@@ -78,7 +78,7 @@ En gros, on utilise des outils qui vont réellement utiliser notre service, comm
 
 Ce petit parcours permet tout simplement de tester que l'authentification fonctionne correctement pour le cas nominal.
 
-Ces tests sont couteux à mettre en place car ils nécessitent de bons outils, généralement payants ou longs à mettre en place. Ils sont aussi beaucoup plus longs à s'exécuter que les autres types de tests car ils ont souvent besoin de faire des requêtes web par exemple.
+Ces tests sont couteux à mettre en place, car ils nécessitent de bons outils, généralement payants ou longs à mettre en place. Ils sont aussi beaucoup plus longs à s'exécuter que les autres types de tests, car ils ont souvent besoin de faire des requêtes web par exemple.
 
 Mais ils restent la meilleure façon de vérifier que les parties les plus critiques de notre application fonctionnent bien et ne subissent pas de régression.
 
@@ -97,8 +97,8 @@ Le développeur qui verra échouer ce snapshot va alors devoir vérifier que le 
 - il n'est pas toujours facile de s'y retrouver dans la capture, et le temps de débug est souvent plus long pour comprendre l'origine d'une régression comparé à un test classique où l'on va pouvoir jouer avec le code autour du test
 - il est très facile de cliquer sur "Mettre à jour les snapshots" dès que ça passe au rouge, surtout pour des développeurs un peu trop confiants sur leurs modifications. Et il est très difficile pour un relecteur de faire la différence entre un snapshot mis à jour pour modification désirée ou mis à jour avec une régression
 
-Pour toutes ces raisons, j'ai arêter de pratiquer cette méthode de tests unitaires.
+Pour toutes ces raisons, j'ai arrêté de pratiquer cette méthode de tests unitaires.
 
-Quant aux smoke tests, il s'agit en fait d'une suite de tests déjà décrits précédemment (généralement des tests d'intégrations ou fonctionnels) qui sont lancés juste après un déploiement pour s'assurer que les parties critiques de l'application n'ait pas été impactés par la mise à jour.
+Quant aux smoke tests, il s'agit en fait d'une suite de tests déjà décrits précédemment (généralement des tests d'intégrations ou fonctionnels) qui sont lancés juste après un déploiement pour s'assurer que les parties critiques de l'application n'aient pas été impactées par la mise à jour.
 
 En plus de ces smoke tests, je recommande de lancer votre suite de tests unitaires et fonctionnels à chaque commit, et la batterie complète de tous les tests à chaque push sur l'intégration continue (ou en local à défaut).
