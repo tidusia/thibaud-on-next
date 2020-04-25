@@ -76,7 +76,7 @@ const Testimonial = ({
             />
           </svg>
           <blockquote>
-            <div className="relative z-10 text-2xl leading-9 font-medium text-gray-900">
+            <div className="relative z-10 text-2xl leading-9 font-medium text-gray-900 max-w-4xl">
               <p>{content}</p>
             </div>
             <footer className="mt-8">

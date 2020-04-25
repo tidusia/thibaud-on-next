@@ -52,7 +52,7 @@ const Home: NextPage<Props> = ({ posts }) => (
     />
 
     <Stats
-      title="Mon crédo : Améliorer constamment mes compétences"
+      title={`Mon crédo :${"\n"} Améliorer constamment mes compétences`}
       subtitle="Via la formation en continu, la création de checklists et l'utilisation d'outils de mesure de la qualité, je fais en sorte d'apporter toujours plus de valeur à mon travail."
       stats={[
         {
