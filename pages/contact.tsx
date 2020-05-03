@@ -9,7 +9,12 @@ const Contact: NextPage = () => (
   <div>
     <Head>
       <title>Formulaire de contact | Thibaud Duthoit</title>
+      <meta
+        name="description"
+        content="Le moyen le plus simple de me contacter, soit via le formulaire, soit directement par email."
+      />
     </Head>
+    
     <div className="max-w-screen-xl mx-auto">
       <Nav navItems={navigation} />
     </div>
