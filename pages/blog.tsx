@@ -25,9 +25,9 @@ const Blog: NextPage<Props> = ({ posts }) => (
         content="En vrac, des articles techniques sur mes sujets favoris du moment, sur le freelancing, ou bien tout autre sujet assez fun pour me justifier d'y passer du temps à l'écrire."
       />
     </Head>
-    <div className="max-w-screen-xl mx-auto mb-6">
+    <header className="max-w-screen-xl mx-auto mb-6">
       <Nav navItems={navigation} />
-    </div>
+    </header>
 
     <FeaturedPosts
       title="Tout le blog !"

@@ -34,9 +34,9 @@ const BlogTemplate: NextPage<Props> = (props) => {
         <title>{props.frontmatter.title}</title>
         <meta name="description" content={props.frontmatter.excerpt} />
       </Head>
-      <div className="max-w-screen-xl mx-auto">
+      <header className="max-w-screen-xl mx-auto">
         <Nav navItems={navigation} />
-      </div>
+      </header>
 
       <article className="article-page mx-auto px-4 py-12">
         <h1 className="article-main-title mt-0 mb-12 sm:my-12 break-words">
@@ -79,9 +79,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
             fill="none"
             viewBox="0 0 404 404"
             role="img"
-            aria-labelledby="svg-workcation"
           >
-            <title id="svg-workcation">Workcation</title>
             <defs>
               <pattern
                 id="ad119f34-7694-4c31-947f-5c9d249b21f3"

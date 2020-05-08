@@ -15,9 +15,9 @@ const Contact: NextPage = () => (
       />
     </Head>
     
-    <div className="max-w-screen-xl mx-auto">
+    <header className="max-w-screen-xl mx-auto">
       <Nav navItems={navigation} />
-    </div>
+    </header>
 
     <main className="relative bg-white mt-12">
       <div className="absolute inset-0">
