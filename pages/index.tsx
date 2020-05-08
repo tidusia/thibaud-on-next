@@ -32,6 +32,7 @@ const Home: NextPage<Props> = ({ posts }) => (
   <div>
     <Head>
       <title>Thibaud Duthoit | Développeur React Freelance</title>
+      <meta name="description" content="Vous cherchez un développeur de confiance ? Passionné par le développement web, je suis disponible pour vous accompagner sur tout le front-end de votre projet : intégration, architecture, connexion back-end et stratégie de tests." />
     </Head>
     <HomeIntro navItems={navigation} />
     <ShowCase />
