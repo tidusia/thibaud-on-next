@@ -20,6 +20,10 @@ const Blog: NextPage<Props> = ({ posts }) => (
   <div>
     <Head>
       <title>Le Blog | Thibaud Duthoit</title>
+      <meta
+        name="description"
+        content="En vrac, des articles techniques sur mes sujets favoris du moment, sur le freelancing, ou bien tout autre sujet assez fun pour me justifier d'y passer du temps à l'écrire."
+      />
     </Head>
     <div className="max-w-screen-xl mx-auto mb-6">
       <Nav navItems={navigation} />

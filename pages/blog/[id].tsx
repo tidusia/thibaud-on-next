@@ -32,6 +32,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
     <div>
       <Head>
         <title>{props.frontmatter.title}</title>
+        <meta name="description" content={props.frontmatter.excerpt} />
       </Head>
       <div className="max-w-screen-xl mx-auto">
         <Nav navItems={navigation} />
