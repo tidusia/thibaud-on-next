@@ -2,8 +2,8 @@
 title: Être freelance, c'est la vie
 date: "2019-02-28"
 timeReading: "4 minutes"
-picture: "/images/blog/planete-mercure-ardeche.jpg"
-pictureAlt: Une photo de l'espace de coworking Planète Mercure en Ardèche
+picture: "/images/blog/freelance-c-est-la-vie.png"
+pictureAlt: Un freelance heureux, travaillant au bord d'une montagne verdoyante
 excerpt: Arrêtons de mentir, on ne devient pas freelance juste pour choisir ses horaires. Qu'est-ce qui te pousse à vouloir te lancer ?
 ---
 
@@ -19,7 +19,7 @@ Voici mon point de vue, complètement arbitraire, sur la question.
 
 Honnêtement, ça serait un très mauvais calcul.
 
-Devenir freelance, ça signifie que tu vas devoir trouver des clients, les satisfaire, qu'ils te payent dans les temps et au juste prix. Tu vas devoir supporter des périodes creuses, de mauvais payeurs, te faire une trésorerie d'avance. Tu vas être obligé de te plonger dans l'administratif, l'entrepreneuriat, [l&apos;écriture d&apos;articles de blog pour expliquer aux gens qui tu es vraiment](http://thibaud-duthoit.fr).
+Devenir freelance, ça signifie que tu vas devoir trouver des clients, les satisfaire, qu'ils te payent dans les temps et au juste prix. Tu vas devoir supporter des périodes creuses, de mauvais payeurs, te faire une trésorerie d'avance. Tu vas être obligé de te plonger dans l'administratif, l'entrepreneuriat, [l&apos;écriture d&apos;articles de blog pour expliquer aux gens qui tu es vraiment](https://thibaud-duthoit.fr/blog).
 
 Alors, es-tu prêt à ce déluge juste pour choisir tes horaires ?
 

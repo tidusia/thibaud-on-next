@@ -33,6 +33,13 @@ const BlogTemplate: NextPage<Props> = (props) => {
       <Head>
         <title>{props.frontmatter.title}</title>
         <meta name="description" content={props.frontmatter.excerpt} />
+
+        <meta property="og:title" content={props.frontmatter.title} />
+        <meta property="og:description" content={props.frontmatter.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:creator" content="@DuthoitThibaud" />
+
+        {!!props.frontmatter.picture && <meta property="og:image" content={`https://www.thibaud-duthoit.fr${props.frontmatter.picture}`} />}
       </Head>
       <header className="max-w-screen-xl mx-auto">
         <Nav navItems={navigation} />
@@ -55,15 +62,17 @@ const BlogTemplate: NextPage<Props> = (props) => {
           {props.frontmatter.timeReading} de lecture
         </p>
 
-        <figure className="mb-16">
-          <img
-            src={props.frontmatter.picture}
-            alt={props.frontmatter.pictureAlt}
-          />
-          <figcaption className="text-center text-gray-600 mt-4">
-            {props.frontmatter.pictureAlt}
-          </figcaption>
-        </figure>
+        {!!props.frontmatter.picture && (
+          <figure className="mb-16">
+            <img
+              src={props.frontmatter.picture}
+              alt={props.frontmatter.pictureAlt}
+            />
+            <figcaption className="text-center text-gray-600 mt-4">
+              {props.frontmatter.pictureAlt}
+            </figcaption>
+          </figure>
+        )}
 
         <div className="article-content">
           <ReactMarkdown source={props.content} />

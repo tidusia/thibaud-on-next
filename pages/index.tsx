@@ -5,6 +5,7 @@ import fs from "fs";
 import matter from "gray-matter";
 
 import navigation from "../data/navigation";
+import metas from "../data/metas";
 import hoursWorking, { yearsWorking } from "../data/hours-working";
 import projects from "../data/projects";
 import HomeIntro from "../components/HomeIntro";
@@ -31,8 +32,14 @@ type Props = {
 const Home: NextPage<Props> = ({ posts }) => (
   <div>
     <Head>
-      <title>Thibaud Duthoit | Développeur React Freelance</title>
-      <meta name="description" content="Vous cherchez un développeur de confiance ? Passionné par le développement web, je suis disponible pour vous accompagner sur tout le front-end de votre projet : intégration, architecture, connexion back-end et stratégie de tests." />
+      <title>{metas.siteTitle}</title>
+      <meta name="description" content={metas.siteDescription} />
+
+      <meta property="og:title" content={metas.siteTitle} />
+      <meta property="og:description" content={metas.siteDescription} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.thibaud-duthoit.fr/" />
+      <meta name="twitter:creator" content="@DuthoitThibaud" />
     </Head>
 
     <HomeIntro navItems={navigation} />
