@@ -99,13 +99,11 @@ const Nav = ({ navItems }: Props) => {
             </div>
             <div className="px-2 pt-2 pb-3">
               {navItems.map((navItem) => (
-                <a
-                  key={navItem.href}
-                  href={navItem.href}
-                  className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-400 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                >
-                  {navItem.text}
-                </a>
+                <Link href={navItem.href} key={navItem.href}>
+                  <a className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-400 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    {navItem.text}
+                  </a>
+                </Link>
               ))}
             </div>
           </div>
