@@ -12,23 +12,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "@tidusia",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/ui": "^0.1.4",
     "gray-matter": "^4.0.2",
     "next": "^9.5.3",
+    "postcss-flexbugs-fixes": "^4.2.1",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-markdown": "^4.3.1"
-  },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@types/node": "^13.13.23",
-    "@types/react": "^16.9.51",
+    "react-markdown": "^4.3.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.8.11",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "@types/node": "^13.13.23",
+    "@types/react": "^16.9.51"
   }
 }
