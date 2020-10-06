@@ -2,9 +2,9 @@
 
 Feel free to use the whole site (as a starter) or parts of it to create your own personal website.
 
-I will try to improve the code quality and apply the more f the best practices available at the time.
+I will try to improve the code quality and apply the most of the best practices available at the time.
 
-At this time, that is not worth the work I do for my clients, my I [planned to upgrade to the same quality](https://github.com/tidusia/thibaud-on-next/projects/2) I deliver in my day job.
+At this time, that is not worth the work I do for my clients, but I [planned to upgrade to the same quality](https://github.com/tidusia/thibaud-on-next/projects/2) I deliver in my day job.
 
 Ideas, issues, forks and PR's are welcomed.
 
@@ -40,7 +40,7 @@ The only command you need to get your rendered HTML/CSS/JS/assets is `npm run de
 and a `/out` folder will be created and filled with all you need to run your static website.
 
 If you intend to use [Netlify](https://www.netlify.com/) to host your site,
-look at the `/netlify.toml` file and see that all the needed instructions for this setup is already there.
+look at the `/netlify.toml` file and see that all the needed instructions for this setup are already there.
 
 ## About styling
 

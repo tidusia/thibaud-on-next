@@ -21,7 +21,7 @@ const Contact: NextPage = () => (
 
     <main className="relative bg-white mt-12">
       <div className="absolute inset-0">
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
       </div>
       <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
         <div className="bg-gray-50 py-8 md:py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
@@ -63,7 +63,7 @@ const Contact: NextPage = () => (
             <form
               method="post"
               name="contact"
-              className="grid grid-cols-1 row-gap-6"
+              className="grid grid-cols-1 gap-y-6"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
@@ -120,7 +120,7 @@ const Contact: NextPage = () => (
                     rows={4}
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Message"
-                  ></textarea>
+                  />
                 </div>
               </div>
               <div>
