@@ -3,7 +3,7 @@ title: Être freelance, c'est la vie
 date: "2019-02-28"
 timeReading: "4 minutes"
 picture: "/images/blog/freelance-c-est-la-vie.png"
-pictureAlt: Un freelance heureux, travaillant au bord d'une montagne verdoyante
+pictureAlt: Un freelance heureux, travaillant au bord d'une montagne verdoyante. Illustration [Mickaël Merley](https://mickaelmerley.com/)
 excerpt: Arrêtons de mentir, on ne devient pas freelance juste pour choisir ses horaires. Qu'est-ce qui te pousse à vouloir te lancer ?
 ---
 

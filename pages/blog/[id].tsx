@@ -68,8 +68,8 @@ const BlogTemplate: NextPage<Props> = (props) => {
               src={props.frontmatter.picture}
               alt={props.frontmatter.pictureAlt}
             />
-            <figcaption className="text-center text-gray-600 mt-4">
-              {props.frontmatter.pictureAlt}
+            <figcaption className="article-figcaption text-center text-gray-600 mt-4">
+              <ReactMarkdown source={props.frontmatter.pictureAlt} />
             </figcaption>
           </figure>
         )}

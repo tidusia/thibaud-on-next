@@ -14,7 +14,8 @@
   @apply leading-relaxed;
 }
 
-.article-content a {
+.article-content a,
+.article-figcaption a {
   @apply underline;
   @apply text-blue-500;
 }
