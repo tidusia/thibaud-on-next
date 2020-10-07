@@ -14,7 +14,7 @@ const Contact: NextPage = () => (
         content="Le moyen le plus simple de me contacter, soit via le formulaire, soit directement par email."
       />
     </Head>
-    
+
     <header className="max-w-screen-xl mx-auto">
       <Nav navItems={navigation} />
     </header>

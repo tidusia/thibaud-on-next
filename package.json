@@ -9,6 +9,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "npm run build && npm run export",
+    "format": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,html}\" --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,17 +17,18 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/ui": "^0.6.2",
+    "@types/node": "^13.13.23",
+    "@types/react": "^16.9.51",
     "gray-matter": "^4.0.2",
     "next": "^9.5.3",
     "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.8.11",
-    "typescript": "^4.0.3",
-    "@types/node": "^13.13.23",
-    "@types/react": "^16.9.51"
+    "typescript": "^4.0.3"
   }
 }

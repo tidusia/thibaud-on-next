@@ -20,7 +20,7 @@ import Footer from "../components/Footer";
 
 const totalNbOfProjects = projects.reduce(
   (total, project) => total + project.nbOfClients,
-  0
+  0,
 );
 
 const blogPath = path.relative(__dirname, "/content/blog");

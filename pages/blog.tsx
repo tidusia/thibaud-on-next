@@ -62,7 +62,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const props: Props = {
     posts: posts.sort((a, b) =>
-      ("" + b.publishDate).localeCompare(a.publishDate)
+      ("" + b.publishDate).localeCompare(a.publishDate),
     ),
   };
 

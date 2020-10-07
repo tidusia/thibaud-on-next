@@ -39,7 +39,12 @@ const BlogTemplate: NextPage<Props> = (props) => {
         <meta property="og:type" content="article" />
         <meta name="twitter:creator" content="@DuthoitThibaud" />
 
-        {!!props.frontmatter.picture && <meta property="og:image" content={`https://www.thibaud-duthoit.fr${props.frontmatter.picture}`} />}
+        {!!props.frontmatter.picture && (
+          <meta
+            property="og:image"
+            content={`https://www.thibaud-duthoit.fr${props.frontmatter.picture}`}
+          />
+        )}
       </Head>
       <header className="max-w-screen-xl mx-auto">
         <Nav navItems={navigation} />
