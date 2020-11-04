@@ -127,7 +127,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
                   <img
                     className="mx-auto h-40 w-40 rounded-full"
                     src="/images/thibaud-duthoit.jpg"
-                    alt="Photo de profil de Thibaud Duthoit, développeur front-end spécialisé en React.js"
+                    alt="Profil de Thibaud Duthoit, développeur front-end spécialisé en React.js"
                   />
                 </footer>
                 <p>
