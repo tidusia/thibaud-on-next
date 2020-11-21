@@ -104,3 +104,15 @@ Pour toutes ces raisons, j'ai arrêté de pratiquer cette méthode de tests unit
 Quant aux smoke tests, il s'agit en fait d'une suite de tests déjà décrits précédemment (généralement des tests d'intégrations ou fonctionnels) qui sont lancés juste après un déploiement pour s'assurer que les parties critiques de l'application n'aient pas été impactées par la mise à jour.
 
 En plus de ces smoke tests, je recommande de lancer votre suite de tests unitaires et fonctionnels à chaque commit, et la batterie complète de tous les tests à chaque push sur l'intégration continue (ou en local à défaut).
+
+## Bonus 2 : statistiques et études autour du TDD
+
+Une des choses les plus difficiles à savoir quand on débute ou qu'on se renseigne sur des techniques comme le TDD, c'est de savoir à quel point elles sont efficaces, et si elles le sont vraiment.
+
+Les développeurs qui ont expérimenté le TDD depuis de nombreuses années sont assez unanimes : cela permet d'aller au moins aussi vite que sans TDD, le code est de meilleure qualité, moins de frictions aux changements et à la maintenabilité, une plus grande confiance et satisfaction dans son travail.
+
+Je peux confirmer personnellement chacun de ces aspects, mais c'est loin d'être suffisant, car ce sont des jugements personnels subjectifs.
+
+Heureusement, certaines personnes ont réussi à condenser quelques études autour du TDD, comme dans [cet article en anglais](https://theqalead.com/general/statistics-studies-benefits-test-driven-development/).
+
+Vous y trouverez quelques résumés et leurs sources, et pourrez ainsi avoir des arguments tangibles si jamais vous devez convaincre votre boss (ou vous-même) de la pertinence d'une telle méthode.
