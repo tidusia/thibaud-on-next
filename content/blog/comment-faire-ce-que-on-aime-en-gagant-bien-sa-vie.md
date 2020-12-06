@@ -1,15 +1,15 @@
 ---
-title: Comment faire ce que l'on aime en gagnant bien sa vie
+title: Comment faire ce qu'on aime en gagnant bien sa vie
 date: "2020-12-06"
 timeReading: "8 minutes"
 excerpt: La réponse qu'on nous donne est souvent d'être passionné par son boulot. Je propose une autre approche.
 ---
 
-> « Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie » — Confucius
+> Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie — Confucius
 
-Mais dans la vie de tous les jours, c'est moins évident qu'il n'y paraît.
+Mais au quotidien, c'est moins évident qu'il n'y paraît.
 
-_Spoiler alert : cet article s'adresse à ceux qui ont tendance à réfléchir beaucoup plus que nécessaire. Si vous êtes satisfaits de votre situation actuelle, passez votre chemin. Mais si vous êtes ici, c'est que le titre de l'article éveille surement en vous de forts sentiments... Et puis je n'ai aucun recul sur sa mise en application, je viens juste d'avoir une révélation, et je pose sur papier le chemin que j'aimerais suivre._
+_Spoiler alert : cet article s'adresse à ceux qui ont tendance à réfléchir plus que nécessaire. Si vous êtes satisfaits de votre situation actuelle, passez votre chemin. Mais si vous êtes ici, c'est que le titre de l'article éveille surement en vous de forts sentiments... Et puis, je n'ai aucun recul sur sa mise en application, je viens juste d'avoir une révélation, et je pose sur papier le chemin que j'aimerais suivre._
 
 ## Séparation des préoccupations
 
