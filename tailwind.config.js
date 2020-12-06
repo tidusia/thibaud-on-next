@@ -23,5 +23,5 @@ module.exports = {
   variants: {
     margin: ["responsive", "first"],
   },
-  plugins: [require("@tailwindcss/ui")],
+  plugins: [require("@tailwindcss/forms")],
 };

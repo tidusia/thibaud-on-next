@@ -74,9 +74,10 @@ const Contact: NextPage = () => (
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <input
+                    type="text"
                     id="name"
                     name="name"
-                    className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    className="block w-full py-3 px-4 border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition ease-in-out duration-150"
                     placeholder="Nom complet"
                   />
                 </div>
@@ -90,7 +91,7 @@ const Contact: NextPage = () => (
                     id="email"
                     type="email"
                     name="email"
-                    className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    className="block w-full py-3 px-4 border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition ease-in-out duration-150"
                     placeholder="Email"
                   />
                 </div>
@@ -103,7 +104,7 @@ const Contact: NextPage = () => (
                   <input
                     id="phone"
                     name="phone"
-                    className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    className="block w-full py-3 px-4 border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition ease-in-out duration-150"
                     placeholder="Téléphone"
                     type="tel"
                   />
@@ -118,7 +119,7 @@ const Contact: NextPage = () => (
                     id="message"
                     name="message"
                     rows={4}
-                    className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    className="block w-full py-3 px-4 border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition ease-in-out duration-150"
                     placeholder="Message"
                   />
                 </div>
