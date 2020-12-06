@@ -5,6 +5,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
+  darkMode: false,
   purge: {
     // enabled: true,
     content: [
