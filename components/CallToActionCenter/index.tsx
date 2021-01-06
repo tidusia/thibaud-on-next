@@ -1,3 +1,4 @@
+import { FunctionComponent } from "react";
 import Link from "next/link";
 
 type Props = {
@@ -5,7 +6,7 @@ type Props = {
   dark?: boolean;
 };
 
-const CallToActionCenter = ({ title, dark }: Props) => (
+const CallToActionCenter: FunctionComponent<Props> = ({ title, dark }) => (
   <div className={dark ? "bg-gray-900" : "bg-white"}>
     <div className="max-w-screen-xl mx-auto md:text-center py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
       <h2

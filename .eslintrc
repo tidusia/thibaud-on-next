@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@tidusia/eslint-config"
+  ],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
+}
