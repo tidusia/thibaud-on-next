@@ -2,7 +2,6 @@ import { NextPage, GetStaticProps } from "next";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-
 import navigation from "../data/navigation";
 import Nav from "../components/Nav";
 import FeaturedPosts from "../components/FeaturedPosts";
@@ -40,7 +39,7 @@ const Blog: NextPage<Props> = ({ posts }) => (
   </div>
 );
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const blogSlugs = fs.readdirSync(blogPath);
   const posts: Array<PostType> = [];
 

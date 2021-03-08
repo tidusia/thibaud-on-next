@@ -96,7 +96,7 @@ const Home: NextPage<Props> = ({ posts }) => (
   </div>
 );
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const blogSlugs = fs.readdirSync(blogPath);
   const posts: Array<PostType> = [];
 

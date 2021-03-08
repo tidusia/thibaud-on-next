@@ -13,7 +13,11 @@
     "start": "next start",
     "export": "next export",
     "deploy": "npm run build && npm run export",
-    "format": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,html}\" --write",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json}\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,18 +25,29 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
-    "@types/node": "^14.14.10",
-    "@types/react": "^17.0.0",
-    "autoprefixer": "^10.0.4",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "autoprefixer": "^10.2.4",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.3",
-    "postcss": "^8.1.14",
-    "prettier": "^2.2.1",
+    "next": "^10.0.6",
+    "postcss": "^8.2.4",
     "raw-loader": "^4.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.3",
-    "tailwindcss": "^2.0.1",
-    "typescript": "^4.1.2"
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@tidusia/eslint-config": "0.0.5",
+    "@tidusia/prettier-config": "0.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   }
 }
