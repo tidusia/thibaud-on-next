@@ -39,7 +39,7 @@ const Home: NextPage<Props> = ({ posts }) => (
       <meta property="og:description" content={metas.siteDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://www.thibaud-duthoit.fr/" />
-      <meta name="twitter:creator" content="@DuthoitThibaud" />
+      <meta name="twitter:creator" content="@thibaud_duthoit" />
     </Head>
 
     <HomeIntro navItems={navigation} />

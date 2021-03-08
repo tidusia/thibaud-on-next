@@ -29,7 +29,7 @@ const Footer = () => (
           </svg>
         </a>
         <a
-          href="https://twitter.com/DuthoitThibaud"
+          href="https://twitter.com/thibaud_duthoit"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-3 text-gray-400 hover:text-gray-500"

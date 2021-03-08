@@ -37,7 +37,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
         <meta property="og:title" content={props.frontmatter.title} />
         <meta property="og:description" content={props.frontmatter.excerpt} />
         <meta property="og:type" content="article" />
-        <meta name="twitter:creator" content="@DuthoitThibaud" />
+        <meta name="twitter:creator" content="@thibaud_duthoit" />
 
         {!!props.frontmatter.picture && (
           <meta
