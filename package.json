@@ -20,7 +20,9 @@
     "prettier:write": "npm run prettier -- --write",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typescript:check": "tsc --noEmit"
+    "typescript:check": "tsc --noEmit",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "keywords": [],
   "author": "@tidusia",
@@ -40,10 +42,16 @@
     "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@storybook/addon-actions": "^6.2.3",
+    "@storybook/addon-essentials": "^6.2.3",
+    "@storybook/addon-links": "^6.2.3",
+    "@storybook/react": "^6.2.3",
     "@tidusia/eslint-config": "0.0.6",
     "@tidusia/prettier-config": "0.0.3",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
