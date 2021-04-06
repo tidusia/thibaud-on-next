@@ -57,6 +57,3 @@ using Tailwind UI is totally OK, so you can freely use my code without the need 
 That being said, if you do not want to bother so much about designing components and UI,
 I strongly recommend that you take a look at the amazing [components library](https://tailwindui.com/components)
 they provide. It saves me so many hours of work.
-
-
- 

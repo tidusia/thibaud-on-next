@@ -7,7 +7,7 @@ pictureAlt: Badge expert Opquast avec un score de 920 points sur 1000.
 excerpt: C'est vrai quand même, à quoi ça peut bien servir ? On a tous une bonne idée de ce qui fait un site de qualité non ?
 ---
 
-Imaginez un développeur passionné. Il aime son taf, et du taf bien fait. 
+Imaginez un développeur passionné. Il aime son taf, et du taf bien fait.
 
 Si vous lui laissiez le temps, il mettrait en place une stratégie de tests complète avec une couverture de code à 100 %, tout au vert.
 
@@ -19,7 +19,7 @@ Les checklists, il aime ça. Ça le rassure. Ça lui permet de ne rien oublier, 
 
 Dans sa tête, il s'est passé quelque chose de ce genre :
 
-> Une certification en maîtrise de la qualité web, basée sur une checklist construite par des experts de différents domaines ! Il me la faut ! 
+> Une certification en maîtrise de la qualité web, basée sur une checklist construite par des experts de différents domaines ! Il me la faut !
 > Avec ça, je vais subjuguer mes clients par la qualité de mon travail, les gens se bousculeront pour travailler avec moi, je vais pouvoir augmenter mon tarif de manière exponentiel et le monde m'appartiendra ! Mhuhuhahaha...
 
 Bref, il était bien content, et en peu de temps, le voilà sur [la plateforme de formation Opquast](https://www.opquast.com/certification/).
@@ -36,7 +36,7 @@ Et pourtant, comme la certification ne porte pas uniquement sur la checklist des
 
 La première chose qui a chamboulé son petit coeur de perfectionniste, c'est que la formation n'encourage pas forcément d'avoir comme objectif de mettre absolument 100 % des bonnes pratiques sur chaque projet web.
 
-Au contraire même, car elle explique que tout a un coût. Chaque projet a un budget défini à l'avance, que le professionnel doit respecter. 
+Au contraire même, car elle explique que tout a un coût. Chaque projet a un budget défini à l'avance, que le professionnel doit respecter.
 
 La formation propose un modèle pour découper les différents métiers et étapes de production d'un site web. Et elle met en avant un point crucial : **le coeur d'un site web, ce sont ses contenus et services**, tout le reste (référencement, performance, accessibilité, etc.) est là pour promouvoir les contenus et les services.
 
@@ -96,7 +96,7 @@ Donc si vous êtes ainsi fabriqué, ne vous lancez pas dans la certification pou
 
 Par contre, si vous êtes normalement constitué, **je pense qu'elle peut vous faire devenir un meilleur professionnel du web, et ça c'est toujours cool**.
 
-## Et maintenant ? 
+## Et maintenant ?
 
 La prochaine étape, ça va être de réaliser un audit en qualité web pour mes propres services.
 
@@ -104,4 +104,4 @@ La prochaine étape, ça va être de réaliser un audit en qualité web pour mes
 
 Ainsi, j'aurais une connaissance plus fine du coût de certaines bonnes pratiques et je pourrais mieux conseiller mes clients.
 
-Et pourquoi pas un jour publier en open source un starter en Next.js qui comprendrait d'office un maximum de bonnes pratiques. Cela pourrait être ce site lui-même. Affaire à suivre 😁 
+Et pourquoi pas un jour publier en open source un starter en Next.js qui comprendrait d'office un maximum de bonnes pratiques. Cela pourrait être ce site lui-même. Affaire à suivre 😁
