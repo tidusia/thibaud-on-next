@@ -1,4 +1,8 @@
-const Footer = () => (
+import React, { FunctionComponent } from "react";
+
+export type Props = Record<string, never>;
+
+const Footer: FunctionComponent<Props> = () => (
   <footer className="bg-white">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div className="flex justify-center md:order-2">
@@ -48,4 +52,5 @@ const Footer = () => (
     </div>
   </footer>
 );
+
 export default Footer;
