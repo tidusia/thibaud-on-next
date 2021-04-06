@@ -38,12 +38,12 @@
     "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
-    "@tidusia/eslint-config": "0.0.5",
+    "@tidusia/eslint-config": "0.0.6",
     "@tidusia/prettier-config": "0.0.3",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "eslint": "^7.23.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
