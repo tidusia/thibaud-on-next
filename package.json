@@ -13,14 +13,14 @@
     "dev": "next",
     "export": "next export",
     "lint": "eslint . --ignore-path .gitignore",
-    "lint:fix": "eslint . --fix",
-    "pre-commit": "npm run prettier:check && npm run lint",
+    "pre-commit": "npm run prettier:check && npm run lint && npm run typescript:check",
     "prepare": "husky install",
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,html}\"",
     "prettier:check": "npm run prettier -- --list-different",
     "prettier:write": "npm run prettier -- --write",
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typescript:check": "tsc --noEmit"
   },
   "keywords": [],
   "author": "@tidusia",
