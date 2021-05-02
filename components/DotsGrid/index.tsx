@@ -1,4 +1,6 @@
-type Props = {
+import styles from "./index.module.css";
+
+export type Props = {
   rootClassNames?: string;
 };
 
@@ -25,7 +27,7 @@ const DotsGrid = ({ rootClassNames = "" }: Props) => {
             y="0"
             width="4"
             height="4"
-            className="text-gray-200"
+            className={styles.dot}
             fill="currentColor"
           />
         </pattern>
