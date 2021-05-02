@@ -1,7 +1,8 @@
 import Post, { Props as PostType } from "../Post";
 import Link from "next/link";
+import styles from "./index.module.css";
 
-type Props = {
+export type Props = {
   title: string;
   subtitle?: string;
   posts: Array<PostType>;
@@ -17,31 +18,28 @@ const FeaturedPosts = ({
   if (!posts || !posts.length) return null;
 
   return (
-    <div className="relative bg-gray-50 pt-16 pb-20 lg:pt-24 lg:pb-28">
-      <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="md:text-center">
-          <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-            {title}
-          </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
-            {subtitle}
-          </p>
+    <section className={styles.section}>
+      <div className={styles.wrapper}>
+        <div className={styles.heading}>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.subtitle}>{subtitle}</p>
         </div>
-        <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+
+        <div className={styles.postsGrid}>
           {posts.map((post) => (
             <Post key={post.title} {...post} />
           ))}
         </div>
 
         {!hideLinks && (
-          <div className="mt-16 sm:flex sm:justify-center">
+          <div className={styles.links}>
             <Link href="/blog">
               <a className="btn btn-blue btn-big">Tous les articles</a>
             </Link>
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

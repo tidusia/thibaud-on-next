@@ -12,25 +12,6 @@
   padding: 48px 16px;
 }
 
-@media screen and (min-width: 640px) {
-  .wrapper {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .wrapper {
-    padding: 96px 32px;
-  }
-}
-
 .title {
   font-size: var(--font-size-3xl);
   line-height: 2.25rem;
@@ -43,22 +24,8 @@
   color: var(--white);
 }
 
-@media screen and (min-width: 640px) {
-  .title {
-    font-size: var(--font-size-4xl);
-    line-height: 2.5rem;
-  }
-}
-
 .buttons {
   margin-top: 32px;
-}
-
-@media screen and (min-width: 640px) {
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .buttonEmail {
@@ -66,8 +33,35 @@
 }
 
 @media screen and (min-width: 640px) {
+  .wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .title {
+    font-size: var(--font-size-4xl);
+    line-height: 2.5rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
   .buttonEmail {
     margin-top: 0;
     margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    padding: 96px 32px;
   }
 }

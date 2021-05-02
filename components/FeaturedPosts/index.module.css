@@ -1,0 +1,84 @@
+.section {
+  position: relative;
+  background-color: var(--gray-50);
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.wrapper {
+  position: relative;
+  max-width: var(--screen-xl);
+  margin: auto;
+  padding: 0 16px;
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+  color: var(--gray-900);
+}
+
+.subtitle {
+  margin: 12px auto 0;
+  max-width: 672px;
+  font-size: var(--font-size-xl);
+  line-height: 1.75rem;
+  color: var(--gray-500);
+}
+
+.postsGrid {
+  margin: 48px auto 0;
+  display: grid;
+  gap: 20px;
+  max-width: 512px;
+}
+
+.links {
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .title {
+    font-size: var(--font-size-4xl);
+    line-height: 2.5rem;
+  }
+
+  .subtitle {
+    margin-top: 16px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 112px;
+  }
+
+  .wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .postsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: none;
+  }
+}
