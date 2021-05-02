@@ -1,28 +1,24 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
+import styles from "./index.module.css";
+import clsx from "clsx";
 
-type Props = {
+export type Props = {
   title: string;
   dark?: boolean;
 };
 
 const CallToActionCenter: FunctionComponent<Props> = ({ title, dark }) => (
-  <div className={dark ? "bg-gray-900" : "bg-white"}>
-    <div className="max-w-screen-xl mx-auto md:text-center py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
-      <h2
-        className={`text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10 ${
-          dark ? "text-white" : "text-gray-900"
-        }`}
-      >
-        {title}
-      </h2>
-      <div className="mt-8 sm:flex sm:justify-center">
+  <div className={dark ? styles.rootDark : styles.rootLight}>
+    <div className={styles.wrapper}>
+      <h2 className={clsx(styles.title, dark && styles.titleDark)}>{title}</h2>
+      <div className={styles.buttons}>
         <Link href="/contact">
           <a className="btn btn-blue btn-big">Formulaire de contact</a>
         </Link>
         <a
           href="mailto:contact@thibaud-duthoit.fr"
-          className="btn btn-light btn-big mt-3 sm:mt-0 sm:ml-3"
+          className={clsx("btn btn-light btn-big", styles.buttonEmail)}
         >
           contact@thibaud-duthoit.fr
         </a>

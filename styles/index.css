@@ -1,4 +1,10 @@
 :root {
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+
   --black: #000;
   --white: #fff;
 
@@ -243,6 +249,43 @@
   --blue-gray-700: #334155;
   --blue-gray-800: #1e293b;
   --blue-gray-900: #0f172a;
+
+  --font-size-xs: 0.75rem;
+  --line-height-xs: 1rem;
+  --font-size-sm: 0.875rem;
+  --line-height-sm: 1.25rem;
+  --font-size-base: 1rem;
+  --line-height-base: 1.5rem;
+  --font-size-lg: 1.125rem;
+  --line-height-lg: 1.75rem;
+  --font-size-xl: 1.25rem;
+  --line-height-xl: 1.75rem;
+  --font-size-2xl: 1.5rem;
+  --line-height-2xl: 2rem;
+  --font-size-3xl: 1.875rem;
+  --line-height-3xl: 2.25rem;
+  --font-size-4xl: 2.25rem;
+  --line-height-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+  --line-height-5xl: 1rem;
+  --font-size-6xl: 3.75rem;
+  --line-height-6xl: 1rem;
+  --font-size-7xl: 4.5rem;
+  --line-height-7xl: 1rem;
+  --font-size-8xl: 6rem;
+  --line-height-8xl: 1rem;
+  --font-size-9xl: 8rem;
+  --line-height-9xl: 1rem;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 }
 
 @tailwind base;
