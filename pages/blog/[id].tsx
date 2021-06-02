@@ -4,6 +4,7 @@ import Link from "next/link";
 import fs from "fs";
 import { NextPage, GetStaticPaths, GetStaticProps } from "next";
 import ReactMarkdown from "react-markdown";
+import reHypePrism from "@mapbox/rehype-prism";
 
 import navigation from "../../data/navigation";
 import Nav from "../../components/Nav";
@@ -74,13 +75,15 @@ const BlogTemplate: NextPage<Props> = (props) => {
               alt={props.frontmatter.pictureAlt}
             />
             <figcaption className="article-figcaption text-center text-gray-600 mt-4">
-              <ReactMarkdown source={props.frontmatter.pictureAlt} />
+              <ReactMarkdown>{props.frontmatter.pictureAlt}</ReactMarkdown>
             </figcaption>
           </figure>
         )}
 
         <div className="article-content">
-          <ReactMarkdown source={props.content} />
+          <ReactMarkdown rehypePlugins={[reHypePrism]}>
+            {props.content}
+          </ReactMarkdown>
         </div>
       </article>
 
