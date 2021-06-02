@@ -97,7 +97,19 @@
 }
 
 .article-content pre {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   overflow-x: auto;
+}
+
+.article-content code {
+  font-size: 0.8em;
+  @apply text-blue-800;
+}
+
+.article-content pre code {
+  font-size: 0.6em;
 }
 
 @tailwind utilities;
