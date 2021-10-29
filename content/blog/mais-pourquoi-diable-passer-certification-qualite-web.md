@@ -1,7 +1,6 @@
 ---
 title: Mais pourquoi diable passer la certification qualité web ?
 date: "2020-06-28"
-timeReading: "6 minutes"
 picture: "/images/blog/badge-expert-opquast-thibaud-duthoit.png"
 pictureAlt: Badge expert Opquast avec un score de 920 points sur 1000.
 excerpt: C'est vrai quand même, à quoi ça peut bien servir ? On a tous une bonne idée de ce qui fait un site de qualité non ?

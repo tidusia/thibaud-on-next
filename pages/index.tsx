@@ -17,6 +17,7 @@ import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import getTimeReading from "../utils/getTimeReading";
 
 const totalNbOfProjects = projects.reduce(
   (total, project) => total + project.nbOfClients,
@@ -104,6 +105,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const slug = blogSlugs[i];
     const content = await import(`../content/blog/${slug}`);
     const markdown = matter(content.default);
+    const computedTimeReading = getTimeReading(markdown.content);
 
     posts.push({
       href: `/blog/${slug.slice(0, -3)}`,
@@ -112,7 +114,7 @@ export const getStaticProps: GetStaticProps = async () => {
       pictureAlt: markdown.data.pictureAlt || "",
       excerpt: markdown.data.excerpt || "",
       publishDate: markdown.data.date || "",
-      timeReading: markdown.data.timeReading || "",
+      timeReading: markdown.data.timeReading || computedTimeReading,
     });
   }
 

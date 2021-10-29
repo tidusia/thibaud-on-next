@@ -11,6 +11,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { yearsWorking } from "../../data/hours-working";
 import Head from "next/head";
+import getTimeReading from "../../utils/getTimeReading";
 
 const blogPath = path.relative(__dirname, "/content/blog");
 
@@ -21,7 +22,7 @@ type Props = {
     title: string;
     excerpt: string;
     date: string;
-    timeReading: string;
+    timeReading?: string;
     picture: string;
     pictureAlt: string;
   };
@@ -172,11 +173,15 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const id = context?.params?.id || "";
   const content = await import(`../../content/blog/${id}.md`);
   const markdown = matter(content.default);
+  const computedTimeReading = getTimeReading(markdown.content);
 
   return {
     props: {
       content: markdown.content,
-      frontmatter: markdown.data,
+      frontmatter: {
+        ...markdown.data,
+        timeReading: markdown.data.timeReading || computedTimeReading,
+      },
     },
   };
 };

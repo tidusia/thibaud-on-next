@@ -1,7 +1,6 @@
 ---
 title: Comprendre les différents types de tests
 date: "2019-06-14"
-timeReading: "6 minutes"
 picture: "/images/blog/un-dev-qui-teste.png"
 pictureAlt: Un développeur en chemise de chimiste, testant des fonctions dans des tubes en verre. Illustration [Mickaël Merley](https://mickaelmerley.com/)
 excerpt: Tests unitaires, fonctionnels ou d'intégration, pas facile de s'y retrouver. Voici l'essentiel à savoir pour bien comprendre la différence entre ces types de tests
