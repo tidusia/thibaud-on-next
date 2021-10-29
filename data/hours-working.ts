@@ -8,4 +8,4 @@ const workingRatio = 1 / 2;
 const hoursOfWorkInAMonth = 150;
 const hoursWorking = totalMonths * hoursOfWorkInAMonth * workingRatio;
 
-export default hoursWorking;
+export default hoursWorking; // HARDER - BETTER - FASTER - STRONGER
