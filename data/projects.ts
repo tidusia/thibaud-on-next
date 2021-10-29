@@ -4,6 +4,9 @@ type Label =
   | "JavaScript"
   | "TypeScript"
   | "Flow"
+  | "Testing library"
+  | "Cypress"
+  | "Bootstrap"
   | "React"
   | "React Native"
   | "CSS-in-JS"
@@ -54,6 +57,38 @@ const pixelPerfect = ["Compellia", "Logista France", "Moffi", "Agricool"];
 
 const projects: Array<Project> = [
   {
+    title: "EDF Store & Forecast",
+    year: "2020-2021",
+    labels: [
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Testing library",
+      "Cypress",
+    ],
+    nbOfClients: 1,
+    isStartup: true,
+    done: [
+      "Lead front",
+      "Création interface client + back-office",
+      "Création de formulaires générés à partir de JSON",
+      "Participation à la conception sur la partie UX",
+    ],
+  },
+  {
+    title: "ENEA Consulting",
+    year: "2021",
+    labels: ["Gatsby.js", "Tailwind CSS", "TypeScript"],
+    nbOfClients: 1,
+    isStartup: false,
+    done: [
+      "Intégration des vues pixel perfect",
+      "Netlify CMS",
+      "Lighthouse 100%",
+      "Multilingue",
+    ],
+  },
+  {
     title: "Agricool",
     year: "2020",
     labels: ["TypeScript", "Next.js", "CSS", "Prismic.io"],
@@ -69,7 +104,7 @@ const projects: Array<Project> = [
   {
     title: "SuperReco",
     year: "2019-2020",
-    labels: ["Rails", "HTML", "Tailwind CSS", "JavaScript"],
+    labels: ["Rails", "HTML", "Tailwind CSS", "JavaScript", "Bootstrap"],
     nbOfClients: 1,
     isStartup: true,
     done: [
@@ -129,7 +164,13 @@ const projects: Array<Project> = [
   {
     title: "Stryng Messaging",
     year: "2017-2018",
-    labels: ["React", "React Native", "CSS-in-JS", "JavaScript"],
+    labels: [
+      "React",
+      "React Native",
+      "CSS-in-JS",
+      "JavaScript",
+      "Testing library",
+    ],
     nbOfClients: 1,
     isStartup: true,
     done: [
@@ -143,7 +184,7 @@ const projects: Array<Project> = [
   {
     title: "Startup on Rails",
     year: "2017",
-    labels: ["React", "React Native", "CSS", "JavaScript"],
+    labels: ["React", "React Native", "CSS", "JavaScript", "Bootstrap"],
     nbOfClients: 2,
     isStartup: true,
     done: [
@@ -154,7 +195,7 @@ const projects: Array<Project> = [
   {
     title: "Intégration Web",
     year: "2017-2020",
-    labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS"],
+    labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS", "Bootstrap"],
     nbOfClients: pixelPerfect.length,
     isStartup: true,
     done: [
@@ -166,11 +207,12 @@ const projects: Array<Project> = [
   {
     title: "Sites vitrine",
     year: "2015-2017",
-    labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS", "Pug"],
+    labels: ["HTML", "CSS", "JavaScript", "jQuery", "SCSS", "Pug", "Bootstrap"],
     nbOfClients: sitesVitrine.length,
     isStartup: false,
     done: [
       `Création de plus ${sitesVitrine.length} sites vitrines pour des clients dans toute la France`,
+      "Collaboration avec de nombreuses agences",
     ],
   },
 ];

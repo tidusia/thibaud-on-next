@@ -2,7 +2,7 @@
 title: Mais pourquoi diable passer la certification qualité web ?
 date: "2020-06-28"
 picture: "/images/blog/badge-expert-opquast-thibaud-duthoit.png"
-pictureAlt: Badge expert Opquast avec un score de 920 points sur 1000.
+pictureAlt: Badge expert Opquast avec [un score de 920 points sur 1000](https://directory.opquast.com/fr/certificat/GPCVSK/).
 excerpt: C'est vrai quand même, à quoi ça peut bien servir ? On a tous une bonne idée de ce qui fait un site de qualité non ?
 ---
 
@@ -83,7 +83,7 @@ Je ne vais pas tous les lister, car si vous décidez de suivre la formation et d
 
 Le seul regret que j'ai, d'avoir aussi choisi la certification pour une autre raison, certainement mauvaise celle-ci : **d'arriver à me sentir plus légitime dans mon métier**.
 
-Même en ayant obtenu un score de 920/1000, faisant de moi un "_expert en maîtrise de la qualité web_", je ne peux m'empêcher de contempler l'étendue de ce que je ne sais toujours pas, et donc, je ne me sens pas forcément plus légitime qu'avant.
+Même en ayant obtenu [un score de 920/1000, faisant de moi un "_expert en maîtrise de la qualité web_"](https://directory.opquast.com/fr/certificat/GPCVSK/), je ne peux m'empêcher de contempler l'étendue de ce que je ne sais toujours pas, et donc, je ne me sens pas forcément plus légitime qu'avant.
 
 Bienvenue dans ce qui est surement le syndrome de l'imposteur 😅
 
