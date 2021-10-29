@@ -1,7 +1,6 @@
 ---
 title: Comment faire ce qu'on aime en gagnant bien sa vie
 date: "2020-12-06"
-timeReading: "8 minutes"
 picture: "/images/blog/faire-ce-que-on-aime.png"
 pictureAlt: Un freelance qui se demande bien comment allier passion et travail... Illustration [Mickaël Merley](https://mickaelmerley.com/)
 excerpt: La réponse qu'on nous donne est souvent d'être passionné par son boulot. Je propose une autre approche.

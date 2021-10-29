@@ -1,7 +1,6 @@
 ---
 title: "React : comprendre le formulaire contrôlé avec des Pizzas"
 date: "2021-06-02"
-timeReading: "10 minutes"
 excerpt: "Un dev vous parle de formulaire contrôlé ? Vous aimeriez bien savoir de quel genre d'animal il s'agit ?"
 ---
 
