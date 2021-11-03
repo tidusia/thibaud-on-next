@@ -4,7 +4,7 @@ Feel free to use the whole site (as a starter) or parts of it to create your own
 
 I will try to improve the code quality and apply the most of the best practices available at the time.
 
-At this time, that is not worth the work I do for my clients, but I [planned to upgrade to the same quality](https://github.com/tidusia/thibaud-on-next/projects/2) I deliver in my day job.
+At this time, that is not worth the work I do for my clients, but I planned to upgrade to the same quality I deliver in my day job.
 
 Ideas, issues, forks and PR's are welcomed.
 
