@@ -18,13 +18,12 @@ import { Props as PostType } from "../components/Post";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import getTimeReading from "../utils/getTimeReading";
+import { BLOG_PATH } from "../constants";
 
 const totalNbOfProjects = projects.reduce(
   (total, project) => total + project.nbOfClients,
   0,
 );
-
-const blogPath = path.relative(__dirname, "/content/blog");
 
 type Props = {
   posts: Array<PostType>;
@@ -98,13 +97,13 @@ const Home: NextPage<Props> = ({ posts }) => (
 );
 
 export const getStaticProps: GetStaticProps = async () => {
-  const blogSlugs = fs.readdirSync(blogPath);
+  const blogSlugs = fs.readdirSync(BLOG_PATH);
   const posts: Array<PostType> = [];
 
   for (let i = 0; i < blogSlugs.length; i++) {
     const slug = blogSlugs[i];
-    const content = await import(`../content/blog/${slug}`);
-    const markdown = matter(content.default);
+    const content = fs.readFileSync(path.join(BLOG_PATH, slug), "utf8");
+    const markdown = matter(content);
     const computedTimeReading = getTimeReading(markdown.content);
 
     posts.push({
