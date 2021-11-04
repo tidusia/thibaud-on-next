@@ -1,3 +1,4 @@
-import path from "path";
+import { join } from "path";
 
-export const BLOG_PATH = path.join(process.cwd(), "/content/blog");
+// Add markdown files in `/content/blog`
+export const BLOG_PATH = join(process.cwd(), "content", "blog");

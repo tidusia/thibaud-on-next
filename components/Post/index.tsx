@@ -6,7 +6,7 @@ export type Props = {
   picture: string;
   pictureAlt: string;
   excerpt: string;
-  publishDate: string;
+  date: string;
   timeReading: string;
 };
 
@@ -16,7 +16,7 @@ const Post = ({
   picture,
   pictureAlt,
   excerpt,
-  publishDate,
+  date,
   timeReading,
 }: Props) => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -47,8 +47,8 @@ const Post = ({
       </div>
       <div className="mt-6 flex items-center">
         <div className="flex flex-wrap text-sm leading-5 text-gray-500">
-          <time dateTime={publishDate}>
-            {new Date(publishDate).toLocaleDateString("fr-FR", {
+          <time dateTime={date}>
+            {new Date(date).toLocaleDateString("fr-FR", {
               year: "numeric",
               month: "long",
               day: "numeric",
