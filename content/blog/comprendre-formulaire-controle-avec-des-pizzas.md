@@ -146,7 +146,7 @@ Voici à quoi ressemblerait notre formulaire avec le champ `pizza` contrôlé pa
 ```tsx
 import React, { FunctionComponent, useState } from "react";
 import styles from "../forms.module.css";
-import buildPayloadFromSubmit from "../../utils/buildPayloadFromSubmit";
+import buildPayloadFromSubmit from "../../lib/buildPayloadFromSubmit";
 import axios from "axios";
 
 export type PizzaFormControlledProps = Record<string, never>;

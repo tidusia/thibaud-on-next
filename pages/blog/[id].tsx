@@ -11,21 +11,13 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { yearsWorking } from "../../data/hours-working";
 import Head from "next/head";
-import getTimeReading from "../../utils/getTimeReading";
-
-const blogPath = path.relative(__dirname, "/content/blog");
-
-const removeMarkdownExtension = (file: string) => file.slice(0, -3);
+import getTimeReading from "../../lib/getTimeReading";
+import { BLOG_PATH } from "../../constants";
+import removeMarkdownExtension from "../../lib/removeMarkdownExtension";
+import { BlogFrontMatter } from "../../types/blog";
 
 type Props = {
-  frontmatter: {
-    title: string;
-    excerpt: string;
-    date: string;
-    timeReading?: string;
-    picture: string;
-    pictureAlt: string;
-  };
+  frontmatter: BlogFrontMatter;
   content: string;
 };
 
@@ -160,7 +152,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const blogSlugs = fs.readdirSync(blogPath);
+  const blogSlugs = fs.readdirSync(BLOG_PATH);
 
   const paths = blogSlugs
     .map(removeMarkdownExtension)
@@ -171,8 +163,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context?.params?.id || "";
-  const content = await import(`../../content/blog/${id}.md`);
-  const markdown = matter(content.default);
+  const content = fs.readFileSync(path.join(BLOG_PATH, `${id}.md`), "utf8");
+  const markdown = matter(content);
   const computedTimeReading = getTimeReading(markdown.content);
 
   return {

@@ -8,9 +8,8 @@ import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import getTimeReading from "../utils/getTimeReading";
-
-const blogPath = path.relative(__dirname, "/content/blog");
+import getTimeReading from "../lib/getTimeReading";
+import { BLOG_PATH } from "../constants";
 
 type Props = {
   posts: Array<PostType>;
@@ -40,14 +39,14 @@ const Blog: NextPage<Props> = ({ posts }) => (
   </div>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
-  const blogSlugs = fs.readdirSync(blogPath);
+export const getStaticProps: GetStaticProps = () => {
+  const blogSlugs = fs.readdirSync(BLOG_PATH);
   const posts: Array<PostType> = [];
 
   for (let i = 0; i < blogSlugs.length; i++) {
     const slug = blogSlugs[i];
-    const content = await import(`../content/blog/${slug}`);
-    const markdown = matter(content.default);
+    const content = fs.readFileSync(path.join(BLOG_PATH, slug), "utf8");
+    const markdown = matter(content);
     const computedTimeReading = getTimeReading(markdown.content);
 
     posts.push({
@@ -56,15 +55,13 @@ export const getStaticProps: GetStaticProps = async () => {
       picture: markdown.data.picture || "",
       pictureAlt: markdown.data.pictureAlt || "",
       excerpt: markdown.data.excerpt || "",
-      publishDate: markdown.data.date || "",
+      date: markdown.data.date || "",
       timeReading: markdown.data.timeReading || computedTimeReading,
     });
   }
 
   const props: Props = {
-    posts: posts.sort((a, b) =>
-      ("" + b.publishDate).localeCompare(a.publishDate),
-    ),
+    posts: posts.sort((a, b) => ("" + b.date).localeCompare(a.date)),
   };
 
   return {

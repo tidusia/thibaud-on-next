@@ -12,7 +12,7 @@ describe("FeaturedPosts", () => {
             href: "/",
             picture: "",
             pictureAlt: "",
-            publishDate: "",
+            date: "",
             timeReading: "",
             excerpt: "",
             title: "WIP",

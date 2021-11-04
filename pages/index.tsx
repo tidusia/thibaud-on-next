@@ -1,8 +1,5 @@
 import { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
-import path from "path";
-import fs from "fs";
-import matter from "gray-matter";
 
 import navigation from "../data/navigation";
 import metas from "../data/metas";
@@ -17,14 +14,12 @@ import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
-import getTimeReading from "../utils/getTimeReading";
+import { getAllPosts } from "../lib/blog";
 
 const totalNbOfProjects = projects.reduce(
   (total, project) => total + project.nbOfClients,
   0,
 );
-
-const blogPath = path.relative(__dirname, "/content/blog");
 
 type Props = {
   posts: Array<PostType>;
@@ -98,29 +93,14 @@ const Home: NextPage<Props> = ({ posts }) => (
 );
 
 export const getStaticProps: GetStaticProps = async () => {
-  const blogSlugs = fs.readdirSync(blogPath);
-  const posts: Array<PostType> = [];
-
-  for (let i = 0; i < blogSlugs.length; i++) {
-    const slug = blogSlugs[i];
-    const content = await import(`../content/blog/${slug}`);
-    const markdown = matter(content.default);
-    const computedTimeReading = getTimeReading(markdown.content);
-
-    posts.push({
-      href: `/blog/${slug.slice(0, -3)}`,
-      title: markdown.data.title || "",
-      picture: markdown.data.picture || "",
-      pictureAlt: markdown.data.pictureAlt || "",
-      excerpt: markdown.data.excerpt || "",
-      publishDate: markdown.data.date || "",
-      timeReading: markdown.data.timeReading || computedTimeReading,
-    });
-  }
+  const posts = getAllPosts().map((post) => ({
+    ...post.frontMatter,
+    href: post.href,
+  }));
 
   const props: Props = {
     posts: posts
-      .sort((a, b) => ("" + b.publishDate).localeCompare(a.publishDate))
+      .sort((a, b) => ("" + b.date).localeCompare(a.date))
       .slice(0, 3),
   };
 
