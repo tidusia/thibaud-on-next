@@ -2,6 +2,8 @@
 title: "React : comprendre le formulaire contrôlé avec des Pizzas"
 date: "2021-06-02"
 excerpt: "Un dev vous parle de formulaire contrôlé ? Vous aimeriez bien savoir de quel genre d'animal il s'agit ?"
+picture: "/images/blog/skating-pizzas.jpg"
+pictureAlt: Un dev react livrant des pizzas (non-controllées) en skate. Illustration [Mickaël Merley](https://mickaelmerley.com/)
 ---
 
 Cet article est destiné aux développeurs front junior ou à toute personne qui travaille avec un dev front qui lui parle de cet étrange animal qu'est le **formulaire contrôlé**.

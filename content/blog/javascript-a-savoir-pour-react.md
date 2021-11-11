@@ -1,8 +1,8 @@
 ---
 title: JavaScript à savoir pour faire du React
 date: "2021-10-15"
-picture: "/images/blog/montagnes-sous-un-ciel-etoile.jpg"
-pictureAlt: Montagnes enneigées sous un ciel étoilé parcouru d'une étoile filante.
+picture: "/images/blog/react-shooting-star.jpg"
+pictureAlt: Un papa dev et ses 2 enfants sous un ciel étoilé, l'étoile filante de react passant entre les étoiles. Illustration [Mickaël Merley](https://mickaelmerley.com/)
 excerpt: Comparé à d'autres frameworks, React nous fait faire beaucoup de JavaScript. Alors, autant poncer un peu les bases.
 ---
 
