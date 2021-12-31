@@ -1,58 +1,62 @@
-.btn {
-  @apply flex;
-  @apply items-center;
-  @apply justify-center;
-  @apply px-4;
-  @apply py-1;
-  @apply border;
-  @apply border-transparent;
-  @apply text-base;
-  @apply leading-6;
-  @apply font-normal;
-  @apply rounded-md;
-  @apply transition;
-  @apply duration-150;
-  @apply ease-in-out;
-}
+@layer components {
+  .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    @apply px-4;
+    @apply py-1;
+    @apply border;
+    @apply border-transparent;
+    @apply text-base;
+    @apply leading-6;
+    @apply font-normal;
+    @apply rounded-md;
+    @apply transition;
+    @apply duration-150;
+    @apply ease-in-out;
+  }
 
-.btn:focus {
-  @apply outline-none;
-  @apply ring;
-}
+  .btn:focus {
+    @apply outline-none;
+    @apply ring;
+  }
 
-.btn-blue {
-  @apply bg-blue-600;
-  @apply text-white;
-}
+  .btn[data-mode="primary"] {
+    @apply bg-blue-600;
+    @apply text-white;
+  }
 
-.btn-blue:hover {
-  @apply bg-blue-500;
-}
+  .btn[data-mode="primary"]:hover {
+    @apply bg-blue-500;
+  }
 
-.btn-light {
-  @apply text-blue-700;
-  @apply bg-blue-100;
-}
+  .btn[data-mode="light"] {
+    @apply text-blue-700;
+    @apply bg-blue-100;
+  }
 
-.btn-light:hover {
-  @apply text-blue-600;
-  @apply bg-blue-50;
-}
+  .btn[data-mode="light"]:hover {
+    @apply text-blue-600;
+    @apply bg-blue-50;
+  }
 
-.btn-light:focus {
-  @apply border-blue-300;
-}
+  .btn[data-mode="light"]:focus {
+    @apply border-blue-300;
+  }
 
-.btn-big {
-  @apply px-8;
-  @apply py-3;
-  @apply font-medium;
-}
+  .btn[data-size="big"] {
+    @apply px-8;
+    @apply py-3;
+    @apply font-medium;
+  }
 
-@media (min-width: 768px) {
-  .btn-big {
-    @apply py-4;
-    @apply px-10;
-    @apply text-lg;
+  @media (min-width: 768px) {
+    .btn[data-size="big"] {
+      @apply py-4;
+      @apply px-10;
+      @apply text-lg;
+    }
   }
 }

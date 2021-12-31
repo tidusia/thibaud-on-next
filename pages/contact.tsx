@@ -127,7 +127,9 @@ const Contact: NextPage = () => (
               <div>
                 <button
                   type="submit"
-                  className="btn btn-blue btn-big w-full lg:w-auto"
+                  className="btn w-full lg:w-auto"
+                  data-mode="primary"
+                  data-size="big"
                 >
                   Envoyer
                 </button>
