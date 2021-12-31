@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
+import ROUTES from "../../data/routes";
 
 type Props = {
   title: string;
@@ -17,7 +18,7 @@ const CallToActionCenter: FunctionComponent<Props> = ({ title, dark }) => (
         {title}
       </h2>
       <div className="mt-8 sm:flex sm:justify-center">
-        <Link href="/contact">
+        <Link href={ROUTES.contact.href}>
           <a className="btn" data-mode="primary" data-size="big">
             Formulaire de contact
           </a>

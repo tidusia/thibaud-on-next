@@ -1,7 +1,6 @@
 import { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 
-import navigation from "../data/navigation";
 import metas from "../data/metas";
 import hoursWorking, { yearsWorking } from "../data/hours-working";
 import projects from "../data/projects";
@@ -38,7 +37,7 @@ const Home: NextPage<Props> = ({ posts }) => (
       <meta name="twitter:creator" content="@thibaud_duthoit" />
     </Head>
 
-    <HomeIntro navItems={navigation} />
+    <HomeIntro />
 
     <main>
       <ShowCase />

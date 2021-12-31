@@ -1,12 +1,8 @@
 import Link from "next/link";
 import Nav from "../Nav";
-import { NavigationItem } from "../../data/navigation";
+import ROUTES from "../../data/routes";
 
-type Props = {
-  navItems: Array<NavigationItem>;
-};
-
-const HomeIntro = ({ navItems }: Props) => (
+const HomeIntro = () => (
   <header className="relative bg-white overflow-hidden">
     <div className="max-w-screen-xl mx-auto ">
       <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -19,7 +15,7 @@ const HomeIntro = ({ navItems }: Props) => (
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
 
-        <Nav navItems={navItems} />
+        <Nav />
 
         <div className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div className="sm:text-center lg:text-left">
@@ -45,7 +41,7 @@ const HomeIntro = ({ navItems }: Props) => (
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <Link href="/contact">
+                <Link href={ROUTES.contact.href}>
                   <a className="w-full btn" data-mode="light" data-size="big">
                     Me contacter
                   </a>

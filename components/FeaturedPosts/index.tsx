@@ -1,5 +1,6 @@
 import Post, { Props as PostType } from "../Post";
 import Link from "next/link";
+import ROUTES from "../../data/routes";
 
 type Props = {
   title: string;
@@ -35,7 +36,7 @@ const FeaturedPosts = ({
 
         {!hideLinks && (
           <div className="mt-16 sm:flex sm:justify-center">
-            <Link href="/blog">
+            <Link href={ROUTES.blog.href}>
               <a className="btn" data-mode="primary" data-size="big">
                 Tous les articles
               </a>

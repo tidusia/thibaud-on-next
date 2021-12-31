@@ -6,7 +6,7 @@ import { NextPage, GetStaticPaths, GetStaticProps } from "next";
 import ReactMarkdown from "react-markdown";
 import reHypePrism from "@mapbox/rehype-prism";
 
-import navigation from "../../data/navigation";
+import ROUTES from "../../data/routes";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { yearsWorking } from "../../data/hours-working";
@@ -41,7 +41,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
         )}
       </Head>
       <header className="max-w-screen-xl mx-auto">
-        <Nav navItems={navigation} />
+        <Nav />
       </header>
 
       <article className="article-page mx-auto px-4 py-12">
@@ -133,7 +133,7 @@ const BlogTemplate: NextPage<Props> = (props) => {
                 </p>
                 <p className="mt-4">
                   Si vous cherchez un développeur passionné, je serais ravi de{" "}
-                  <Link href="/contact">
+                  <Link href={ROUTES.contact.href}>
                     <a className="text-blue-500 underline">
                       prendre&nbsp;contact
                     </a>

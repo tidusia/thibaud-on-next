@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ROUTES from "../../data/routes";
 
 export type Props = {
   href: string;
@@ -36,7 +37,7 @@ const Post = ({
             <a className="hover:underline">{category}</a>
           </Link>
         </p> */}
-        <Link href="/blog/[id]" as={href}>
+        <Link href={ROUTES.blogPost.href} as={href}>
           <a className="block">
             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {title}

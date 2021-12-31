@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 
-import navigation from "../data/navigation";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -16,7 +15,7 @@ const Contact: NextPage = () => (
     </Head>
 
     <header className="max-w-screen-xl mx-auto">
-      <Nav navItems={navigation} />
+      <Nav />
     </header>
 
     <main className="relative bg-white mt-12">

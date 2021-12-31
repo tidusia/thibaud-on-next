@@ -2,7 +2,6 @@ import { NextPage, GetStaticProps } from "next";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import navigation from "../data/navigation";
 import Nav from "../components/Nav";
 import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
@@ -25,7 +24,7 @@ const Blog: NextPage<Props> = ({ posts }) => (
       />
     </Head>
     <header className="max-w-screen-xl mx-auto mb-6">
-      <Nav navItems={navigation} />
+      <Nav />
     </header>
 
     <FeaturedPosts
