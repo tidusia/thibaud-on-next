@@ -61,10 +61,8 @@ const Contact: NextPage = () => (
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form
               method="post"
-              name="contact"
+              action="https://formspree.io/f/xayvnjan"
               className="grid grid-cols-1 gap-y-6"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div>
