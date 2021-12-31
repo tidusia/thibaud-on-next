@@ -1,10 +1,6 @@
 {
   "name": "thibaud-on-next",
   "description": "Personal website on Next.js",
-  "engines": {
-    "node": "^16",
-    "npm": "^8"
-  },
   "scripts": {
     "build": "next build",
     "deploy": "npm run build && npm run export",
