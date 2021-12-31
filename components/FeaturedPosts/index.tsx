@@ -36,7 +36,9 @@ const FeaturedPosts = ({
         {!hideLinks && (
           <div className="mt-16 sm:flex sm:justify-center">
             <Link href="/blog">
-              <a className="btn btn-blue btn-big">Tous les articles</a>
+              <a className="btn" data-mode="primary" data-size="big">
+                Tous les articles
+              </a>
             </Link>
           </div>
         )}

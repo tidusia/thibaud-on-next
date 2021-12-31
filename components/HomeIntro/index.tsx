@@ -35,13 +35,20 @@ const HomeIntro = ({ navItems }: Props) => (
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a href="#references" className="w-full btn btn-blue btn-big">
+                <a
+                  href="#references"
+                  className="w-full btn"
+                  data-mode="primary"
+                  data-size="big"
+                >
                   Mes références
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <Link href="/contact">
-                  <a className="w-full btn btn-light btn-big">Me contacter</a>
+                  <a className="w-full btn" data-mode="light" data-size="big">
+                    Me contacter
+                  </a>
                 </Link>
               </div>
             </div>
