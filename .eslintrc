@@ -3,6 +3,11 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "plugin:storybook/csf",
+    "plugin:storybook/csf-strict",
+    "plugin:storybook/addon-interactions",
+    "plugin:jest-dom/recommended",
     "prettier"
   ],
   "plugins": ["@typescript-eslint"],
