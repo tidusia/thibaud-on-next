@@ -1,0 +1,20 @@
+# dependencies
+/.pnp
+.pnp.js
+package-lock.json
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# vercel
+.vercel
+
+# Storybook
+/storybook-static
