@@ -1,7 +1,7 @@
 .link {
   @apply mx-3;
-  @apply text-gray-400;
+  @apply text-gray-500;
 }
 .link:hover {
-  @apply text-gray-500;
+  @apply text-gray-600;
 }

@@ -93,7 +93,7 @@ const Testimonial = ({
                     {name}
                   </div>
                   {!!position && (
-                    <div className="text-base leading-6 font-medium text-green-400">
+                    <div className="text-base leading-6 font-medium text-green-700">
                       {position}
                     </div>
                   )}
