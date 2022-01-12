@@ -14,7 +14,7 @@ const Nav = () => {
     <>
       <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
-          <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+          <div className="flex items-center flex-grow shrink-0 lg:grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link href={ROUTES.home.href}>
                 <a className="text-2xl tracking-tight leading-10 font-extrabold">

@@ -22,7 +22,7 @@ const Post = ({
 }: Props) => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
     {!!picture && (
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <img
           className="h-48 w-full object-cover"
           src={picture}

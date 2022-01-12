@@ -37,7 +37,7 @@ const Contact: NextPage = () => (
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <svg
-                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                    className="shrink-0 h-6 w-6 text-gray-400"
                     stroke="currentColor"
                     fill="none"
                     viewBox="0 0 24 24"

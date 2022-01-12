@@ -16,7 +16,7 @@ const Testimonial = ({
   <div className="bg-white overflow-hidden">
     <div className="relative max-w-xl lg:max-w-screen-xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
       <svg
-        className={`hidden lg:block absolute top-1/2 transform -translate-y-1/2 ${
+        className={`hidden lg:block absolute top-1/2 -translate-y-1/2 ${
           reverse ? "left-full -translate-x-1/2" : "right-full translate-x-1/2"
         }`}
         width="404"
@@ -55,13 +55,13 @@ const Testimonial = ({
           reverse && "lg:flex-row-reverse lg:text-right"
         }`}
       >
-        <div className="hidden lg:block lg:flex-shrink-0">
+        <div className="hidden lg:block lg:shrink-0">
           <img className="h-48 w-48 rounded-full" src={picture} alt={name} />
         </div>
 
         <div className={`relative ${reverse ? "lg:mr-10" : "lg:ml-10"}`}>
           <svg
-            className={`absolute z-0 top-0  transform  -translate-y-24 h-36 w-36 text-indigo-200 opacity-50 ${
+            className={`absolute z-0 top-0 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50 ${
               reverse
                 ? "-translate-x-8 left-0 lg:translate-x-8 lg:right-0 lg:left-auto"
                 : "-translate-x-8 left-0"
@@ -81,7 +81,7 @@ const Testimonial = ({
             </div>
             <footer className="mt-8">
               <div className={`flex ${reverse && "lg:justify-end"}`}>
-                <div className="flex-shrink-0 lg:hidden">
+                <div className="shrink-0 lg:hidden">
                   <img
                     className="h-12 w-12 rounded-full"
                     src={picture}

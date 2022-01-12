@@ -33,9 +33,9 @@ const Project = ({
       <ul>
         {done.map((item) => (
           <li key={item} className="mt-4 flex items-start">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <svg
-                className="h-6 w-6 text-green-500"
+                className="h-6 w-6 text-green-700"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 24 24"

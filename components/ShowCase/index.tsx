@@ -6,7 +6,7 @@ import projects from "../../data/projects";
 const ShowCase = () => (
   <section className="py-16 overflow-hidden lg:py-24">
     <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-      <DotsGrid rootClassNames="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" />
+      <DotsGrid rootClassNames="hidden lg:block absolute left-full -translate-x-1/2 -translate-y-1/4" />
 
       <div className="relative">
         <h2 className="lg:text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
@@ -43,7 +43,7 @@ const ShowCase = () => (
           <ul className="mt-10">
             <li>
               <div className="flex">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
                     <LogoReact className="w-12" />
                   </div>
@@ -64,7 +64,7 @@ const ShowCase = () => (
             </li>
             <li className="mt-10">
               <div className="flex">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
                     <svg
                       fill="none"
@@ -93,7 +93,7 @@ const ShowCase = () => (
             </li>
             <li className="mt-10">
               <div className="flex">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
                     <svg
                       fill="none"
@@ -137,14 +137,14 @@ const ShowCase = () => (
         </div>
       </div>
 
-      <DotsGrid rootClassNames="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" />
+      <DotsGrid rootClassNames="hidden lg:block absolute right-full translate-x-1/2 translate-y-12" />
 
       <div className="relative mt-12 sm:mt-16 lg:mt-24">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="lg:col-start-2">
             <h3 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
               Un de mes derniers projets :
-              <span className="block font-bold text-green-400">
+              <span className="block font-bold text-green-700">
                 la start-up Agricool
               </span>
             </h3>
@@ -158,7 +158,7 @@ const ShowCase = () => (
             <ul className="mt-10">
               <li>
                 <div className="flex">
-                  <div className="flex-shrink-0">
+                  <div className="shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
                       <svg
                         fill="none"
@@ -190,7 +190,7 @@ const ShowCase = () => (
               </li>
               <li className="mt-10">
                 <div className="flex">
-                  <div className="flex-shrink-0">
+                  <div className="shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
                       <svg
                         fill="none"
@@ -220,7 +220,7 @@ const ShowCase = () => (
               </li>
               <li className="mt-10">
                 <div className="flex">
-                  <div className="flex-shrink-0">
+                  <div className="shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-300 text-white">
                       <svg
                         fill="none"

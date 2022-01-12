@@ -50,7 +50,7 @@ const Stats = ({ title, subtitle, stats = [] }: Props) => (
         {subtitle}
       </p>
     </div>
-    <div className="max-w-screen-xl mx-auto my-8 sm:-mt-8 sm:mb-0 px-4 sm:px-6 lg:px-8 sm:transform sm:translate-y-1/2">
+    <div className="max-w-screen-xl mx-auto my-8 sm:-mt-8 sm:mb-0 px-4 sm:px-6 lg:px-8 sm:translate-y-1/2">
       <div className="max-w-4xl mx-auto">
         <div className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
           {/* CSS designed for 3 items */}
