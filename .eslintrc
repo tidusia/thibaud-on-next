@@ -13,6 +13,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": "warn",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "storybook/no-title-property-in-meta": "off"
   }
 }

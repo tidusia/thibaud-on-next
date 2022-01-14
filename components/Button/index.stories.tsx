@@ -1,12 +1,14 @@
-import React from "react";
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import Button from ".";
 import { userEvent, within } from "@storybook/testing-library";
 import { action } from "@storybook/addon-actions";
 
 export default {
+  title: "Components/Button",
   component: Button,
-  decorators: [(story) => <div className="p-4">{story()}</div>],
+  parameters: {
+    layout: "centered",
+  },
 } as ComponentMeta<typeof Button>;
 
 export const Default: ComponentStoryObj<typeof Button> = {

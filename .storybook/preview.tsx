@@ -3,6 +3,7 @@ import { RouterContext } from "next/dist/shared/lib/router-context"; // next 12
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: "fullscreen",
   controls: {
     matchers: {
       color: /(background|color)$/i,
