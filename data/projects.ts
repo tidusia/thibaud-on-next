@@ -217,4 +217,9 @@ const projects: Array<Project> = [
   },
 ];
 
+export const totalNbOfProjects = projects.reduce(
+  (total, project) => total + project.nbOfClients,
+  0,
+);
+
 export default projects;
