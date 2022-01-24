@@ -80,7 +80,7 @@ export default function Roadmap({ className, domains }: Props): JSX.Element {
               </ReactMarkdown>
             )}
           </div>
-          <ul role="list" className="flex-1 mt-4 sm:mt-8 md:mt-10 xl:mt-0">
+          <ul role="list" className="flex-1 mt-4 sm:mt-8 lg:mt-0">
             {domain.skills.map((skill, index) => (
               <li
                 key={index}

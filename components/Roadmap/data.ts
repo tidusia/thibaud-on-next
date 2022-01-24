@@ -1,11 +1,11 @@
 import { Domain } from "./index";
-import { totalNbOfProjects } from "../../data/projects";
+import { totalNbOfProjects, totalNbOfReactProjects } from "../../data/projects";
 import hoursWorking from "../../data/hours-working";
 
 /**
  * Sources :
  * - Clients
- * - Workshops (codeSchool, Opquast, CodeWars)
+ * - Workshops (codeSchool, Opquast, CodeWars, WesBos, OpenClassrooms)
  * - Livres (Kindle, ebooks en local, livres physiques)
  * - OSS Github
  */
@@ -52,17 +52,29 @@ Je me rappelle encore bien mes premiers pas dans le développement avec ce langa
   {
     title: "CSS",
     subTitle: "Avec du style",
+    description: `Ah les Cascading Style Sheets, c'est beau. J'aime vraiment beaucoup écrire du CSS.
+    
+Quand je travaille sur un projet comme Agricool ou ENEA Consulting, la rigueur est de mise et j'aime me rapprocher du pixel perfect pour honorer le travail du designer, surtout quand il est de grande qualité.
+
+Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché des dernières nouveautés, mais je compte bien me prendre un moment pour rattraper ça !`,
     skills: [
       {
         type: "client",
-        content: `Utilisé dans tous mes projets clients depuis 2015, soit ${totalNbOfProjects} projets actuellement pour un total d'environs ${hoursWorking} heures de pratique.`,
+        content: `Comme pour le HTML, utilisé dans tous mes projets clients.`,
       },
     ],
   },
   {
     title: "JavaScript",
-    subTitle: "Le langage le plus utilisé au monde (à part l'anglais)",
+    subTitle: "Langage le plus utilisé au monde ? (à part l'anglais)",
+    description: `Le JavaScript est un langage étonnant, tant par sa structure que par ses usages et plus encore sa spécification !
+      
+  Le futur à l'air de se tourner vers WebAssembly, mais le JS a encore certainement de très beaux jours devant lui.`,
     skills: [
+      {
+        type: "client",
+        content: `Je fais du JavaScript depuis quasiment le début, mais de manière réellement significative depuis 2017 avec l'utilisation de React`,
+      },
       {
         type: "formation",
         content: "Frontend Masters - Getting started with JavaScript v2",
@@ -72,27 +84,67 @@ Je me rappelle encore bien mes premiers pas dans le développement avec ce langa
   {
     title: "Version Control Systems",
     subTitle: "Et toi, tu git push ?",
-    skills: [],
+    description:
+      "On ne débat plus la pertinence d'utiliser `git`. Un code non versionné, c'est un parachutiste amnésique qui risque d'oublier quelque chose d'important à chaque saut.",
+    skills: [
+      {
+        type: "client",
+        content:
+          "L'utilisation de git est juste obligatoire pour toute codebase. Puis, en fonction de la préférence du client, je `push` le code sur Gitlab, Bitbucket ou bien Github.",
+      },
+    ],
   },
   {
     title: "CSS Architecture",
     subTitle: "CSS c'est simple, tant que c'est bien cadré...",
-    skills: [],
+    description:
+      "Une bonne architecture permets d'éviter de créer des bugs visuel sur la durée sans s'en rendre compte, et permets de travailler à plusieurs sur la même codebase.",
+    skills: [
+      {
+        type: "client",
+        content:
+          "Seuls mes premiers projets ne disposent pas d'une réelle méthodologie. C'est absolument indispensable pour s'y retrouver",
+      },
+    ],
   },
   {
     title: "CSS Preprocessors",
     subTitle: "Des boosters parfois essentiels",
-    skills: [],
+    description: `Les préprocesseurs sont là pour étendre le CSS. Ils permettent de gagner du temps, des lignes de code et d'éviter certaines répétitions.
+    
+CSS évoluant, il n'y a généralement plus besoin de préprocesseurs comme Sass, mais PostCSS permets entre-autre d'utiliser dès aujourd'hui le futur du langage, ce qui en fait un candidat de choix.`,
+    skills: [
+      {
+        type: "client",
+        content:
+          "La plupart de mes projets clients utilisent un preprocesseur CSS, j'ai beaucoup utilisé Sass, un peu Less, et surtout PostCSS avec React",
+      },
+    ],
   },
   {
     title: "Linters et Formatters",
     subTitle: "Du joli code mignon tout plein",
-    skills: [],
+    description: `Qui a envie de passer des heures en revue de code par ce que l'on ne passe pas à la ligne après les "{" ? Et qui a déjà passé 30 minutes à débugger du code alors qu'il manquait juste un ";" ?
+    
+Prettier et Eslint sont là spécifiquement pour vous faire gagner ce temps-là.`,
+    skills: [
+      {
+        type: "client",
+        content:
+          "Je propose de suite sur tous les projets depuis quelques années un setup Prettier + Eslint.",
+      },
+    ],
   },
   {
     title: "React",
     subTitle: "Framework React et son écosystème, ses meta-framework",
-    skills: [],
+    skills: [
+      {
+        type: "client",
+        content: `À ce jour, j'ai travaillé sur **${totalNbOfReactProjects} projets clients en React**, sur des durées allant de 2 mois **à plus d'un an et demi**`,
+      },
+      // La doc
+    ],
   },
   {
     title: "Modern CSS",

@@ -222,4 +222,19 @@ export const totalNbOfProjects = projects.reduce(
   0,
 );
 
+export function getNbOfProjectsUsing(labels: Array<Label>): number {
+  return projects.reduce((acc, project) => {
+    return project.labels?.some((projectLabel) => labels.includes(projectLabel))
+      ? acc + project.nbOfClients
+      : acc;
+  }, 0);
+}
+
+export const totalNbOfReactProjects = getNbOfProjectsUsing([
+  "React",
+  "React Native",
+  "Gatsby.js",
+  "Next.js",
+]);
+
 export default projects;
