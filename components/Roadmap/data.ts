@@ -4,8 +4,7 @@ import hoursWorking from "../../data/hours-working";
 
 /**
  * Sources :
- * - Livres (ebooks en local, livres physiques)
- * - OSS Github
+ * - Livres (livres physiques)
  */
 export const DOMAINS: Array<Domain> = [
   {
@@ -124,6 +123,15 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
         content:
           "Seuls mes premiers projets ne disposent pas d'une réelle méthodologie. C'est absolument indispensable pour s'y retrouver",
       },
+      {
+        content:
+          "Quand je ne peux pas mettre en place des outils de CSS moderne (voir plus bas), j'utilise généralement la méthodologie BEM et un peu d'OOCSS",
+      },
+      {
+        type: "book",
+        content:
+          "**SMACSS, Scalable and Modular Architecture for CSS** - _Jonathan Snook_",
+      },
     ],
   },
   {
@@ -151,6 +159,16 @@ Prettier et Eslint sont là spécifiquement pour vous faire gagner ce temps-là.
         type: "client",
         content:
           "Je propose de suite sur tous les projets depuis quelques années un setup Prettier + Eslint.",
+      },
+      {
+        type: "perso",
+        content:
+          "[@tidusia/eslint-config](https://github.com/tidusia/eslint-config) : ma conf favorite à portée de `npm install`",
+      },
+      {
+        type: "perso",
+        content:
+          "[@tidusia/prettier-config](https://github.com/tidusia/prettier-config) : la même chose pour Prettier !",
       },
     ],
   },
@@ -267,8 +285,14 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         content: `**Certification OpQuast** : [Expert en qualité web](/blog/mais-pourquoi-diable-passer-certification-qualite-web)`,
       },
       {
+        type: "perso",
+        content:
+          "[Front-End Checklist](https://github.com/tidusia/Front-End-Checklist) : ensemble de points à checker pour les projets front + liste de ressources",
+      },
+      {
         type: "formation",
-        content: "Frontend Masters - Modern Search Engine Optimization (SEO)",
+        content:
+          "Frontend Masters - Modern Search Engine Optimization (SEO) + [une checklist](https://github.com/tidusia/seo-checklist-dev) pour facilement mettre en application",
       },
     ],
   },
@@ -348,6 +372,11 @@ Ces références sont donc données à titre indicative, il n'est pas utile de m
     description:
       "Assurer en freelance demande plus que de simples compétences techniques. Voici les ressources que j'ai utilisés et qui m'ont été les plus utiles.",
     skills: [
+      {
+        type: "perso",
+        content:
+          "[Bookmarks](https://github.com/tidusia/bookmarks) - liste qui se remplit petit à petit où je stocke toutes les ressources web utiles classés par domaine",
+      },
       {
         type: "book",
         content:
