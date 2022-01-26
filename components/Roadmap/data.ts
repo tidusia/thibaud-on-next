@@ -22,6 +22,14 @@ Je me rappelle encore bien mes premiers pas dans le développement avec ce langa
         content: `Utilisé dans tous mes projets clients depuis 2015, **soit ${totalNbOfProjects} projets** actuellement pour un total d'environs **${hoursWorking} heures de pratique**, sans compter les projets perso et la formation.`,
       },
       {
+        type: "formation",
+        content: "Frontend Masters - HTML Email Development v2",
+      },
+      {
+        type: "formation",
+        content: "Frontend Masters - Complete intro to Web development v2",
+      },
+      {
         type: "book",
         content:
           "**HTML5, une référence pour le développeur web** - _Rodolphe Rimelé_",
@@ -31,21 +39,13 @@ Je me rappelle encore bien mes premiers pas dans le développement avec ce langa
         content: "**HTML5 pour les web designers** - _Jeffrey Zeldman_",
       },
       {
-        type: "book",
-        content:
-          "**Réalisez votre site web avec HTML5 et CSS3** - _Mathieu Nebra_",
-      },
-      {
         type: "formation",
         content: "CodeSchool - Parcours complet HTML/CSS",
       },
       {
-        type: "formation",
-        content: "Frontend Masters - Complete intro to Web development v2",
-      },
-      {
-        type: "formation",
-        content: "Frontend Masters - HTML Email Development v2",
+        type: "book",
+        content:
+          "**Réalisez votre site web avec HTML5 et CSS3** - _Mathieu Nebra_",
       },
     ],
   },
@@ -60,7 +60,7 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
     skills: [
       {
         type: "client",
-        content: `Comme pour le HTML, utilisé dans tous mes projets clients.`,
+        content: `Comme pour le HTML, utilisé dans **tous mes projets clients**.`,
       },
     ],
   },
@@ -138,10 +138,13 @@ Prettier et Eslint sont là spécifiquement pour vous faire gagner ce temps-là.
   {
     title: "React",
     subTitle: "Framework React et son écosystème, ses meta-framework",
+    description: `Même si j'ai un peu joué avec Angular et Vue.js, et que j'ai participé à des projets fullstack en Ruby on Rails, c'est React que j'utilise au quotidien depuis 2017.
+      
+J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le meta-framework Next.js (bien que Remix.run me fasse de l'oeil !).`,
     skills: [
       {
         type: "client",
-        content: `À ce jour, j'ai travaillé sur **${totalNbOfReactProjects} projets clients en React**, sur des durées allant de 2 mois **à plus d'un an et demi**`,
+        content: `À ce jour, j'ai travaillé sur **${totalNbOfReactProjects} projets clients en React** / React Native, sur des durées allant de 2 mois **à plus d'un an et demi**`,
       },
       // La doc
     ],
@@ -149,26 +152,82 @@ Prettier et Eslint sont là spécifiquement pour vous faire gagner ce temps-là.
   {
     title: "Modern CSS",
     subTitle: "Il y a du nouveau dans le game",
-    skills: [],
+    description:
+      "L'enjeu principal du CSS moderne est de tirer partit des bundlers et du système de composants pour éviter d'avoir à gérer une architecture CSS.",
+    skills: [
+      {
+        type: "client",
+        content: `**CSS Modules** : mon favori du moment, en combinaison avec TailwindCSS. Utilisé sur la plupart des mes projets récents comme SuperReco, ENEA Consulting et EDF Store & Forecast.`,
+      },
+      {
+        content: `**Styled JSX** : utilisé sur le site d'Agricool car choix par défaut sur Next.js. Très efficace en réalité.`,
+      },
+      {
+        content: `**Styled Components** : mon choix par défaut jusqu'en 2020`,
+      },
+    ],
   },
   {
     title: "CSS Frameworks",
     subTitle: "Parce que gagner du temps, c'est cool",
-    skills: [],
+    description:
+      "Il faut bien différencier les frameworks proposant de l'UI (comme bootstrap) et ceux proposant des utilitaires (comme TailwindCSS). Ils répondent à des besoins totalement différents.",
+    skills: [
+      {
+        type: "client",
+        content: `**Tailwind CSS** : Absolument génial, la dernière version permets d'à peu près tout faire avec. je le couple parfois avec CSS Modules si jamais je suis limité.`,
+      },
+      {
+        content: `**Material-UI** : Pas mal utilisé il y a quelques années. Efficace sur codebase React pour aller vite au début, mais pas toujours simple à customiser.`,
+      },
+      {
+        content: `**Bootstrap** : Beaucoup utilisé, bien que souvent à contre-coeur, car pas toujours évident de partir d'une base Boostrap pour aller vers du custom.`,
+      },
+    ],
   },
   {
     title: "Testing web apps",
     subTitle: "Certainement mon sujet préféré",
-    skills: [],
+    description: `Une bonne stratégie de tests permets majoritairement 2 choses : gagner du temps lors du développement, et pouvoir modifier du code avec confiance.`,
+    skills: [
+      {
+        type: "client",
+        content:
+          "**Cypress** : outil génial permettant de tester exactement comme un vrai utilisateur avec un navigateur. Idéal pour tester des parcours, mais commence à devenir aussi utilisé pour tester des composants directement. J'ai commencé réellement à l'utiliser sur mon dernier projet client : EDF Store & Forecast.",
+      },
+      {
+        content:
+          "**React Testing Library** : idéal pour tester des composants et même certaines intégrations.",
+      },
+      {
+        content:
+          "**Jest** : pour tester des fonctions directement, les snapshots sont parfois utiles pour tester des retours assez lourds comme de gros objets.",
+      },
+    ],
   },
   {
     title: "Type Checkers",
     subTitle: "On n'est jamais assez sûr",
-    skills: [],
+    description:
+      "TypeScript est devenu la référence dans le domaine. Utilisateur assez tardif, je me vois mal commencer un projet sans désormais...",
+    skills: [
+      {
+        type: "client",
+        content:
+          "**TypeScript**: je l'utilise sur quasiment tous les projets, et sur 100% des projets critiques.",
+      },
+      {
+        type: "client",
+        content:
+          "Sur EDF Store & Forecast, l'utilisation de TypeScript est très complète, en complément avec **des règles strictes** et de nombreux plugins ESlint. Le gain de temps est considérable.",
+      },
+    ],
   },
   {
     title: "Best practices",
     subTitle: "Comment s'assurer d'un travail de qualité",
+    description:
+      "Je regroupe ici en vrac tout ce qui fait un travail de qualité, que ce soit par des audits automatiques, des checklists ou tout simplement un savoir-faire acquis avec l'expérience.",
     skills: [
       {
         type: "formation",
@@ -179,19 +238,16 @@ Prettier et Eslint sont là spécifiquement pour vous faire gagner ce temps-là.
     ],
   },
   {
-    title: "Server Side Rendering",
-    subTitle: "On revient aux classiques",
-    skills: [],
-  },
-  {
-    title: "GraphQL",
-    subTitle: "De la requête optimisée",
-    skills: [],
-  },
-  {
     title: "Containers",
     subTitle: "🐳",
+    description:
+      "Docker est la référence dans le domaine. J'ai réussit à éviter d'avoir à utiliser cette techno jusqu'à fin 2021, mais finalement je trouve que c'est une excellente ressource et je vois plein de cas où ça me sera utile dans le futur !",
     skills: [
+      {
+        type: "client",
+        content:
+          "Sur EDF Store & Forecast, j'ai pris en main **l'écriture du Dockerfile** pour les déploiement.",
+      },
       {
         type: "formation",
         content:
@@ -202,16 +258,58 @@ Prettier et Eslint sont là spécifiquement pour vous faire gagner ce temps-là.
   {
     title: "Static Site Generators",
     subTitle: "Qui dit Jamstack, dit Jamtax !",
-    skills: [],
+    description:
+      "Moyen efficace de générer un site facilement, avec une bonne DX (Expérience de Développement) et souvent de le déployer sans coût sur des services comme Vercel ou Netlify.",
+    skills: [
+      {
+        type: "client",
+        content:
+          "**Next.js** : utilisé pour Agricool (en mode SSR à l'époque), EDF Store & Forecast et ce site même !",
+      },
+      {
+        type: "client",
+        content:
+          "**Gatsby** : plateforme choisie pour propulser ENEA Consulting",
+      },
+    ],
   },
   {
     title: "Mobile Applications",
     subTitle: "La quête du Graal, et des Stores",
+    description: `J'ai pas mal utilisé React Native à une époque, mais j'ai décidé de me recentrer sur le web car c'est pas évident d'être à jour sur le web + le mobile...
+      
+Ces références sont donc données à titre indicative, il n'est pas utile de me contacter pour des applications mobiles.`,
     skills: [],
   },
   {
     title: "Freelancing",
-    subTitle: "",
-    skills: [],
+    subTitle: "Tips Business / Productivité / Organisation",
+    skills: [
+      {
+        type: "client",
+        content:
+          "**Sport Managing** : Intervenu en renfort sur un projet existant.",
+      },
+      {
+        type: "client",
+        content:
+          "**The Geek Family** : Intervenu en renfort sur plusieurs projets en React Native pour intégrer de nombreuses vues en un délai très court.",
+      },
+      {
+        type: "client",
+        content:
+          "**Poi Pay** : Réalisation d'une V1 pour une application mobile dans le domaine de la crypto-monnaie. Sur cette mission j'ai eu la chance de pouvoir former un dev junior en React Native venant de l'univers Java.",
+      },
+      {
+        type: "client",
+        content:
+          "**Stryng Messaging** : j'ai eu la chance de réaliser un POC (Proof Of Concept) d'une migration d'une grosse app de messagerie de React.js + Cordova vers React Native.",
+      },
+      {
+        type: "client",
+        content:
+          "**Startup on Rails** : petit projet startup qui m'a introduit à la techno en 2017.",
+      },
+    ],
   },
 ];
