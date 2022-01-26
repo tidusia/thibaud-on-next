@@ -4,9 +4,7 @@ import hoursWorking from "../../data/hours-working";
 
 /**
  * Sources :
- * - Clients
- * - Workshops (codeSchool, Opquast, CodeWars, WesBos, OpenClassrooms)
- * - Livres (Kindle, ebooks en local, livres physiques)
+ * - Livres (ebooks en local, livres physiques)
  * - OSS Github
  */
 export const DOMAINS: Array<Domain> = [
@@ -62,6 +60,22 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
         type: "client",
         content: `Comme pour le HTML, utilisé dans **tous mes projets clients**.`,
       },
+      {
+        type: "book",
+        content: "**CSS 3 Flexbox** - _Raphaël Goetter_",
+      },
+      {
+        type: "book",
+        content: "**CSS 3 Pratique du design web** - _Raphaël Goetter_",
+      },
+      {
+        type: "book",
+        content: "**CSS Avancées** - _Raphaël Goetter_",
+      },
+      {
+        type: "book",
+        content: "**CSS 2 Pratique du design web** - _Raphaël Goetter_",
+      },
     ],
   },
   {
@@ -78,6 +92,11 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
       {
         type: "formation",
         content: "Frontend Masters - Getting started with JavaScript v2",
+      },
+      {
+        type: "perso",
+        content:
+          "**CodeWars**: [réalisation de nombreux Katas](https://www.codewars.com/users/tidusia) pour m'entrainer sur le langage et découvrir des solutions.",
       },
     ],
   },
@@ -146,6 +165,11 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         type: "client",
         content: `À ce jour, j'ai travaillé sur **${totalNbOfReactProjects} projets clients en React** / React Native, sur des durées allant de 2 mois **à plus d'un an et demi**`,
       },
+      {
+        type: "formation",
+        content:
+          "**Epic React** : je ne l'ai pas encore terminé, j'en suis à plus de la moitié. Formation très conséquente et très complète, avec des usages bien avancés.",
+      },
       // La doc
     ],
   },
@@ -203,6 +227,10 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         content:
           "**Jest** : pour tester des fonctions directement, les snapshots sont parfois utiles pour tester des retours assez lourds comme de gros objets.",
       },
+      {
+        type: "formation",
+        content: "**Testingjavascript.com** : Standard Testing course",
+      },
     ],
   },
   {
@@ -230,11 +258,18 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
       "Je regroupe ici en vrac tout ce qui fait un travail de qualité, que ce soit par des audits automatiques, des checklists ou tout simplement un savoir-faire acquis avec l'expérience.",
     skills: [
       {
+        type: "client",
+        content:
+          "**Lighthouse** : obtention d'un score de 100% sur ENEA Consulting.",
+      },
+      {
+        type: "certification",
+        content: `**Certification OpQuast** : [Expert en qualité web](/blog/mais-pourquoi-diable-passer-certification-qualite-web)`,
+      },
+      {
         type: "formation",
         content: "Frontend Masters - Modern Search Engine Optimization (SEO)",
       },
-      // Opquast
-      // Lighthouse
     ],
   },
   {
@@ -279,11 +314,6 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
     description: `J'ai pas mal utilisé React Native à une époque, mais j'ai décidé de me recentrer sur le web car c'est pas évident d'être à jour sur le web + le mobile...
       
 Ces références sont donc données à titre indicative, il n'est pas utile de me contacter pour des applications mobiles.`,
-    skills: [],
-  },
-  {
-    title: "Freelancing",
-    subTitle: "Tips Business / Productivité / Organisation",
     skills: [
       {
         type: "client",
@@ -309,6 +339,35 @@ Ces références sont donc données à titre indicative, il n'est pas utile de m
         type: "client",
         content:
           "**Startup on Rails** : petit projet startup qui m'a introduit à la techno en 2017.",
+      },
+    ],
+  },
+  {
+    title: "Freelancing",
+    subTitle: "Tips Business / Productivité / Organisation",
+    description:
+      "Assurer en freelance demande plus que de simples compétences techniques. Voici les ressources que j'ai utilisés et qui m'ont été les plus utiles.",
+    skills: [
+      {
+        type: "book",
+        content:
+          "**Rest: Why You Get More Done When You Work Less** - _Alex Soojung-Kim Pang_",
+      },
+      {
+        type: "book",
+        content: "**Remote** - _Jason Fried_",
+      },
+      {
+        type: "book",
+        content: "**Getting Things Done** - _David Allen_",
+      },
+      {
+        type: "book",
+        content: "**The personal MBA** - _Josh Kaufman_",
+      },
+      {
+        type: "book",
+        content: "**Rework** - _Jason Fried_",
       },
     ],
   },

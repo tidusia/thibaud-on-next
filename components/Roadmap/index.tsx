@@ -4,7 +4,13 @@ import ROUTES from "../../data/routes";
 import RoadmapItem from "./components/RoadmapItem";
 
 export type Skill = {
-  type?: "client" | "perso" | "formation" | "book" | "article";
+  type?:
+    | "client"
+    | "perso"
+    | "formation"
+    | "book"
+    | "article"
+    | "certification";
   content: string;
 };
 

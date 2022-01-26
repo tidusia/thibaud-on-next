@@ -5,6 +5,8 @@ import {
   BookOpenIcon,
   CheckIcon,
   SparklesIcon,
+  BadgeCheckIcon,
+  BeakerIcon,
 } from "@heroicons/react/outline";
 import { Skill } from "../../index";
 
@@ -68,6 +70,18 @@ export default function RoadmapItem({
             {skill.type === "formation" && (
               <AcademicCapIcon
                 className="flex-shrink-0 h-6 w-6 text-cyan-500"
+                aria-hidden="true"
+              />
+            )}
+            {skill.type === "certification" && (
+              <BadgeCheckIcon
+                className="flex-shrink-0 h-6 w-6 text-green-500"
+                aria-hidden="true"
+              />
+            )}
+            {skill.type === "perso" && (
+              <BeakerIcon
+                className="flex-shrink-0 h-6 w-6 text-fuchsia-500"
                 aria-hidden="true"
               />
             )}
