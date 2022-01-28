@@ -8,6 +8,7 @@ import {
   BadgeCheckIcon,
   BeakerIcon,
 } from "@heroicons/react/outline";
+import styles from "./index.module.css";
 import { Skill } from "../../index";
 
 type Props = {
@@ -30,6 +31,7 @@ export default function RoadmapItem({
   return (
     <div
       className={clsx(
+        styles.item,
         className,
         "border-t border-gray-200 py-16 lg:flex lg:gap-x-16",
         reverse && "flex-row-reverse",

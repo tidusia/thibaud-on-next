@@ -15,7 +15,7 @@ const LogoLink = () => (
   </Link>
 );
 
-const mainPages = [ROUTES.blog, ROUTES.contact];
+const mainPages = [ROUTES.skills, ROUTES.blog, ROUTES.contact];
 
 const Nav = () => {
   const [open, setOpen] = React.useState<boolean>(false);
@@ -46,7 +46,7 @@ const Nav = () => {
                 <a
                   className={`mx-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${
                     router.pathname === route.href
-                      ? "text-blue-500"
+                      ? "text-blue-600"
                       : "text-gray-500"
                   }`}
                 >

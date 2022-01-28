@@ -1,0 +1,11 @@
+.item a {
+  @apply text-blue-600;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.item a:hover,
+.item a:active,
+.item a:focus {
+  @apply text-blue-800;
+  text-decoration: none;
+}

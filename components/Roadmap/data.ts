@@ -2,29 +2,26 @@ import { Domain } from "./index";
 import { totalNbOfProjects, totalNbOfReactProjects } from "../../data/projects";
 import hoursWorking from "../../data/hours-working";
 
-/**
- * Sources :
- * - Livres (livres physiques)
- */
 export const DOMAINS: Array<Domain> = [
   {
     title: "HTML",
     subTitle: "Franca lingua du Web",
-    description: `Le HTML est beaucoup plus riche et vaste que ce qu'on pourrait imaginer au premier abord. Je suis toujours surpris d'y découvrir des nouvelles choses régulièrement.
+    description: `Le HTML est beaucoup plus riche et vaste que ce qu'on pourrait imaginer au premier abord. Je suis toujours surpris d'y découvrir de nouvelles choses régulièrement.
 
 Je me rappelle encore bien mes premiers pas dans le développement avec ce langage en 2013, pour créer le site d'une association.`,
     skills: [
       {
         type: "client",
-        content: `Utilisé dans tous mes projets clients depuis 2015, **soit ${totalNbOfProjects} projets** actuellement pour un total d'environs **${hoursWorking} heures de pratique**, sans compter les projets perso et la formation.`,
+        content: `Utilisé dans tous mes projets clients depuis 2015, **soit ${totalNbOfProjects} projets** actuellement pour un total d'environ **${hoursWorking} heures de pratique**, sans compter les projets perso et la formation.`,
       },
       {
         type: "formation",
-        content: "Frontend Masters - HTML Email Development v2",
+        content: "**HTML Email Development v2** - _Frontend Masters_",
       },
       {
         type: "formation",
-        content: "Frontend Masters - Complete intro to Web development v2",
+        content:
+          "**Complete intro to Web development v2** - _Frontend Masters_",
       },
       {
         type: "book",
@@ -37,10 +34,10 @@ Je me rappelle encore bien mes premiers pas dans le développement avec ce langa
       },
       {
         type: "formation",
-        content: "CodeSchool - Parcours complet HTML/CSS",
+        content: "**Parcours complet HTML/CSS** - _CodeSchool_",
       },
       {
-        type: "book",
+        type: "formation",
         content:
           "**Réalisez votre site web avec HTML5 et CSS3** - _Mathieu Nebra_",
       },
@@ -90,7 +87,7 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
       },
       {
         type: "formation",
-        content: "Frontend Masters - Getting started with JavaScript v2",
+        content: "**Getting started with JavaScript v2** - _Frontend Masters_",
       },
       {
         type: "perso",
@@ -116,12 +113,12 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
     title: "CSS Architecture",
     subTitle: "CSS c'est simple, tant que c'est bien cadré...",
     description:
-      "Une bonne architecture permets d'éviter de créer des bugs visuel sur la durée sans s'en rendre compte, et permets de travailler à plusieurs sur la même codebase.",
+      "Une bonne architecture permet d'éviter de créer des bugs visuels sur la durée sans s'en rendre compte, et permet de travailler à plusieurs sur la même codebase.",
     skills: [
       {
         type: "client",
         content:
-          "Seuls mes premiers projets ne disposent pas d'une réelle méthodologie. C'est absolument indispensable pour s'y retrouver",
+          "Seuls mes premiers projets ne disposent pas d'une réelle méthodologie. C'est absolument indispensable pour s'y retrouver.",
       },
       {
         content:
@@ -139,12 +136,12 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
     subTitle: "Des boosters parfois essentiels",
     description: `Les préprocesseurs sont là pour étendre le CSS. Ils permettent de gagner du temps, des lignes de code et d'éviter certaines répétitions.
     
-CSS évoluant, il n'y a généralement plus besoin de préprocesseurs comme Sass, mais PostCSS permets entre-autre d'utiliser dès aujourd'hui le futur du langage, ce qui en fait un candidat de choix.`,
+CSS évoluant, il n'y a généralement plus besoin de préprocesseurs comme Sass, mais PostCSS permet entre-autres d'utiliser dès aujourd'hui le futur du langage, ce qui en fait un candidat de choix.`,
     skills: [
       {
         type: "client",
         content:
-          "La plupart de mes projets clients utilisent un preprocesseur CSS, j'ai beaucoup utilisé Sass, un peu Less, et surtout PostCSS avec React",
+          "La plupart de mes projets clients utilisent un préprocesseur CSS, j'ai beaucoup utilisé Sass, un peu Less, et surtout PostCSS avec React",
       },
     ],
   },
@@ -199,7 +196,7 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
     skills: [
       {
         type: "client",
-        content: `**CSS Modules** : mon favori du moment, en combinaison avec TailwindCSS. Utilisé sur la plupart des mes projets récents comme SuperReco, ENEA Consulting et EDF Store & Forecast.`,
+        content: `**CSS Modules** : mon favori du moment, en combinaison avec TailwindCSS. Utilisé sur la plupart de mes projets récents comme SuperReco, ENEA Consulting et EDF Store & Forecast.`,
       },
       {
         content: `**Styled JSX** : utilisé sur le site d'Agricool car choix par défaut sur Next.js. Très efficace en réalité.`,
@@ -217,20 +214,20 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
     skills: [
       {
         type: "client",
-        content: `**Tailwind CSS** : Absolument génial, la dernière version permets d'à peu près tout faire avec. je le couple parfois avec CSS Modules si jamais je suis limité.`,
+        content: `**Tailwind CSS** : Absolument génial, la dernière version permet d'à peu près tout faire avec. Je le couple parfois avec CSS Modules si jamais je suis limité.`,
       },
       {
         content: `**Material-UI** : Pas mal utilisé il y a quelques années. Efficace sur codebase React pour aller vite au début, mais pas toujours simple à customiser.`,
       },
       {
-        content: `**Bootstrap** : Beaucoup utilisé, bien que souvent à contre-coeur, car pas toujours évident de partir d'une base Boostrap pour aller vers du custom.`,
+        content: `**Bootstrap** : Beaucoup utilisé, bien que souvent à contrecœur, car pas toujours évident de partir d'une base Boostrap pour aller vers du custom.`,
       },
     ],
   },
   {
     title: "Testing web apps",
     subTitle: "Certainement mon sujet préféré",
-    description: `Une bonne stratégie de tests permets majoritairement 2 choses : gagner du temps lors du développement, et pouvoir modifier du code avec confiance.`,
+    description: `Une bonne stratégie de tests permet majoritairement 2 choses : gagner du temps lors du développement, et pouvoir modifier du code avec confiance.`,
     skills: [
       {
         type: "client",
@@ -305,7 +302,7 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
       {
         type: "client",
         content:
-          "Sur EDF Store & Forecast, j'ai pris en main **l'écriture du Dockerfile** pour les déploiement.",
+          "Sur EDF Store & Forecast, j'ai pris en main **l'écriture du Dockerfile** pour les déploiements.",
       },
       {
         type: "formation",
@@ -335,9 +332,9 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
   {
     title: "Mobile Applications",
     subTitle: "La quête du Graal, et des Stores",
-    description: `J'ai pas mal utilisé React Native à une époque, mais j'ai décidé de me recentrer sur le web car c'est pas évident d'être à jour sur le web + le mobile...
+    description: `J'ai pas mal utilisé React Native à une époque, mais j'ai décidé de me recentrer sur le web, car ce n'est pas évident d'être à jour sur le web + le mobile...
       
-Ces références sont donc données à titre indicative, il n'est pas utile de me contacter pour des applications mobiles.`,
+Ces références sont donc données à titre indicatives, il n'est pas utile de me contacter pour des applications mobiles.`,
     skills: [
       {
         type: "client",
@@ -352,7 +349,7 @@ Ces références sont donc données à titre indicative, il n'est pas utile de m
       {
         type: "client",
         content:
-          "**Poi Pay** : Réalisation d'une V1 pour une application mobile dans le domaine de la crypto-monnaie. Sur cette mission j'ai eu la chance de pouvoir former un dev junior en React Native venant de l'univers Java.",
+          "**Poi Pay** : Réalisation d'une V1 pour une application mobile dans le domaine de la cryptomonnaie. Sur cette mission j'ai eu la chance de pouvoir former un dev junior en React Native venant de l'univers Java.",
       },
       {
         type: "client",
@@ -370,12 +367,12 @@ Ces références sont donc données à titre indicative, il n'est pas utile de m
     title: "Freelancing",
     subTitle: "Tips Business / Productivité / Organisation",
     description:
-      "Assurer en freelance demande plus que de simples compétences techniques. Voici les ressources que j'ai utilisés et qui m'ont été les plus utiles.",
+      "Assurer en freelance demande plus que de simples compétences techniques. Voici les ressources que j'ai utilisées et qui m'ont été les plus utiles.",
     skills: [
       {
         type: "perso",
         content:
-          "[Bookmarks](https://github.com/tidusia/bookmarks) - liste qui se remplit petit à petit où je stocke toutes les ressources web utiles classés par domaine",
+          "[Bookmarks](https://github.com/tidusia/bookmarks) - liste qui se remplit petit à petit où je stocke toutes les ressources web utiles classées par domaine",
       },
       {
         type: "book",
@@ -397,6 +394,11 @@ Ces références sont donc données à titre indicative, il n'est pas utile de m
       {
         type: "book",
         content: "**Rework** - _Jason Fried_",
+      },
+      {
+        type: "book",
+        content:
+          "**The pomodoro technique** - _Francesco Cirillo_. C'est devenu ma méthode de gestion du temps par défaut.",
       },
     ],
   },
