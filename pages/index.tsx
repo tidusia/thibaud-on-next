@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import metas from "../data/metas";
 import hoursWorking, { yearsWorking } from "../data/hours-working";
-import projects from "../data/projects";
+import projects, { totalNbOfProjects } from "../data/projects";
 import HomeIntro from "../components/HomeIntro";
 import ShowCase from "../components/ShowCase";
 import Testimonial from "../components/Testimonial";
@@ -14,11 +14,6 @@ import { Props as PostType } from "../components/Post";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import { getAllPosts } from "../lib/blog";
-
-const totalNbOfProjects = projects.reduce(
-  (total, project) => total + project.nbOfClients,
-  0,
-);
 
 type Props = {
   posts: Array<PostType>;
