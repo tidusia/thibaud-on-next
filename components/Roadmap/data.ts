@@ -323,6 +323,10 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
           "**Next.js** : utilisé pour Agricool (en mode SSR à l'époque), EDF Store & Forecast et ce site même !",
       },
       {
+        type: "formation",
+        content: "**Gatsby Theme Authoring** - _Egghead.io_",
+      },
+      {
         type: "client",
         content:
           "**Gatsby** : plateforme choisie pour propulser ENEA Consulting",
