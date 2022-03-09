@@ -1,11 +1,14 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import Button from ".";
-import { userEvent, within } from "@storybook/testing-library";
-import { action } from "@storybook/addon-actions";
+import { userEvent, within, waitFor } from "@storybook/testing-library";
+import { expect } from "@storybook/jest";
 
 export default {
   title: "Components/Button",
   component: Button,
+  argTypes: {
+    onClick: { action: true },
+  },
   parameters: {
     layout: "centered",
   },
@@ -14,15 +17,15 @@ export default {
 export const Default: ComponentStoryObj<typeof Button> = {
   args: {
     content: "Mes références",
-    onClick: action("Clicked !"),
   },
 };
 
 export const Clicked: ComponentStoryObj<typeof Button> = {
   args: { ...Default.args },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, args }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByText("Mes références"));
+    await waitFor(() => expect(args.onClick).toHaveBeenCalledTimes(1));
   },
 };
 
