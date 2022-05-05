@@ -86,6 +86,11 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
         content: `Je fais du JavaScript depuis quasiment le début, mais de manière réellement significative depuis 2017 avec l'utilisation de React`,
       },
       {
+        type: "perso",
+        content:
+          "J'ai réalisé quelques modestes [vidéos sur YouTube](https://www.youtube.com/channel/UCu_CgMOr86n3vfNbT3tk2dw) pour vulgariser quelques concepts en JavaScript.",
+      },
+      {
         type: "formation",
         content: "**Getting started with JavaScript v2** - _Frontend Masters_",
       },
@@ -233,6 +238,10 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         type: "client",
         content:
           "**Cypress** : outil génial permettant de tester exactement comme un vrai utilisateur avec un navigateur. Idéal pour tester des parcours, mais commence à devenir aussi utilisé pour tester des composants directement. J'ai commencé réellement à l'utiliser sur mon dernier projet client : EDF Store & Forecast.",
+      },
+      {
+        content:
+          "**Storybook Interaction Testing** : permets d'écrire ses tests au même endroit que ses Stories. Absolument génial, ultra performant, tourne dans un navigateur, utilise Jest et React testing Library. C'est ma nouvelle solution par défaut pour tester les composants et les vues (unitaire + intégration).",
       },
       {
         content:
