@@ -312,6 +312,29 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
     ],
   },
   {
+    title: "Package managers & tools",
+    subTitle: "Car on ne travaille bien qu'avec de bons outils",
+    description:
+      "Les outils ne font pas uniquement partie du setup d'un projet, ils évoluent aussi dans le temps et il est important d'améliorer constamment ses pratiques, surtout sur une partie aussi critique et liée à l'architecture globale du projet.",
+    skills: [
+      {
+        type: "client",
+        content:
+          "J'ai une grande préférence pour utiliser directement **NPM**, mais je reste ouvert aux autres possibilités si jamais c'est justifié.",
+      },
+      {
+        type: "client",
+        content:
+          "Pour ENEA Consulting, on a choisi d'utiliser **Yarn workspace** pour monter un monorepo qui partage des composants et quelques configurations entre 2 projets Gatsby",
+      },
+      {
+        type: "client",
+        content:
+          "Sur tous les projets, je mets en place **husky** et **lint-staged** afin de lancer une série de commande en pre-commit : eslint, TypeScript, tests unitaires et d'intégration. Je lance généralement les tests E2E directement sur la CI car ils sont très longs et il est très rare de faire une régression sur ces tests-là.",
+      },
+    ],
+  },
+  {
     title: "Static Site Generators",
     subTitle: "Qui dit Jamstack, dit Jamtax !",
     description:
