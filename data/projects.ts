@@ -57,8 +57,26 @@ const pixelPerfect = ["Compellia", "Logista France", "Moffi", "Agricool"];
 
 const projects: Array<Project> = [
   {
+    title: "EDF Agregio Solutions",
+    year: "2023",
+    labels: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Testing library",
+      "Cypress",
+    ],
+    nbOfClients: 1,
+    isStartup: true,
+    done: [
+      "Refonte complète architecture",
+      "Maintient et améliorations sur projet existant",
+      "Participation à la conception sur la partie UX",
+    ],
+  },
+  {
     title: "EDF Store & Forecast",
-    year: "2020-2021",
+    year: "2020-2023",
     labels: [
       "React",
       "Tailwind CSS",
@@ -77,7 +95,7 @@ const projects: Array<Project> = [
   },
   {
     title: "ENEA Consulting",
-    year: "2021",
+    year: "2021-2022",
     labels: ["Gatsby.js", "Tailwind CSS", "TypeScript"],
     nbOfClients: 1,
     isStartup: false,

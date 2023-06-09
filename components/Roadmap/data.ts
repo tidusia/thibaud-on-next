@@ -86,6 +86,11 @@ Ces derniers temps, j'écris beaucoup de JS avec React, j'ai un peu décroché d
         content: `Je fais du JavaScript depuis quasiment le début, mais de manière réellement significative depuis 2017 avec l'utilisation de React`,
       },
       {
+        type: "perso",
+        content:
+          "J'ai réalisé quelques modestes [vidéos sur YouTube](https://www.youtube.com/channel/UCu_CgMOr86n3vfNbT3tk2dw) pour vulgariser quelques concepts en JavaScript.",
+      },
+      {
         type: "formation",
         content: "**Getting started with JavaScript v2** - _Frontend Masters_",
       },
@@ -236,6 +241,10 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
       },
       {
         content:
+          "**Storybook Interaction Testing** : permets d'écrire ses tests au même endroit que ses Stories. Absolument génial, ultra performant, tourne dans un navigateur, utilise Jest et React testing Library. C'est ma nouvelle solution par défaut pour tester les composants et les vues (unitaire + intégration).",
+      },
+      {
+        content:
           "**React Testing Library** : idéal pour tester des composants et même certaines intégrations.",
       },
       {
@@ -264,6 +273,11 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         content:
           "Sur EDF Store & Forecast, l'utilisation de TypeScript est très complète, en complément avec **des règles strictes** et de nombreux plugins ESlint. Le gain de temps est considérable.",
       },
+      {
+        type: "formation",
+        content:
+          "Total TypeScript - Zod tutorial: validation de schémas avec type inference",
+      },
     ],
   },
   {
@@ -291,6 +305,11 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         content:
           "Frontend Masters - Modern Search Engine Optimization (SEO) + [une checklist](https://github.com/tidusia/seo-checklist-dev) pour facilement mettre en application",
       },
+      {
+        type: "formation",
+        content:
+          "Ryan Chenkie - React security course (JWT, routes privées, maintient du state logged in, sanitize user input, etc.)",
+      },
     ],
   },
   {
@@ -308,6 +327,29 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         type: "formation",
         content:
           "Frontend Masters - Complete intro to Containers (feat. Docker)",
+      },
+    ],
+  },
+  {
+    title: "Package managers & tools",
+    subTitle: "Car on ne travaille bien qu'avec de bons outils",
+    description:
+      "Les outils ne font pas uniquement partie du setup d'un projet, ils évoluent aussi dans le temps et il est important d'améliorer constamment ses pratiques, surtout sur une partie aussi critique et liée à l'architecture globale du projet.",
+    skills: [
+      {
+        type: "client",
+        content:
+          "J'ai une grande préférence pour utiliser directement **NPM**, mais je reste ouvert aux autres possibilités si jamais c'est justifié.",
+      },
+      {
+        type: "client",
+        content:
+          "Pour ENEA Consulting, on a choisi d'utiliser **Yarn workspace** pour monter un monorepo qui partage des composants et quelques configurations entre 2 projets Gatsby",
+      },
+      {
+        type: "client",
+        content:
+          "Sur tous les projets, je mets en place **husky** et **lint-staged** afin de lancer une série de commande en pre-commit : eslint, TypeScript, tests unitaires et d'intégration. Je lance généralement les tests E2E directement sur la CI car ils sont très longs et il est très rare de faire une régression sur ces tests-là.",
       },
     ],
   },
