@@ -273,6 +273,11 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         content:
           "Sur EDF Store & Forecast, l'utilisation de TypeScript est très complète, en complément avec **des règles strictes** et de nombreux plugins ESlint. Le gain de temps est considérable.",
       },
+      {
+        type: "formation",
+        content:
+          "Total TypeScript - Zod tutorial: validation de schémas avec type inference",
+      },
     ],
   },
   {
@@ -299,6 +304,11 @@ J'ai décidé d'en faire ma spécialité, et d'exploiter particulièrement le me
         type: "formation",
         content:
           "Frontend Masters - Modern Search Engine Optimization (SEO) + [une checklist](https://github.com/tidusia/seo-checklist-dev) pour facilement mettre en application",
+      },
+      {
+        type: "formation",
+        content:
+          "Ryan Chenkie - React security course (JWT, routes privées, maintient du state logged in, sanitize user input, etc.)",
       },
     ],
   },
