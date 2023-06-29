@@ -1,5 +1,3 @@
-import "@testing-library/jest-dom";
-import "jest-axe/extend-expect";
 import { format } from "util";
 
 // Mark all console.errors as failing tests
