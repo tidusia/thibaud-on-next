@@ -51,7 +51,6 @@
     "@tailwindcss/forms": "^0.5.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
-    "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.5.0",
     "@tidusia/prettier-config": "^2.1.0",
     "@types/jest": "^27.5.2",
