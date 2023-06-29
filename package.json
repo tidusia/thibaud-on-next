@@ -26,7 +26,7 @@
   "author": "@tidusia",
   "license": "MIT",
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
+    "@heroicons/react": "^2.0.18",
     "@mapbox/rehype-prism": "^0.8.0",
     "clsx": "^1.2.1",
     "gray-matter": "^4.0.3",
