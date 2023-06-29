@@ -8,10 +8,11 @@ const menuOpenClassName = "absolute top-0 inset-x-0 md:hidden z-40";
 const menuCloseClassName = "hidden";
 
 const LogoLink = () => (
-  <Link href={ROUTES.home.href}>
-    <a className="text-2xl tracking-tight leading-10 font-extrabold">
-      Thibaud Duthoit
-    </a>
+  <Link
+    href={ROUTES.home.href}
+    className="text-2xl tracking-tight leading-10 font-extrabold"
+  >
+    Thibaud Duthoit
   </Link>
 );
 
@@ -42,16 +43,16 @@ const Nav = () => {
           </div>
           <div className="hidden md:block pl-6">
             {mainPages.map((route) => (
-              <Link key={route.href} href={route.href}>
-                <a
-                  className={`mx-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${
-                    router.pathname === route.href
-                      ? "text-blue-600"
-                      : "text-gray-500"
-                  }`}
-                >
-                  {route.text}
-                </a>
+              <Link
+                key={route.href}
+                href={route.href}
+                className={`mx-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${
+                  router.pathname === route.href
+                    ? "text-blue-600"
+                    : "text-gray-500"
+                }`}
+              >
+                {route.text}
               </Link>
             ))}
           </div>
@@ -76,10 +77,12 @@ const Nav = () => {
             </div>
             <div className="px-2 pt-2 pb-3">
               {mainPages.map((route) => (
-                <Link href={route.href} key={route.href}>
-                  <a className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-400 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    {route.text}
-                  </a>
+                <Link
+                  href={route.href}
+                  key={route.href}
+                  className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-400 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                >
+                  {route.text}
                 </Link>
               ))}
             </div>

@@ -37,13 +37,11 @@ const Post = ({
             <a className="hover:underline">{category}</a>
           </Link>
         </p> */}
-        <Link href={ROUTES.blogPost.href} as={href}>
-          <a className="block">
-            <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-              {title}
-            </h3>
-            <p className="mt-3 text-base leading-6 text-gray-500">{excerpt}</p>
-          </a>
+        <Link href={ROUTES.blogPost.href} as={href} className="block">
+          <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+            {title}
+          </h3>
+          <p className="mt-3 text-base leading-6 text-gray-500">{excerpt}</p>
         </Link>
       </div>
       <div className="mt-6 flex items-center">
