@@ -1,4 +1,5 @@
 import { AppProps } from "next/app";
+import { Analytics } from "@vercel/analytics/react";
 
 import "../styles/index.css";
 import Head from "next/head";
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
