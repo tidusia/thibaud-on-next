@@ -5,9 +5,9 @@ import {
   BookOpenIcon,
   CheckIcon,
   SparklesIcon,
-  BadgeCheckIcon,
   BeakerIcon,
-} from "@heroicons/react/outline";
+  CheckBadgeIcon,
+} from "@heroicons/react/24/outline";
 import styles from "./index.module.css";
 import { Skill } from "../../index";
 
@@ -76,7 +76,7 @@ export default function RoadmapItem({
               />
             )}
             {skill.type === "certification" && (
-              <BadgeCheckIcon
+              <CheckBadgeIcon
                 className="flex-shrink-0 h-6 w-6 text-green-500"
                 aria-hidden="true"
               />

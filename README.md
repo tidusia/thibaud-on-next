@@ -87,3 +87,10 @@ Husky adds some hooks to run the package.json script `pre-commit`. This script i
 - `typescript:check` for... validating TypeScript
 
 All of these assure good and high standards regarding the quality of the code.
+
+## Updating deps
+
+- `npx sb@latest upgrade` -> upgrade Storybook and related deps, it's best to do it first
+- `npx npm-check-updates --reject '@storybook/*' --target minor -u --peer` upgrade all other deps to minor version (ignore storybook which has its own script)
+- `npx npm-check-updates --format group --interactive` -> use your command line to select which deps you want to upgrade interactively
+- `npm outdated` -> native command from npm to check rapidly what is outdated

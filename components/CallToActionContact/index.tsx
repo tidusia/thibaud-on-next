@@ -67,10 +67,11 @@ export default function CallToActionContact({ className }: Props): JSX.Element {
               </p>
               <p className="mt-4">
                 Si vous cherchez un développeur passionné, je serais ravi de{" "}
-                <Link href={ROUTES.contact.href}>
-                  <a className="text-blue-500 underline">
-                    prendre&nbsp;contact
-                  </a>
+                <Link
+                  href={ROUTES.contact.href}
+                  className="text-blue-500 underline"
+                >
+                  prendre&nbsp;contact
                 </Link>{" "}
                 avec vous.
               </p>

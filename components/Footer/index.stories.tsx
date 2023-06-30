@@ -1,13 +1,13 @@
-import React from "react";
-import { Meta, Story } from "@storybook/react/types-6-0";
-import Footer, { Props } from ".";
+import { Meta, StoryObj } from "@storybook/react";
+import Footer from ".";
 
 export default {
-  title: "Components/Footer",
   component: Footer,
-} as Meta;
+  parameters: {
+    layout: "none",
+  },
+} as Meta<typeof Footer>;
 
-const Template: Story<Props> = (args) => <Footer {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {};
+export const Default: StoryObj<typeof Footer> = {
+  args: {},
+};

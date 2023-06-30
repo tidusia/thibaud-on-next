@@ -18,11 +18,15 @@ const CallToActionCenter: FunctionComponent<Props> = ({ title, dark }) => (
         {title}
       </h2>
       <div className="mt-8 sm:flex sm:justify-center">
-        <Link href={ROUTES.contact.href}>
-          <a className="btn" data-mode="primary" data-size="big">
-            Formulaire de contact
-          </a>
+        <Link
+          href={ROUTES.contact.href}
+          className="btn"
+          data-mode="primary"
+          data-size="big"
+        >
+          Formulaire de contact
         </Link>
+
         <a
           href="mailto:contact@thibaud-duthoit.fr"
           className="btn mt-3 sm:mt-0 sm:ml-3"

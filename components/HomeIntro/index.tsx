@@ -41,10 +41,13 @@ const HomeIntro = () => (
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <Link href={ROUTES.contact.href}>
-                  <a className="w-full btn" data-mode="light" data-size="big">
-                    Me contacter
-                  </a>
+                <Link
+                  href={ROUTES.contact.href}
+                  className="w-full btn"
+                  data-mode="light"
+                  data-size="big"
+                >
+                  Me contacter
                 </Link>
               </div>
             </div>
