@@ -2,6 +2,12 @@ import DotsGrid from "../DotsGrid";
 import LogoReact from "../LogoReact";
 import { yearsWorking } from "../../data/hours-working";
 import projects from "../../data/projects";
+import Title from "../Title";
+
+const nbOfStartupProjects = projects.reduce(
+  (total, project) => (project.isStartup ? total + project.nbOfClients : total),
+  0,
+);
 
 const ShowCase = () => (
   <section className="py-16 overflow-hidden lg:py-24">
@@ -9,9 +15,12 @@ const ShowCase = () => (
       <DotsGrid rootClassNames="hidden lg:block absolute left-full -translate-x-1/2 -translate-y-1/4" />
 
       <div className="relative">
-        <h2 className="lg:text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-          Vous cherchez un développeur de confiance ?
-        </h2>
+        <Title
+          level="h2"
+          as="h2"
+          mainText="Vous cherchez un développeur de confiance ?"
+          className="lg:text-center"
+        />
         <p className="mt-4 max-w-2xl mx-auto lg:text-center text-xl leading-7 text-gray-500">
           Passionné par le développement web, je suis disponible pour vous
           accompagner sur tout le front-end de votre projet : intégration,
@@ -21,18 +30,12 @@ const ShowCase = () => (
 
       <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div className="relative">
-          <h3 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-            En {yearsWorking} ans, j'ai accompagné plus
-            <span className="block font-bold text-blue-500">
-              de{" "}
-              {projects.reduce(
-                (total, project) =>
-                  project.isStartup ? total + project.nbOfClients : total,
-                0,
-              )}{" "}
-              projets startups
-            </span>
-          </h3>
+          <Title
+            level="h3"
+            as="h3"
+            mainText={`En ${yearsWorking} ans, j'ai accompagné plus de`}
+            secondText={`\n${nbOfStartupProjects} projets startups`}
+          />
           <p className="mt-3 text-lg leading-7 text-gray-500">
             Ma plus-value, c'est ma passion pour le code de qualité, sans bugs
             et bien testé. Avec moi, vous aurez l'assurance d'un produit de
