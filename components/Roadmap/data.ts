@@ -416,9 +416,9 @@ Ces références sont donc données à titre indicatives, il n'est pas utile de 
       "Assurer en freelance demande plus que de simples compétences techniques. Voici les ressources que j'ai utilisées et qui m'ont été les plus utiles.",
     skills: [
       {
-        type: "perso",
+        type: "book",
         content:
-          "[Bookmarks](https://github.com/tidusia/bookmarks) - liste qui se remplit petit à petit où je stocke toutes les ressources web utiles classées par domaine",
+          "**The PARA method: Simplify, Organise and Master Your Digital Life** - _Tiago Forte_",
       },
       {
         type: "book",
