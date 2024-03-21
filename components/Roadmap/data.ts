@@ -2,6 +2,8 @@ import { Domain } from "./index";
 import { totalNbOfProjects, totalNbOfReactProjects } from "../../data/projects";
 import hoursWorking from "../../data/hours-working";
 
+// TODO: remove this line, just added to test Vercel CI/CD
+
 export const DOMAINS: Array<Domain> = [
   {
     title: "HTML",
