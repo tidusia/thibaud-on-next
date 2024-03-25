@@ -3,7 +3,7 @@ title: "IA Driven Dev : Un must pour dev avec l’IA"
 date: "2023-03-25"
 # picture: "/images/blog/faire-ce-que-on-aime.png"
 # pictureAlt: Un freelance qui se demande bien comment allier passion et travail... Illustration [Mickaël Merley](https://mickaelmerley.com/)
-excerpt: "L'IA est partout, et elle est de plus en plus présente dans le quotidien. AI Driven Community t'aide à passer au niveau supérieur en te proposant des prompts prêts à l'emploi et un outil pour les utiliser à la vitesse de l'éclair."
+excerpt: "L'IA est partout, et elle est de plus en plus présente dans le quotidien. AI Driven Dev Community t'aide à passer au niveau supérieur en te proposant des prompts prêts à l'emploi et un outil pour les utiliser à la vitesse de l'éclair."
 ---
 
 ## Le problème avec l’IA en début 2024
