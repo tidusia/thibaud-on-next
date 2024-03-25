@@ -20,9 +20,7 @@ J’aime utiliser le terme de “prompt-crafting” car c’est vraiment le mêm
 
 Mais aujourd'hui, j'aimerais te partager un cheat code. Une ressource qui va te faire gagner un temps incroyable et qui va te permettre d'obtenir de vrais résultats avec les IA dès aujourd'hui.
 
-Cette ressource, ce cheat code, c’est le repo de l'**AI Driven Dev Community** créé par Alex So Yes.
-
-https://github.com/alexsoyes/ai-driven-dev-community
+Cette ressource, ce cheat code, c’est le [repo de l'AI Driven Dev Community créé par Alex So Yes](https://github.com/alexsoyes/ai-driven-dev-community).
 
 Cette note sert de présentation pour t'aider à prendre en main les ressources qui y sont disponibles et à donner quelques compléments d’informations.
 
