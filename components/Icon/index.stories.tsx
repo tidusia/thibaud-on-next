@@ -1,14 +1,13 @@
 import React from "react";
 import Icon, { IconName, IconProps } from "./index";
-import { ComponentMeta } from "@storybook/react";
+import { Meta } from "@storybook/react";
 
 export default {
-  title: "Components/Icon",
   component: Icon,
   parameters: {
     layout: "padded",
   },
-} as ComponentMeta<typeof Icon>;
+} as Meta<typeof Icon>;
 
 const renderIcon = (name: IconName, props?: IconProps): JSX.Element => (
   <div className="m-4 p-4 flex flex-col items-center border rounded">

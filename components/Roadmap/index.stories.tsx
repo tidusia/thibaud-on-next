@@ -1,17 +1,16 @@
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import Roadmap from ".";
 import { DOMAINS } from "./data";
 
 export default {
-  title: "Components/Roadmap",
   component: Roadmap,
   decorators: [(story) => <div>{story()}</div>],
   parameters: {
     layout: "fullscreen",
   },
-} as ComponentMeta<typeof Roadmap>;
+} as Meta<typeof Roadmap>;
 
-export const Default: ComponentStoryObj<typeof Roadmap> = {
+export const Default: StoryObj<typeof Roadmap> = {
   args: {
     domains: DOMAINS,
   },

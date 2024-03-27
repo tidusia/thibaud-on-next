@@ -1,9 +1,10 @@
-import { ComponentMeta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import Nav from ".";
 
 export default {
-  title: "Components/Nav",
   component: Nav,
-} as ComponentMeta<typeof Nav>;
+} as Meta<typeof Nav>;
 
-export const Default = {};
+export const Default: StoryObj<typeof Nav> = {
+  args: {},
+};
