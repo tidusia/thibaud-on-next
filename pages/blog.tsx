@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import Nav from "../components/Nav";
 import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
-import Footer from "../components/Footer";
+import Footer from "../app/components/Footer";
 import Head from "next/head";
 import getTimeReading from "../lib/getTimeReading";
 import { BLOG_PATH } from "../constants";

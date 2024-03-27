@@ -6,13 +6,13 @@ import ReactMarkdown from "react-markdown";
 import reHypePrism from "@mapbox/rehype-prism";
 
 import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
+import Footer from "../../app/components/Footer";
 import Head from "next/head";
 import getTimeReading from "../../lib/getTimeReading";
 import { BLOG_PATH } from "../../constants";
 import removeMarkdownExtension from "../../lib/removeMarkdownExtension";
 import { BlogFrontMatter } from "../../types/blog";
-import CallToActionContact from "../../components/CallToActionContact";
+import CallToActionContact from "../../app/components/CallToActionContact";
 
 type Props = {
   frontmatter: BlogFrontMatter;

@@ -1,8 +1,9 @@
 import { Domain } from "./index";
-import { totalNbOfProjects, totalNbOfReactProjects } from "../../data/projects";
-import hoursWorking from "../../data/hours-working";
-
-// TODO: remove this line, just added to test Vercel CI/CD
+import {
+  totalNbOfProjects,
+  totalNbOfReactProjects,
+} from "../../../../data/projects";
+import hoursWorking from "../../../../data/hours-working";
 
 export const DOMAINS: Array<Domain> = [
   {

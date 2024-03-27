@@ -12,7 +12,7 @@ import CallToActionCenter from "../components/CallToActionCenter";
 import FeaturedPosts from "../components/FeaturedPosts";
 import { Props as PostType } from "../components/Post";
 import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+import Footer from "../app/components/Footer";
 import { getAllPosts } from "../lib/blog";
 
 type Props = {

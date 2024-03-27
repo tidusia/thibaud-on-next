@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Roadmap from ".";
+import Roadmap from "./index";
 import { DOMAINS } from "./data";
 
 export default {
