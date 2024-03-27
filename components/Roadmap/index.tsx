@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
-import ROUTES from "../../data/routes";
 import RoadmapItem from "./components/RoadmapItem";
+import { ROUTES } from "../../app/constants";
 
 export type Skill = {
   type?:

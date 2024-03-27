@@ -1,19 +1,16 @@
-import { NextPage } from "next";
+import { Metadata } from "next";
 
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import Head from "next/head";
+import Footer from "../../components/Footer";
 
-const Contact: NextPage = () => (
+export const metadata: Metadata = {
+  title: "Formulaire de contact | Thibaud Duthoit",
+  description:
+    "Le moyen le plus simple de me contacter, soit via le formulaire, soit directement par email.",
+};
+
+const Contact = () => (
   <div>
-    <Head>
-      <title>Formulaire de contact | Thibaud Duthoit</title>
-      <meta
-        name="description"
-        content="Le moyen le plus simple de me contacter, soit via le formulaire, soit directement par email."
-      />
-    </Head>
-
     <header className="max-w-screen-xl mx-auto">
       <Nav />
     </header>

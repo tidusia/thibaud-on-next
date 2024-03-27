@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
-import ROUTES from "../../data/routes";
+import { ROUTES } from "../../app/constants";
 
 type Props = {
   title: string;

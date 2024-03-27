@@ -1,6 +1,6 @@
 import Post, { Props as PostType } from "../Post";
 import Link from "next/link";
-import ROUTES from "../../data/routes";
+import { ROUTES } from "../../app/constants";
 
 type Props = {
   title: string;

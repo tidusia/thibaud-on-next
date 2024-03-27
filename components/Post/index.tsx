@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ROUTES from "../../data/routes";
+import { ROUTES } from "../../app/constants";
 
 export type Props = {
   href: string;
