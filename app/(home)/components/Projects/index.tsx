@@ -1,5 +1,5 @@
 import Project from "./components/Project";
-import { Project as ProjectType } from "../../../../data/projects";
+import { Project as ProjectType } from "../../../../content/projects";
 
 type Props = {
   title: string;

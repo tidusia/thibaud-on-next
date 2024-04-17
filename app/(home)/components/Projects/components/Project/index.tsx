@@ -1,4 +1,4 @@
-import type { Project as ProjectProps } from "../../../../../../data/projects";
+import type { Project as ProjectProps } from "../../../../../../content/projects";
 
 const Project = ({
   labels = [],

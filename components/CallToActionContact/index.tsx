@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { yearsWorking } from "../../data/hours-working";
+import { yearsWorking } from "../../content/hours-working";
 import { ROUTES } from "../../app/constants";
 
 type Props = {

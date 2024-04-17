@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 
-import metas from "../../data/metas";
-import hoursWorking, { yearsWorking } from "../../data/hours-working";
-import projects, { totalNbOfProjects } from "../../data/projects";
+import hoursWorking, { yearsWorking } from "../../content/hours-working";
+import projects, { totalNbOfProjects } from "../../content/projects";
 import HomeIntro from "./components/HomeIntro";
 import ShowCase from "./components/ShowCase";
 import Testimonial from "./components/Testimonial";
@@ -14,11 +13,10 @@ import Footer from "../../components/Footer";
 import { getAllPosts } from "../../lib/blog";
 
 export const metadata: Metadata = {
-  title: metas.siteTitle,
-  description: metas.siteDescription,
+  title: "Thibaud Duthoit | Développeur React Freelance",
+  description:
+    "Vous cherchez un développeur de confiance ? Passionné par le développement web, je suis disponible pour vous accompagner sur tout le front-end de votre projet : intégration, architecture, connexion back-end et stratégie de tests.",
   openGraph: {
-    title: metas.siteTitle,
-    description: metas.siteDescription,
     type: "website",
     url: "https://www.thibaud-duthoit.fr/",
   },

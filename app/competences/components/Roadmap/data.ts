@@ -2,8 +2,8 @@ import { Domain } from "./index";
 import {
   totalNbOfProjects,
   totalNbOfReactProjects,
-} from "../../../../data/projects";
-import hoursWorking from "../../../../data/hours-working";
+} from "../../../../content/projects";
+import hoursWorking from "../../../../content/hours-working";
 
 export const DOMAINS: Array<Domain> = [
   {
