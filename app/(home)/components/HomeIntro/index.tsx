@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Nav from "../../../components/Nav";
+import Nav from "../../../../components/Nav";
 import { ROUTES } from "../../../constants";
 
 const HomeIntro = () => (

@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import Nav from "../components/Nav";
+import Nav from "../../components/Nav";
 import FeaturedPosts from "../../components/FeaturedPosts";
 import { Props as PostType } from "../../components/Post";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import getTimeReading from "../../lib/getTimeReading";
 import { BLOG_PATH } from "../../constants";
 

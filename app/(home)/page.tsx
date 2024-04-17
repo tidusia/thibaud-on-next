@@ -4,13 +4,13 @@ import metas from "../../data/metas";
 import hoursWorking, { yearsWorking } from "../../data/hours-working";
 import projects, { totalNbOfProjects } from "../../data/projects";
 import HomeIntro from "./components/HomeIntro";
-import ShowCase from "../../components/ShowCase";
-import Testimonial from "../../components/Testimonial";
-import Stats from "../../components/Stats";
-import CallToActionCenter from "../../components/CallToActionCenter";
+import ShowCase from "./components/ShowCase";
+import Testimonial from "./components/Testimonial";
+import Stats from "./components/Stats";
+import CallToActionCenter from "./components/CallToActionCenter";
 import FeaturedPosts from "../../components/FeaturedPosts";
-import Projects from "../../components/Projects";
-import Footer from "../components/Footer";
+import Projects from "./components/Projects";
+import Footer from "../../components/Footer";
 import { getAllPosts } from "../../lib/blog";
 
 export const metadata: Metadata = {

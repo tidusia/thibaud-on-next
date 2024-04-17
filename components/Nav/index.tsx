@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Icon from "../Icon";
+import { usePathname } from "next/navigation";
 import { ROUTES } from "../../app/constants";
 
 const menuOpenClassName = "absolute top-0 inset-x-0 md:hidden z-40";
@@ -20,7 +22,8 @@ const mainPages = [ROUTES.skills, ROUTES.blog, ROUTES.contact];
 
 const Nav = () => {
   const [open, setOpen] = React.useState<boolean>(false);
-  const router = useRouter();
+  const pathname = usePathname();
+  const isActive = (path: string) => path === pathname;
 
   return (
     <>
@@ -47,9 +50,7 @@ const Nav = () => {
                 key={route.href}
                 href={route.href}
                 className={`mx-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${
-                  router.pathname === route.href
-                    ? "text-blue-600"
-                    : "text-gray-500"
+                  isActive(route.href) ? "text-blue-600" : "text-gray-500"
                 }`}
               >
                 {route.text}

@@ -3,12 +3,12 @@ import path from "path";
 import fs from "fs";
 import ReactMarkdown from "react-markdown";
 import reHypePrism from "@mapbox/rehype-prism";
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
+import Nav from "../../../components/Nav";
+import Footer from "../../../components/Footer";
 import getTimeReading from "../../../lib/getTimeReading";
 import { BLOG_PATH } from "../../../constants";
 import removeMarkdownExtension from "../../../lib/removeMarkdownExtension";
-import CallToActionContact from "../../components/CallToActionContact";
+import CallToActionContact from "../../../components/CallToActionContact";
 import { Metadata } from "next";
 
 // Return 404 for any segment that is not generated in generateStaticParams

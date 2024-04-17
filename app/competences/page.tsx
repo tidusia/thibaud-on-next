@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 import Roadmap from "./components/Roadmap";
 import { DOMAINS } from "./components/Roadmap/data";
-import CallToActionContact from "../components/CallToActionContact";
+import CallToActionContact from "../../components/CallToActionContact";
 
 export const metadata: Metadata = {
   title: "Mes compétences en détail | Thibaud Duthoit",

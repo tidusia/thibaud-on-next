@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title: "Formulaire de contact | Thibaud Duthoit",

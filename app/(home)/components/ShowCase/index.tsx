@@ -1,7 +1,7 @@
-import DotsGrid from "../DotsGrid";
-import LogoReact from "../LogoReact";
-import { yearsWorking } from "../../data/hours-working";
-import projects from "../../data/projects";
+import DotsGrid from "./components/DotsGrid";
+import LogoReact from "../../../../components/LogoReact";
+import { yearsWorking } from "../../../../data/hours-working";
+import projects from "../../../../data/projects";
 
 const ShowCase = () => (
   <section className="py-16 overflow-hidden lg:py-24">
