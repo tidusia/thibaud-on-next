@@ -3,9 +3,7 @@
   "description": "Personal website on Next.js",
   "scripts": {
     "build": "next build --no-lint",
-    "deploy": "npm run build && npm run export",
     "dev": "next dev",
-    "export": "next export",
     "formatters": "npm run prettier:check && npm run lint && npm run typescript:check",
     "integrity": "npm run formatters && npm run build && npm run storybook:build && npm run jest:all && npm run storybook:test:integrity",
     "jest:all": "jest",

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Nav from "../Nav";
-import { ROUTES } from "../../app/constants";
+import Nav from "../../../components/Nav";
+import { ROUTES } from "../../../constants";
 
 const HomeIntro = () => (
   <header className="relative bg-white overflow-hidden">

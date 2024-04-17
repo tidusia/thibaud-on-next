@@ -12,7 +12,7 @@ export const ROUTES = {
     text: "Blog",
   },
   blogPost: {
-    href: "/blog/[id]",
+    href: "/blog/[slug]",
   },
   contact: {
     href: "/contact",
