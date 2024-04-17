@@ -12,16 +12,27 @@ import Projects from "./components/Projects";
 import Footer from "../../components/Footer";
 import getBlogPosts from "../../lib/getBlogPosts";
 
+const title = "Thibaud Duthoit | Développeur React Freelance";
+const description =
+  "Vous cherchez un développeur de confiance ? Passionné par le développement web, je suis disponible pour vous accompagner sur tout le front-end de votre projet : intégration, architecture, connexion back-end et stratégie de tests.";
+const image = "https://www.thibaud-duthoit.fr/images/un-dev-qui-teste.png";
+
 export const metadata: Metadata = {
-  title: "Thibaud Duthoit | Développeur React Freelance",
-  description:
-    "Vous cherchez un développeur de confiance ? Passionné par le développement web, je suis disponible pour vous accompagner sur tout le front-end de votre projet : intégration, architecture, connexion back-end et stratégie de tests.",
+  title,
+  description,
   openGraph: {
     type: "website",
     url: "https://www.thibaud-duthoit.fr/",
+    title,
+    description,
+    images: image,
   },
   twitter: {
+    title,
+    description,
+    card: "summary_large_image",
     creator: "@thibaud_duthoit",
+    images: image,
   },
 };
 
