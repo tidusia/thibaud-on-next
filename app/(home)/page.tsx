@@ -10,7 +10,7 @@ import CallToActionCenter from "./components/CallToActionCenter";
 import FeaturedPosts from "../../components/FeaturedPosts";
 import Projects from "./components/Projects";
 import Footer from "../../components/Footer";
-import { getAllPosts } from "../../lib/blog";
+import getBlogPosts from "../../lib/getBlogPosts";
 
 export const metadata: Metadata = {
   title: "Thibaud Duthoit | Développeur React Freelance",
@@ -25,18 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
-// Fetch the markdown file corresponding to the slug and prepare clean post object
-async function getLast3Posts() {
-  const posts = getAllPosts().map((post) => ({
-    ...post.frontMatter,
-    href: post.href,
-  }));
-
-  return posts.sort((a, b) => ("" + b.date).localeCompare(a.date)).slice(0, 3);
-}
-
 export default async function HomePage() {
-  const last3Posts = await getLast3Posts();
+  const last3Posts = await getBlogPosts(3);
 
   return (
     <div>
