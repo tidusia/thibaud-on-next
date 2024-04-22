@@ -1,6 +1,5 @@
 import ReactMarkdown from "react-markdown";
 import reHypePrism from "@mapbox/rehype-prism";
-import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
 import CallToActionContact from "../../../components/CallToActionContact";
 import { Metadata } from "next";
@@ -50,10 +49,6 @@ export default async function BlogPage({
 
   return (
     <div>
-      <header className="max-w-screen-xl mx-auto">
-        <Nav />
-      </header>
-
       <article className="article-page mx-auto px-4 py-12">
         <h1 className="article-main-title mt-0 mb-12 sm:my-12 break-words">
           {post.title}

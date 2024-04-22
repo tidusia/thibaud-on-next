@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Roadmap from "./components/Roadmap";
 import { DOMAINS } from "./components/Roadmap/data";
@@ -14,10 +13,6 @@ export const metadata: Metadata = {
 export default function CompetencesPage() {
   return (
     <div>
-      <header className="max-w-screen-xl mx-auto">
-        <Nav />
-      </header>
-
       <main className="relative bg-white mt-6">
         <Roadmap domains={DOMAINS} />
 

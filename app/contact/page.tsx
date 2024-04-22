@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 
-import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
@@ -12,10 +11,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div>
-      <header className="max-w-screen-xl mx-auto">
-        <Nav />
-      </header>
-
       <main className="relative bg-white mt-12">
         <div className="absolute inset-0">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
