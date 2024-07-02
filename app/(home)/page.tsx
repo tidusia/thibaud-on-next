@@ -15,7 +15,7 @@ import getBlogPosts from "../../lib/getBlogPosts";
 const title = "Thibaud Duthoit | Développeur React Freelance";
 const description =
   "Vous cherchez un développeur de confiance ? Passionné par le développement web, je suis disponible pour vous accompagner sur tout le front-end de votre projet : intégration, architecture, connexion back-end et stratégie de tests.";
-const image = "https://www.thibaud-duthoit.fr/images/thibaud-duthoit-og.png";
+const image = "https://www.thibaud-duthoit.fr/images/thibaud-duthoit-og.jpg";
 
 export const metadata: Metadata = {
   title,
