@@ -2,6 +2,8 @@ import clsx from "clsx";
 import Link from "next/link";
 import { yearsWorking } from "../../content/hours-working";
 import { ROUTES } from "../../app/constants";
+import Image from "next/image";
+import profilePic from "../../content/assets/thibaud-duthoit.jpg";
 
 type Props = {
   className?: string;
@@ -54,9 +56,9 @@ export default function CallToActionContact({ className }: Props): JSX.Element {
           <blockquote>
             <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
               <footer className="mb-8 md:flex md:items-center md:justify-center">
-                <img
+                <Image
                   className="mx-auto h-40 w-40 rounded-full"
-                  src="/images/thibaud-duthoit.jpg"
+                  src={profilePic}
                   alt="Profil de Thibaud Duthoit, développeur front-end spécialisé en React.js"
                 />
               </footer>

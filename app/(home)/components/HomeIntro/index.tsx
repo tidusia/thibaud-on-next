@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Nav from "../../../../components/Nav";
 import { ROUTES } from "../../../constants";
+import Image from "next/image";
+import profilePic from "../../../../content/assets/thibaud-duthoit.jpg";
 
 const HomeIntro = () => (
   <header className="relative bg-white overflow-hidden">
@@ -57,9 +59,9 @@ const HomeIntro = () => (
     </div>
 
     <div className="flex justify-center lg:justify-end xl:justify-center items-center p-8 bg-gray-900 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img
+      <Image
         className="rounded-full border-white border-4 sm:border-8 w-32 sm:w-48 lg:w-64"
-        src="/images/thibaud-duthoit.jpg"
+        src={profilePic}
         alt="Thibaud Duthoit"
       />
     </div>
