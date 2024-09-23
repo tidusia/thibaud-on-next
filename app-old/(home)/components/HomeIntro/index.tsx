@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Nav from "../../../../components/Nav";
-import { ROUTES } from "../../../constants";
+import { ROUTES } from "../../../../app/constants";
 import Image from "next/image";
 import profilePic from "../../../../content/assets/thibaud-duthoit.jpg";
 

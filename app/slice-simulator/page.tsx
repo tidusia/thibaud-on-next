@@ -4,8 +4,6 @@ import {
   getSlices,
 } from "@slicemachine/adapter-next/simulator";
 import { SliceZone } from "@prismicio/react";
-
-// @ts-expect-error slices will come soon
 import { components } from "../../slices";
 
 export default function SliceSimulatorPage({
