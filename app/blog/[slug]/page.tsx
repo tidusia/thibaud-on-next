@@ -6,6 +6,7 @@ import Footer from "../../../components/Footer";
 import CallToActionContact from "../../../components/CallToActionContact";
 import getPostBySlug from "../../../lib/getPostBySlug";
 import getBlogPosts from "../../../lib/getBlogPosts";
+import rehypeRaw from "rehype-raw";
 
 // Return 404 for any segment that is not generated in generateStaticParams
 // This avoids server errors if Next tries to access non-existing markdown files
@@ -83,7 +84,7 @@ export default async function BlogPage({
         )}
 
         <div className="article-content">
-          <ReactMarkdown rehypePlugins={[reHypePrism]}>
+          <ReactMarkdown rehypePlugins={[reHypePrism, rehypeRaw]}>
             {post.content}
           </ReactMarkdown>
         </div>
