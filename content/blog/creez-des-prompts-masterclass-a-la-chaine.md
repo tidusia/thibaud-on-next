@@ -2,6 +2,7 @@
 title: "Créez des prompts masterclass à la chaine"
 date: "2025-11-21"
 picture: "/images/blog/creez-des-prompts-masterclass-a-la-chaine.png"
+timeReading: "9 minutes"
 # pictureAlt: RAS
 excerpt: "Parfoi son a besoin d'un coup de pouce pour créer un prompt vraiment qualitatif pour créer des agents. Je vous montre comment j'utilise un LLM Prompt Engineer pour ça."
 ---
