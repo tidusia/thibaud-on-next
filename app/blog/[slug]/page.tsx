@@ -1,9 +1,9 @@
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
 import reHypePrism from "@mapbox/rehype-prism";
 import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
 import CallToActionContact from "../../../components/CallToActionContact";
-import { Metadata } from "next";
 import getPostBySlug from "../../../lib/getPostBySlug";
 import getBlogPosts from "../../../lib/getBlogPosts";
 
@@ -20,9 +20,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   return {
     title: post.title,
@@ -44,9 +45,10 @@ export async function generateMetadata({
 export default async function BlogPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   return (
     <div>
