@@ -1,11 +1,12 @@
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
 import reHypePrism from "@mapbox/rehype-prism";
 import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
 import CallToActionContact from "../../../components/CallToActionContact";
-import { Metadata } from "next";
 import getPostBySlug from "../../../lib/getPostBySlug";
 import getBlogPosts from "../../../lib/getBlogPosts";
+import rehypeRaw from "rehype-raw";
 
 // Return 404 for any segment that is not generated in generateStaticParams
 // This avoids server errors if Next tries to access non-existing markdown files
@@ -20,9 +21,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   return {
     title: post.title,
@@ -44,9 +46,10 @@ export async function generateMetadata({
 export default async function BlogPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   return (
     <div>
@@ -81,7 +84,7 @@ export default async function BlogPage({
         )}
 
         <div className="article-content">
-          <ReactMarkdown rehypePlugins={[reHypePrism]}>
+          <ReactMarkdown rehypePlugins={[reHypePrism, rehypeRaw]}>
             {post.content}
           </ReactMarkdown>
         </div>

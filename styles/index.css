@@ -1,8 +1,8 @@
+@import "./prism.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "./prism.css";
 
 @layer components {
   .btn {

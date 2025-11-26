@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/nextjs";
 import Button from ".";
-import { userEvent, within, waitFor, expect, fn } from "@storybook/test";
+import { userEvent, within, waitFor, expect, fn } from "storybook/test";
 
 export default {
   component: Button,
