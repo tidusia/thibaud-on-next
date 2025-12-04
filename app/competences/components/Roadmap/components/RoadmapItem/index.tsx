@@ -27,7 +27,7 @@ export default function RoadmapItem({
   skills,
   description,
   subTitle,
-}: Props): JSX.Element {
+}: Props): React.ReactNode {
   return (
     <div
       className={clsx(

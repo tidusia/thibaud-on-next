@@ -14,7 +14,7 @@ const Button = ({
   content,
   mode,
   size,
-}: ButtonProps): JSX.Element => {
+}: ButtonProps): React.ReactNode => {
   return (
     <button
       className={clsx(className, "btn")}

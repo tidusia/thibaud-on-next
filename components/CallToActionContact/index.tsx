@@ -9,7 +9,9 @@ type Props = {
   className?: string;
 };
 
-export default function CallToActionContact({ className }: Props): JSX.Element {
+export default function CallToActionContact({
+  className,
+}: Props): React.ReactNode {
   return (
     <section
       className={clsx(

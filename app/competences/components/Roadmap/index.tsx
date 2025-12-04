@@ -26,7 +26,10 @@ type Props = {
   domains: Array<Domain>;
 };
 
-export default function Roadmap({ className, domains }: Props): JSX.Element {
+export default function Roadmap({
+  className,
+  domains,
+}: Props): React.ReactNode {
   return (
     <div
       className={clsx(

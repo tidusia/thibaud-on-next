@@ -8,7 +8,7 @@ export type IconProps = React.SVGProps<SVGSVGElement> & {
   name: IconName;
 };
 
-const Icon: FunctionComponent<IconProps> = ({ ...props }): JSX.Element => {
+const Icon: FunctionComponent<IconProps> = ({ ...props }): React.ReactNode => {
   switch (props.name) {
     case "Cross":
       return <IconCross {...props} />;

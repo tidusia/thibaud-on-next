@@ -9,7 +9,7 @@ export default {
   },
 } as Meta<typeof Icon>;
 
-const renderIcon = (name: IconName, props?: IconProps): JSX.Element => (
+const renderIcon = (name: IconName, props?: IconProps): React.ReactNode => (
   <div className="m-4 p-4 flex flex-col items-center border rounded">
     <Icon className="h-6 w-6" name={name} {...props} />
     <p className="mt-2">{name}</p>
