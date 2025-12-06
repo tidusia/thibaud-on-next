@@ -1,6 +1,6 @@
 import React from "react";
 import Icon, { IconName, IconProps } from "./index";
-import { Meta } from "@storybook/nextjs";
+import { Meta } from "@storybook/nextjs-vite";
 
 export default {
   component: Icon,

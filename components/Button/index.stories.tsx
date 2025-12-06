@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/nextjs";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Button from ".";
 import { userEvent, within, waitFor, expect, fn } from "storybook/test";
 
