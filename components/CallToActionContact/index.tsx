@@ -9,7 +9,7 @@ type Props = {
   className?: string;
 };
 
-export default function CallToActionContact({ className }: Props): JSX.Element {
+export default function CallToActionContact({ className }: Props) {
   return (
     <section
       className={clsx(
