@@ -27,7 +27,7 @@ export default function RoadmapItem({
   skills,
   description,
   subTitle,
-}: Props): JSX.Element {
+}: Props) {
   return (
     <div
       className={clsx(
@@ -46,9 +46,9 @@ export default function RoadmapItem({
         </h2>
         <p className="mt-2 text-3xl font-extrabold text-gray-900">{subTitle}</p>
         {!!description && (
-          <ReactMarkdown className="mt-4 text-lg text-gray-500 whitespace-pre-line">
-            {description}
-          </ReactMarkdown>
+          <div className="mt-4 text-lg text-gray-500 whitespace-pre-line">
+            <ReactMarkdown>{description}</ReactMarkdown>
+          </div>
         )}
       </div>
       <ul role="list" className="flex-1 mt-4 sm:mt-8 lg:mt-0">

@@ -1,6 +1,5 @@
 import ReactMarkdown from "react-markdown";
 import type { Metadata } from "next";
-import reHypePrism from "@mapbox/rehype-prism";
 import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
 import CallToActionContact from "../../../components/CallToActionContact";
@@ -84,7 +83,7 @@ export default async function BlogPage({
         )}
 
         <div className="article-content">
-          <ReactMarkdown rehypePlugins={[reHypePrism, rehypeRaw]}>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
             {post.content}
           </ReactMarkdown>
         </div>

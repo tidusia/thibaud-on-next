@@ -8,13 +8,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: "big";
 };
 
-const Button = ({
-  className,
-  onClick,
-  content,
-  mode,
-  size,
-}: ButtonProps): JSX.Element => {
+const Button = ({ className, onClick, content, mode, size }: ButtonProps) => {
   return (
     <button
       className={clsx(className, "btn")}
